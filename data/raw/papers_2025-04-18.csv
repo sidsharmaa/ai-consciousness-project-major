@@ -1,0 +1,865 @@
+Title,Authors,Summary,Published,Updated,URL,Primary Category
+FLIP Reasoning Challenge,"Andreas Plesner, Turlan Kuzhagaliyev, Roger Wattenhofer","Over the past years, advances in artificial intelligence (AI) have
+demonstrated how AI can solve many perception and generation tasks, such as
+image classification and text writing, yet reasoning remains a challenge. This
+paper introduces the FLIP dataset, a benchmark for evaluating AI reasoning
+capabilities based on human verification tasks on the Idena blockchain. FLIP
+challenges present users with two orderings of 4 images, requiring them to
+identify the logically coherent one. By emphasizing sequential reasoning,
+visual storytelling, and common sense, FLIP provides a unique testbed for
+multimodal AI systems. Our experiments evaluate state-of-the-art models,
+leveraging both vision-language models (VLMs) and large language models (LLMs).
+Results reveal that even the best open-sourced and closed-sourced models
+achieve maximum accuracies of 75.5% and 77.9%, respectively, in zero-shot
+settings, compared to human performance of 95.3%. Captioning models aid
+reasoning models by providing text descriptions of images, yielding better
+results than when using the raw images directly, 69.6% vs. 75.2% for Gemini 1.5
+Pro. Combining the predictions from 15 models in an ensemble increases the
+accuracy to 85.2%. These findings highlight the limitations of existing
+reasoning models and the need for robust multimodal benchmarks like FLIP. The
+full codebase and dataset will be available at
+https://github.com/aplesner/FLIP-Reasoning-Challenge.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12256v1,cs.CV
+Comparative Evaluation of Radiomics and Deep Learning Models for Disease Detection in Chest Radiography,"Zhijin He, Alan B. McMillan","The application of artificial intelligence (AI) in medical imaging has
+revolutionized diagnostic practices, enabling advanced analysis and
+interpretation of radiological data. This study presents a comprehensive
+evaluation of radiomics-based and deep learning-based approaches for disease
+detection in chest radiography, focusing on COVID-19, lung opacity, and viral
+pneumonia. While deep learning models, particularly convolutional neural
+networks (CNNs) and vision transformers (ViTs), learn directly from image data,
+radiomics-based models extract and analyze quantitative features, potentially
+providing advantages in data-limited scenarios. This study systematically
+compares the diagnostic accuracy and robustness of various AI models, including
+Decision Trees, Gradient Boosting, Random Forests, Support Vector Machines
+(SVM), and Multi-Layer Perceptrons (MLP) for radiomics, against
+state-of-the-art computer vision deep learning architectures. Performance
+metrics across varying sample sizes reveal insights into each model's efficacy,
+highlighting the contexts in which specific AI approaches may offer enhanced
+diagnostic capabilities. The results aim to inform the integration of AI-driven
+diagnostic tools in clinical practice, particularly in automated and
+high-throughput environments where timely, reliable diagnosis is critical. This
+comparative study addresses an essential gap, establishing guidance for the
+selection of AI models based on clinical and operational needs.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12249v1,eess.IV
+Creating benchmarkable components to measure the quality ofAI-enhanced developer tools,"Elise Paradis, Ambar Murillo, Maulishree Pandey, Sarah D'Angelo, Matthew Hughes, Andrew Macvean, Ben Ferrari-Church","In the AI community, benchmarks to evaluate model quality are well
+established, but an equivalent approach to benchmarking products built upon
+generative AI models is still missing. This has had two consequences. First, it
+has made teams focus on model quality over the developer experience, while
+successful products combine both. Second, product team have struggled to answer
+questions about their products in relation to their competitors.
+  In this case study, we share: (1) our process to create robust,
+enterprise-grade and modular components to support the benchmarking of the
+developer experience (DX) dimensions of our team's AI for code offerings, and
+(2) the components we have created to do so, including demographics and
+attitudes towards AI surveys, a benchmarkable task, and task and feature
+surveys. By doing so, we hope to lower the barrier to the DX benchmarking of
+genAI-enhanced code products.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12211v1,cs.SE
+Communication Optimization for Decentralized Learning atop Bandwidth-limited Edge Networks,"Tingyang Sun, Tuan Nguyen, Ting He","Decentralized federated learning (DFL) is a promising machine learning
+paradigm for bringing artificial intelligence (AI) capabilities to the network
+edge. Running DFL on top of edge networks, however, faces severe performance
+challenges due to the extensive parameter exchanges between agents. Most
+existing solutions for these challenges were based on simplistic communication
+models, which cannot capture the case of learning over a multi-hop
+bandwidth-limited network. In this work, we address this problem by jointly
+designing the communication scheme for the overlay network formed by the agents
+and the mixing matrix that controls the communication demands between the
+agents. By carefully analyzing the properties of our problem, we cast each
+design problem into a tractable optimization and develop an efficient algorithm
+with guaranteed performance. Our evaluations based on real topology and data
+show that the proposed algorithm can reduce the total training time by over
+$80\%$ compared to the baseline without sacrificing accuracy, while
+significantly improving the computational efficiency over the state of the art.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12210v1,cs.NI
+Beyond Patches: Mining Interpretable Part-Prototypes for Explainable AI,"Mahdi Alehdaghi, Rajarshi Bhattacharya, Pourya Shamsolmoali, Rafael M. O. Cruz, Maguelonne Heritier, Eric Granger","Deep learning has provided considerable advancements for multimedia systems,
+yet the interpretability of deep models remains a challenge. State-of-the-art
+post-hoc explainability methods, such as GradCAM, provide visual interpretation
+based on heatmaps but lack conceptual clarity. Prototype-based approaches, like
+ProtoPNet and PIPNet, offer a more structured explanation but rely on fixed
+patches, limiting their robustness and semantic consistency.
+  To address these limitations, a part-prototypical concept mining network
+(PCMNet) is proposed that dynamically learns interpretable prototypes from
+meaningful regions. PCMNet clusters prototypes into concept groups, creating
+semantically grounded explanations without requiring additional annotations.
+Through a joint process of unsupervised part discovery and concept activation
+vector extraction, PCMNet effectively captures discriminative concepts and
+makes interpretable classification decisions.
+  Our extensive experiments comparing PCMNet against state-of-the-art methods
+on multiple datasets show that it can provide a high level of interpretability,
+stability, and robustness under clean and occluded scenarios.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12197v1,cs.CV
+Nonequilibrium physics of brain dynamics,"Ramón Nartallo-Kaluarachchi, Morten L. Kringelbach, Gustavo Deco, Renaud Lambiotte, Alain Goriely","Information processing in the brain is coordinated by the dynamic activity of
+neurons and neural populations at a range of spatiotemporal scales. These
+dynamics, captured in the form of electrophysiological recordings and
+neuroimaging, show evidence of time-irreversibility and broken detailed balance
+suggesting that the brain operates in a nonequilibrium stationary state.
+Furthermore, the level of nonequilibrium, measured by entropy production or
+irreversibility appears to be a crucial signature of cognitive complexity and
+consciousness. The subsequent study of neural dynamics from the perspective of
+nonequilibrium statistical physics is an emergent field that challenges the
+assumptions of symmetry and maximum-entropy that are common in traditional
+models. In this review, we discuss the plethora of exciting results emerging at
+the interface of nonequilibrium dynamics and neuroscience. We begin with an
+introduction to the mathematical paradigms necessary to understand
+nonequilibrium dynamics in both continuous and discrete state-spaces. Next, we
+review both model-free and model-based approaches to analysing nonequilibrium
+dynamics in both continuous-state recordings and neural spike-trains, as well
+as the results of such analyses. We briefly consider the topic of
+nonequilibrium computation in neural systems, before concluding with a
+discussion and outlook on the field.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12188v1,q-bio.NC
+AI Behind Closed Doors: a Primer on The Governance of Internal Deployment,"Charlotte Stix, Matteo Pistillo, Girish Sastry, Marius Hobbhahn, Alejandro Ortega, Mikita Balesni, Annika Hallensleben, Nix Goldowsky-Dill, Lee Sharkey","The most advanced future AI systems will first be deployed inside the
+frontier AI companies developing them. According to these companies and
+independent experts, AI systems may reach or even surpass human intelligence
+and capabilities by 2030. Internal deployment is, therefore, a key source of
+benefits and risks from frontier AI systems. Despite this, the governance of
+the internal deployment of highly advanced frontier AI systems appears absent.
+This report aims to address this absence by priming a conversation around the
+governance of internal deployment. It presents a conceptualization of internal
+deployment, learnings from other sectors, reviews of existing legal frameworks
+and their applicability, and illustrative examples of the type of scenarios we
+are most concerned about. Specifically, it discusses the risks correlated to
+the loss of control via the internal application of a misaligned AI system to
+the AI research and development pipeline, and unconstrained and undetected
+power concentration behind closed doors. The report culminates with a small
+number of targeted recommendations that provide a first blueprint for the
+governance of internal deployment.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12170v1,cs.CY
+ARCeR: an Agentic RAG for the Automated Definition of Cyber Ranges,"Matteo Lupinacci, Francesco Blefari, Francesco Romeo, Francesco Aurelio Pironti, Angelo Furfaro","The growing and evolving landscape of cybersecurity threats necessitates the
+development of supporting tools and platforms that allow for the creation of
+realistic IT environments operating within virtual, controlled settings as
+Cyber Ranges (CRs). CRs can be exploited for analyzing vulnerabilities and
+experimenting with the effectiveness of devised countermeasures, as well as
+serving as training environments for building cyber security skills and
+abilities for IT operators. This paper proposes ARCeR as an innovative solution
+for the automatic generation and deployment of CRs, starting from user-provided
+descriptions in a natural language. ARCeR relies on the Agentic RAG paradigm,
+which allows it to fully exploit state-of-art AI technologies. Experimental
+results show that ARCeR is able to successfully process prompts even in cases
+that LLMs or basic RAG systems are not able to cope with. Furthermore, ARCeR is
+able to target any CR framework provided that specific knowledge is made
+available to it.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12143v1,cs.CR
+Towards LLM Agents for Earth Observation,"Chia Hsiang Kao, Wenting Zhao, Shreelekha Revankar, Samuel Speas, Snehal Bhagat, Rajeev Datta, Cheng Perng Phoo, Utkarsh Mall, Carl Vondrick, Kavita Bala, Bharath Hariharan","Earth Observation (EO) provides critical planetary data for environmental
+monitoring, disaster management, climate science, and other scientific domains.
+Here we ask: Are AI systems ready for reliable Earth Observation? We introduce
+\datasetnamenospace, a benchmark of 140 yes/no questions from NASA Earth
+Observatory articles across 13 topics and 17 satellite sensors. Using Google
+Earth Engine API as a tool, LLM agents can only achieve an accuracy of 33%
+because the code fails to run over 58% of the time. We improve the failure rate
+for open models by fine-tuning synthetic data, allowing much smaller models
+(Llama-3.1-8B) to achieve comparable accuracy to much larger ones (e.g.,
+DeepSeek-R1). Taken together, our findings identify significant challenges to
+be solved before AI agents can automate earth observation, and suggest paths
+forward. The project page is available at
+https://iandrover.github.io/UnivEarth.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12110v1,cs.AI
+"Reasoning-Based AI for Startup Evaluation (R.A.I.S.E.): A Memory-Augmented, Multi-Step Decision Framework","Jack Preuveneers, Joseph Ternasky, Fuat Alican, Yigit Ihlamur","We present a novel framework that bridges the gap between the
+interpretability of decision trees and the advanced reasoning capabilities of
+large language models (LLMs) to predict startup success. Our approach leverages
+chain-of-thought prompting to generate detailed reasoning logs, which are
+subsequently distilled into structured, human-understandable logical rules. The
+pipeline integrates multiple enhancements - efficient data ingestion, a
+two-step refinement process, ensemble candidate sampling, simulated
+reinforcement learning scoring, and persistent memory - to ensure both stable
+decision-making and transparent output. Experimental evaluations on curated
+startup datasets demonstrate that our combined pipeline improves precision by
+54% from 0.225 to 0.346 and accuracy by 50% from 0.46 to 0.70 compared to a
+standalone OpenAI o3 model. Notably, our model achieves over 2x the precision
+of a random classifier (16%). By combining state-of-the-art AI reasoning with
+explicit rule-based explanations, our method not only augments traditional
+decision-making processes but also facilitates expert intervention and
+continuous policy refinement. This work lays the foundation for the
+implementation of interpretable LLM-powered decision frameworks in high-stakes
+investment environments and other domains that require transparent and
+data-driven insights.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12090v1,cs.AI
+Evolutionary Reinforcement Learning for Interpretable Decision-Making in Supply Chain Management,"Stefano Genetti, Alberto Longobardi, Giovanni Iacca","In the context of Industry 4.0, Supply Chain Management (SCM) faces
+challenges in adopting advanced optimization techniques due to the ""black-box""
+nature of most AI-based solutions, which causes reluctance among company
+stakeholders. To overcome this issue, in this work, we employ an Interpretable
+Artificial Intelligence (IAI) approach that combines evolutionary computation
+with Reinforcement Learning (RL) to generate interpretable decision-making
+policies in the form of decision trees. This IAI solution is embedded within a
+simulation-based optimization framework specifically designed to handle the
+inherent uncertainties and stochastic behaviors of modern supply chains. To our
+knowledge, this marks the first attempt to combine IAI with simulation-based
+optimization for decision-making in SCM. The methodology is tested on two
+supply chain optimization problems, one fictional and one from the real world,
+and its performance is compared against widely used optimization and RL
+algorithms. The results reveal that the interpretable approach delivers
+competitive, and sometimes better, performance, challenging the prevailing
+notion that there must be a trade-off between interpretability and optimization
+efficiency. Additionally, the developed framework demonstrates strong potential
+for industrial applications, offering seamless integration with various
+Python-based algorithms.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12023v1,cs.NE
+Active Human Feedback Collection via Neural Contextual Dueling Bandits,"Arun Verma, Xiaoqiang Lin, Zhongxiang Dai, Daniela Rus, Bryan Kian Hsiang Low","Collecting human preference feedback is often expensive, leading recent works
+to develop principled algorithms to select them more efficiently. However,
+these works assume that the underlying reward function is linear, an assumption
+that does not hold in many real-life applications, such as online
+recommendation and LLM alignment. To address this limitation, we propose
+Neural-ADB, an algorithm based on the neural contextual dueling bandit
+framework that provides a principled and practical method for collecting human
+preference feedback when the underlying latent reward function is non-linear.
+We theoretically show that when preference feedback follows the
+Bradley-Terry-Luce model, the worst sub-optimality gap of the policy learned by
+Neural-ADB decreases at a sub-linear rate as the preference dataset increases.
+Our experimental results on problem instances derived from synthetic preference
+datasets further validate the effectiveness of Neural-ADB.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12016v1,cs.LG
+Purposefully Induced Psychosis (PIP): Embracing Hallucination as Imagination in Large Language Models,"Kris Pilcher, Esen K. Tütüncü","Hallucinations in Large Language Models (LLMs) are widely regarded as errors
+- outputs that deviate from factual accuracy. However, in creative or
+exploratory contexts, these ""mistakes"" may represent unexpected avenues for
+innovation. We introduce Purposefully Induced Psychosis (PIP), a novel approach
+that amplifies LLM hallucinations for imaginative tasks such as speculative
+fiction, interactive storytelling, and mixed-reality simulations. Drawing on
+Herman Melville's Moby-Dick, where Pip's ""madness"" reveals profound insight, we
+reframe hallucinations as a source of computational imagination rather than a
+flaw. Our method fine-tunes LLMs to encourage speculative, metaphorical, and
+surreal outputs - hallucinations that are useful when factual accuracy is not
+the chief objective. Inspired by the consensual illusions of theater and stage
+magic, PIP situates these creative missteps in contexts where users willingly
+suspend disbelief, thereby transforming ""errors"" into catalysts for new ways of
+thinking. We discuss potential applications, design principles for ensuring
+user consent, preliminary observations, and implications for broader AI ethics
+and human-AI collaboration.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12012v1,cs.AI
+The Evolution of Zero Trust Architecture (ZTA) from Concept to Implementation,"Md Nasiruzzaman, Maaruf Ali, Iftekhar Salam, Mahdi H. Miraz","Zero Trust Architecture (ZTA) is one of the paradigm changes in
+cybersecurity, from the traditional perimeter-based model to perimeterless.
+This article studies the core concepts of ZTA, its beginning, a few use cases
+and future trends. Emphasising the always verify and least privilege access,
+some key tenets of ZTA have grown to be integration technologies like Identity
+Management, Multi-Factor Authentication (MFA) and real-time analytics. ZTA is
+expected to strengthen cloud environments, education, work environments
+(including from home) while controlling other risks like lateral movement and
+insider threats. Despite ZTA's benefits, it comes with challenges in the form
+of complexity, performance overhead and vulnerabilities in the control plane.
+These require phased implementation and continuous refinement to keep up with
+evolving organisational needs and threat landscapes. Emerging technologies,
+such as Artificial Intelligence (AI) and Machine Learning (ML) will further
+automate policy enforcement and threat detection in keeping up with dynamic
+cyber threats.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11984v1,cs.CR
+Who Said Only Military Officers Can Deal with Uncertainty? On the Importance of Uncertainty in EdTech Data Visualisations,"Felicitas Macgilchrist, Juliane Jarke","AI-powered predictive systems have high margins of error. However, data
+visualisations of algorithmic systems in education and other social fields tend
+to visualise certainty, thus invisibilising the underlying approximations and
+uncertainties of the algorithmic systems and the social settings in which these
+systems operate. This paper draws on a critical speculative approach to first
+analyse data visualisations from predictive analytics platforms for education.
+It demonstrates that visualisations of uncertainty in education are rare.
+Second, the paper explores uncertainty visualisations in other fields (defence,
+climate change and healthcare). The paper concludes by reflecting on the role
+of data visualisations and un/certainty in shaping educational futures. It also
+identifies practical implications for the design of data visualisations in
+education.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11974v1,cs.HC
+Robust and Fine-Grained Detection of AI Generated Texts,"Ram Mohan Rao Kadiyala, Siddartha Pullakhandam, Kanwal Mehreen, Drishti Sharma, Siddhant Gupta, Jebish Purbey, Ashay Srivastava, Subhasya TippaReddy, Arvind Reddy Bobbili, Suraj Telugara Chandrashekhar, Modabbir Adeeb, Srinadh Vura, Hamza Farooq","An ideal detection system for machine generated content is supposed to work
+well on any generator as many more advanced LLMs come into existence day by
+day. Existing systems often struggle with accurately identifying AI-generated
+content over shorter texts. Further, not all texts might be entirely authored
+by a human or LLM, hence we focused more over partial cases i.e human-LLM
+co-authored texts. Our paper introduces a set of models built for the task of
+token classification which are trained on an extensive collection of
+human-machine co-authored texts, which performed well over texts of unseen
+domains, unseen generators, texts by non-native speakers and those with
+adversarial inputs. We also introduce a new dataset of over 2.4M such texts
+mostly co-authored by several popular proprietary LLMs over 23 languages. We
+also present findings of our models' performance over each texts of each domain
+and generator. Additional findings include comparison of performance against
+each adversarial method, length of input texts and characteristics of generated
+texts compared to the original human authored texts.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11952v1,cs.CL
+Zooming In on Fakes: A Novel Dataset for Localized AI-Generated Image Detection with Forgery Amplification Approach,"Lvpan Cai, Haowei Wang, Jiayi Ji, YanShu ZhouMen, Yiwei Ma, Xiaoshuai Sun, Liujuan Cao, Rongrong Ji","The rise of AI-generated image editing tools has made localized forgeries
+increasingly realistic, posing challenges for visual content integrity.
+Although recent efforts have explored localized AIGC detection, existing
+datasets predominantly focus on object-level forgeries while overlooking
+broader scene edits in regions such as sky or ground. To address these
+limitations, we introduce \textbf{BR-Gen}, a large-scale dataset of 150,000
+locally forged images with diverse scene-aware annotations, which are based on
+semantic calibration to ensure high-quality samples. BR-Gen is constructed
+through a fully automated Perception-Creation-Evaluation pipeline to ensure
+semantic coherence and visual realism. In addition, we further propose
+\textbf{NFA-ViT}, a Noise-guided Forgery Amplification Vision Transformer that
+enhances the detection of localized forgeries by amplifying forgery-related
+features across the entire image. NFA-ViT mines heterogeneous regions in
+images, \emph{i.e.}, potential edited areas, by noise fingerprints.
+Subsequently, attention mechanism is introduced to compel the interaction
+between normal and abnormal features, thereby propagating the generalization
+traces throughout the entire image, allowing subtle forgeries to influence a
+broader context and improving overall detection robustness. Extensive
+experiments demonstrate that BR-Gen constructs entirely new scenarios that are
+not covered by existing methods. Take a step further, NFA-ViT outperforms
+existing methods on BR-Gen and generalizes well across current benchmarks. All
+data and codes are available at https://github.com/clpbc/BR-Gen.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11922v1,cs.CV
+Rethinking the Generation of High-Quality CoT Data from the Perspective of LLM-Adaptive Question Difficulty Grading,"Qianjin Yu, Keyu Wu, Zihan Chen, Chushu Zhang, Manlin Mei, Lingjun Huang, Fang Tan, Yongsheng Du, Kunlin Liu, Yurui Zhu","Recently, DeepSeek-R1 (671B) (DeepSeek-AIet al., 2025) has demonstrated its
+excellent reasoning ability in complex tasks and has publiclyshared its
+methodology. This provides potentially high-quality chain-of-thought (CoT) data
+for stimulating the reasoning abilities of small-sized large language models
+(LLMs). To generate high-quality CoT data for different LLMs, we seek an
+efficient method for generating high-quality CoT data with LLM-Adaptive
+questiondifficulty levels. First, we grade the difficulty of the questions
+according to the reasoning ability of the LLMs themselves and construct a
+LLM-Adaptive question database. Second, we sample the problem database based on
+a distribution of difficulty levels of the questions and then use DeepSeek-R1
+(671B) (DeepSeek-AI et al., 2025) to generate the corresponding high-quality
+CoT data with correct answers. Thanks to the construction of CoT data with
+LLM-Adaptive difficulty levels, we have significantly reduced the cost of data
+generation and enhanced the efficiency of model supervised fine-tuning (SFT).
+Finally, we have validated the effectiveness and generalizability of the
+proposed method in the fields of complex mathematical competitions and code
+generation tasks. Notably, with only 2k high-quality mathematical CoT data, our
+ZMath-32B surpasses DeepSeek-Distill-32B in math reasoning task. Similarly,
+with only 2k high-quality code CoT data, our ZCode-32B surpasses
+DeepSeek-Distill-32B in code reasoning tasks.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11919v1,cs.AI
+A Bidirectional DeepParticle Method for Efficiently Solving Low-dimensional Transport Map Problems,"Tan Zhang, Zhongjian Wang, Jack Xin, Zhiwen Zhang","This paper aims to efficiently compute transport maps between probability
+distributions arising from particle representation of bio-physical problems. We
+develop a bidirectional DeepParticle (BDP) method to learn and generate
+solutions under varying physical parameters. Solutions are approximated as
+empirical measures of particles that adaptively align with the high-gradient
+regions. The core idea of the BDP method is to learn both forward and reverse
+mappings (between the uniform and a non-trivial target distribution) by
+minimizing the discrete 2-Wasserstein distance (W2) and optimizing the
+transition map therein by a minibatch technique. We present numerical results
+demonstrating the effectiveness of the BDP method for learning and generating
+solutions to Keller-Segel chemotaxis systems in the presence of laminar flows
+and Kolmogorov flows with chaotic streamlines in three space dimensions. The
+BDP outperforms two recent representative single-step flow matching and
+diffusion models (rectified flow and shortcut diffusion models) in the
+generative AI literature. However when the target distribution is
+high-dimensional (4 and above), e.g. a mixture of two Gaussians, the
+single-step diffusion models scale better in dimensions than BDP in terms of
+W2-accuracy.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11851v1,physics.comp-ph
+Schemex: Interactive Structural Abstraction from Examples with Contrastive Refinement,"Sitong Wang, Samia Menon, Dingzeyu Li, Xiaojuan Ma, Richard Zemel, Lydia B. Chilton","Each type of creative or communicative work is underpinned by an implicit
+structure. People learn these structures from examples - a process known in
+cognitive science as schema induction. However, inducing schemas is
+challenging, as structural patterns are often obscured by surface-level
+variation. We present Schemex, an interactive visual workflow that scaffolds
+schema induction through clustering, abstraction, and contrastive refinement.
+Schemex supports users through visual representations and interactive
+exploration that connect abstract structures to concrete examples, promoting
+transparency, adaptability, and effective human-AI collaboration. In our user
+study, participants reported significantly greater insight and confidence in
+the schemas developed with Schemex compared to those created using a baseline
+of an AI reasoning model. We conclude by discussing the broader implications of
+structural abstraction and contrastive refinement across domains.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11795v1,cs.HC
+Large Language Models for Drug Overdose Prediction from Longitudinal Medical Records,"Md Sultan Al Nahian, Chris Delcher, Daniel Harris, Peter Akpunonu, Ramakanth Kavuluru","The ability to predict drug overdose risk from a patient's medical records is
+crucial for timely intervention and prevention. Traditional machine learning
+models have shown promise in analyzing longitudinal medical records for this
+task. However, recent advancements in large language models (LLMs) offer an
+opportunity to enhance prediction performance by leveraging their ability to
+process long textual data and their inherent prior knowledge across diverse
+tasks. In this study, we assess the effectiveness of Open AI's GPT-4o LLM in
+predicting drug overdose events using patients' longitudinal insurance claims
+records. We evaluate its performance in both fine-tuned and zero-shot settings,
+comparing them to strong traditional machine learning methods as baselines. Our
+results show that LLMs not only outperform traditional models in certain
+settings but can also predict overdose risk in a zero-shot setting without
+task-specific training. These findings highlight the potential of LLMs in
+clinical decision support, particularly for drug overdose risk prediction.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11792v1,cs.AI
+Agile Retrospectives: What went well? What didn't go well? What should we do?,"Maria Spichkova, Hina Lee, Kevin Iwan, Madeleine Zwart, Yuwon Yoon, Xiaohan Qin","In Agile/Scrum software development, the idea of retrospective meetings
+(retros) is one of the core elements of the project process. In this paper, we
+present our work in progress focusing on two aspects: analysis of potential
+usage of generative AI for information interaction within retrospective
+meetings, and visualisation of retros' information to software development
+teams. We also present our prototype tool RetroAI++, focusing on retros-related
+functionalities.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11780v1,cs.SE
+Discrimination-free Insurance Pricing with Privatized Sensitive Attributes,"Tianhe Zhang, Suhan Liu, Peng Shi","Fairness has emerged as a critical consideration in the landscape of machine
+learning algorithms, particularly as AI continues to transform decision-making
+across societal domains. To ensure that these algorithms are free from bias and
+do not discriminate against individuals based on sensitive attributes such as
+gender and race, the field of algorithmic bias has introduced various fairness
+concepts, along with methodologies to achieve these notions in different
+contexts. Despite the rapid advancement, not all sectors have embraced these
+fairness principles to the same extent. One specific sector that merits
+attention in this regard is insurance. Within the realm of insurance pricing,
+fairness is defined through a distinct and specialized framework. Consequently,
+achieving fairness according to established notions does not automatically
+ensure fair pricing in insurance. In particular, regulators are increasingly
+emphasizing transparency in pricing algorithms and imposing constraints on
+insurance companies on the collection and utilization of sensitive consumer
+attributes. These factors present additional challenges in the implementation
+of fairness in pricing algorithms. To address these complexities and comply
+with regulatory demands, we propose an efficient method for constructing fair
+models that are tailored to the insurance domain, using only privatized
+sensitive attributes. Notably, our approach ensures statistical guarantees,
+does not require direct access to sensitive attributes, and adapts to varying
+transparency requirements, addressing regulatory demands while ensuring
+fairness in insurance pricing.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11775v1,stat.ML
+Characterizing and Optimizing LLM Inference Workloads on CPU-GPU Coupled Architectures,"Prabhu Vellaisamy, Thomas Labonte, Sourav Chakraborty, Matt Turner, Samantika Sury, John Paul Shen","Large language model (LLM)-based inference workloads increasingly dominate
+data center costs and resource utilization. Therefore, understanding the
+inference workload characteristics on evolving CPU-GPU coupled architectures is
+crucial for optimization. This paper presents an in-depth analysis of LLM
+inference behavior on loosely-coupled (PCIe A100/H100) and closely-coupled
+(GH200) systems. We analyze performance dynamics using fine-grained
+operator-to-kernel trace analysis, facilitated by our novel profiler SKIP and
+metrics like Total Kernel Launch and Queuing Time (TKLQT). Results show that
+closely-coupled (CC) GH200 significantly outperforms loosely-coupled (LC)
+systems at large batch sizes, achieving 1.9x-2.7x faster prefill latency for
+Llama 3.2-1B. However, our analysis also reveals that GH200 remains CPU-bound
+up to 4x larger batch sizes than LC systems. In this extended CPU-bound region,
+we identify the performance characteristics of the Grace CPU as a key factor
+contributing to higher inference latency at low batch sizes on GH200. We
+demonstrate that TKLQT accurately identifies this CPU/GPU-bound transition
+point. Based on this analysis, we further show that kernel fusion offers
+significant potential to mitigate GH200's low-batch latency bottleneck by
+reducing kernel launch overhead. This detailed kernel-level characterization
+provides critical insights for optimizing diverse CPU-GPU coupling strategies.
+This work is an initial effort, and we plan to explore other major AI/DL
+workloads that demand different degrees of CPU-GPU heterogeneous architectures.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11750v1,cs.DC
+Safety with Agency: Human-Centered Safety Filter with Application to AI-Assisted Motorsports,"Donggeon David Oh, Justin Lidard, Haimin Hu, Himani Sinhmar, Elle Lazarski, Deepak Gopinath, Emily S. Sumner, Jonathan A. DeCastro, Guy Rosman, Naomi Ehrich Leonard, Jaime Fernández Fisac","We propose a human-centered safety filter (HCSF) for shared autonomy that
+significantly enhances system safety without compromising human agency. Our
+HCSF is built on a neural safety value function, which we first learn scalably
+through black-box interactions and then use at deployment to enforce a novel
+quality control barrier function (Q-CBF) safety constraint. Since this Q-CBF
+safety filter does not require any knowledge of the system dynamics for both
+synthesis and runtime safety monitoring and intervention, our method applies
+readily to complex, black-box shared autonomy systems. Notably, our HCSF's
+CBF-based interventions modify the human's actions minimally and smoothly,
+avoiding the abrupt, last-moment corrections delivered by many conventional
+safety filters. We validate our approach in a comprehensive in-person user
+study using Assetto Corsa-a high-fidelity car racing simulator with black-box
+dynamics-to assess robustness in ""driving on the edge"" scenarios. We compare
+both trajectory data and drivers' perceptions of our HCSF assistance against
+unassisted driving and a conventional safety filter. Experimental results show
+that 1) compared to having no assistance, our HCSF improves both safety and
+user satisfaction without compromising human agency or comfort, and 2) relative
+to a conventional safety filter, our proposed HCSF boosts human agency,
+comfort, and satisfaction while maintaining robustness.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11717v1,cs.RO
+Progent: Programmable Privilege Control for LLM Agents,"Tianneng Shi, Jingxuan He, Zhun Wang, Linyu Wu, Hongwei Li, Wenbo Guo, Dawn Song","LLM agents are an emerging form of AI systems where large language models
+(LLMs) serve as the central component, utilizing a diverse set of tools to
+complete user-assigned tasks. Despite their great potential, LLM agents pose
+significant security risks. When interacting with the external world, they may
+encounter malicious commands from attackers, leading to the execution of
+dangerous actions. A promising way to address this is by enforcing the
+principle of least privilege: allowing only essential actions for task
+completion while blocking unnecessary ones. However, achieving this is
+challenging, as it requires covering diverse agent scenarios while preserving
+both security and utility.
+  We introduce Progent, the first privilege control mechanism for LLM agents.
+At its core is a domain-specific language for flexibly expressing privilege
+control policies applied during agent execution. These policies provide
+fine-grained constraints over tool calls, deciding when tool calls are
+permissible and specifying fallbacks if they are not. This enables agent
+developers and users to craft suitable policies for their specific use cases
+and enforce them deterministically to guarantee security. Thanks to its modular
+design, integrating Progent does not alter agent internals and requires only
+minimal changes to agent implementation, enhancing its practicality and
+potential for widespread adoption. To automate policy writing, we leverage LLMs
+to generate policies based on user queries, which are then updated dynamically
+for improved security and utility. Our extensive evaluation shows that it
+enables strong security while preserving high utility across three distinct
+scenarios or benchmarks: AgentDojo, ASB, and AgentPoison. Furthermore, we
+perform an in-depth analysis, showcasing the effectiveness of its core
+components and the resilience of its automated policy generation against
+adaptive attacks.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11703v1,cs.CR
+A New Paradigm of User-Centric Wireless Communication Driven by Large Language Models,"Kuiyuan Ding, Caili Guo, Yang Yang, Wuxia Hu, Yonina C. Eldar","The next generation of wireless communications seeks to deeply integrate
+artificial intelligence (AI) with user-centric communication networks, with the
+goal of developing AI-native networks that more accurately address user
+requirements. The rapid development of large language models (LLMs) offers
+significant potential in realizing these goals. However, existing efforts that
+leverage LLMs for wireless communication often overlook the considerable gap
+between human natural language and the intricacies of real-world communication
+systems, thus failing to fully exploit the capabilities of LLMs. To address
+this gap, we propose a novel LLM-driven paradigm for wireless communication
+that innovatively incorporates the nature language to structured query language
+(NL2SQL) tool. Specifically, in this paradigm, user personal requirements is
+the primary focus. Upon receiving a user request, LLMs first analyze the user
+intent in terms of relevant communication metrics and system parameters.
+Subsequently, a structured query language (SQL) statement is generated to
+retrieve the specific parameter values from a high-performance real-time
+database. We further utilize LLMs to formulate and solve an optimization
+problem based on the user request and the retrieved parameters. The solution to
+this optimization problem then drives adjustments in the communication system
+to fulfill the user's requirements. To validate the feasibility of the proposed
+paradigm, we present a prototype system. In this prototype, we consider
+user-request centric semantic communication (URC-SC) system in which a dynamic
+semantic representation network at the physical layer adapts its encoding depth
+to meet user requirements. Additionally, two LLMs are employed to analyze user
+requests and generate SQL statements, respectively. Simulation results
+demonstrate the effectiveness.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11696v1,cs.NI
+Can GPT tell us why these images are synthesized? Empowering Multimodal Large Language Models for Forensics,"Yiran He, Yun Cao, Bowen Yang, Zeyu Zhang","The rapid development of generative AI facilitates content creation and makes
+image manipulation easier and more difficult to detect. While multimodal Large
+Language Models (LLMs) have encoded rich world knowledge, they are not
+inherently tailored for combating AI-generated Content (AIGC) and struggle to
+comprehend local forgery details. In this work, we investigate the application
+of multimodal LLMs in forgery detection. We propose a framework capable of
+evaluating image authenticity, localizing tampered regions, providing evidence,
+and tracing generation methods based on semantic tampering clues. Our method
+demonstrates that the potential of LLMs in forgery analysis can be effectively
+unlocked through meticulous prompt engineering and the application of few-shot
+learning techniques. We conduct qualitative and quantitative experiments and
+show that GPT4V can achieve an accuracy of 92.1% in Autosplice and 86.3% in
+LaMa, which is competitive with state-of-the-art AIGC detection methods. We
+further discuss the limitations of multimodal LLMs in such tasks and propose
+potential improvements.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11686v1,cs.CV
+Steering Prosocial AI Agents: Computational Basis of LLM's Decision Making in Social Simulation,Ji Ma,"Large language models (LLMs) increasingly serve as human-like decision-making
+agents in social science and applied settings. These LLM-agents are typically
+assigned human-like characters and placed in real-life contexts. However, how
+these characters and contexts shape an LLM's behavior remains underexplored.
+This study proposes and tests methods for probing, quantifying, and modifying
+an LLM's internal representations in a Dictator Game -- a classic behavioral
+experiment on fairness and prosocial behavior. We extract ``vectors of variable
+variations'' (e.g., ``male'' to ``female'') from the LLM's internal state.
+Manipulating these vectors during the model's inference can substantially alter
+how those variables relate to the model's decision-making. This approach offers
+a principled way to study and regulate how social concepts can be encoded and
+engineered within transformer-based models, with implications for alignment,
+debiasing, and designing AI agents for social simulations in both academic and
+commercial applications.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.11671v1,cs.AI
+Towards Interpretable Deep Generative Models via Causal Representation Learning,"Gemma E. Moran, Bryon Aragam","Recent developments in generative artificial intelligence (AI) rely on
+machine learning techniques such as deep learning and generative modeling to
+achieve state-of-the-art performance across wide-ranging domains. These
+methods' surprising performance is due in part to their ability to learn
+implicit ""representations'' of complex, multi-modal data. Unfortunately, deep
+neural networks are notoriously black boxes that obscure these representations,
+making them difficult to interpret or analyze. To resolve these difficulties,
+one approach is to build new interpretable neural network models from the
+ground up. This is the goal of the emerging field of causal representation
+learning (CRL) that uses causality as a vector for building flexible,
+interpretable, and transferable generative AI. CRL can be seen as a culmination
+of three intrinsically statistical problems: (i) latent variable models such as
+factor analysis; (ii) causal graphical models with latent variables; and (iii)
+nonparametric statistics and deep learning. This paper reviews recent progress
+in CRL from a statistical perspective, focusing on connections to classical
+models and statistical and causal identifiablity results. This review also
+highlights key application areas, implementation strategies, and open
+statistical questions in CRL.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11609v1,stat.ML
+MULTI-LF: A Unified Continuous Learning Framework for Real-Time DDoS Detection in Multi-Environment Networks,"Furqan Rustam, Islam Obaidat, Anca Delia Jurcut","Detecting Distributed Denial of Service (DDoS) attacks in Multi-Environment
+(M-En) networks presents significant challenges due to diverse malicious
+traffic patterns and the evolving nature of cyber threats. Existing AI-based
+detection systems struggle to adapt to new attack strategies and lack real-time
+attack detection capabilities with high accuracy and efficiency. This study
+proposes an online, continuous learning methodology for DDoS detection in M-En
+networks, enabling continuous model updates and real-time adaptation to
+emerging threats, including zero-day attacks. First, we develop a unique M-En
+network dataset by setting up a realistic, real-time simulation using the NS-3
+tool, incorporating both victim and bot devices. DDoS attacks with varying
+packet sizes are simulated using the DDoSim application across IoT and
+traditional IP-based environments under M-En network criteria. Our approach
+employs a multi-level framework (MULTI-LF) featuring two machine learning
+models: a lightweight Model 1 (M1) trained on a selective, critical packet
+dataset for fast and efficient initial detection, and a more complex, highly
+accurate Model 2 (M2) trained on extensive data. When M1 exhibits low
+confidence in its predictions, the decision is escalated to M2 for verification
+and potential fine-tuning of M1 using insights from M2. If both models
+demonstrate low confidence, the system flags the incident for human
+intervention, facilitating model updates with human-verified categories to
+enhance adaptability to unseen attack patterns. We validate the MULTI-LF
+through real-world simulations, demonstrating superior classification accuracy
+of 0.999 and low prediction latency of 0.866 seconds compared to established
+baselines. Furthermore, we evaluate performance in terms of memory usage (3.632
+MB) and CPU utilization (10.05%) in real-time scenarios.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11575v1,cs.CR
+Perceptions of Agentic AI in Organizations: Implications for Responsible AI and ROI,Lee Ackerman,"As artificial intelligence (AI) systems rapidly gain autonomy, the need for
+robust responsible AI frameworks becomes paramount. This paper investigates how
+organizations perceive and adapt such frameworks amidst the emerging landscape
+of increasingly sophisticated agentic AI. Employing an interpretive qualitative
+approach, the study explores the lived experiences of AI professionals.
+Findings highlight that the inherent complexity of agentic AI systems and their
+responsible implementation, rooted in the intricate interconnectedness of
+responsible AI dimensions and the thematic framework (an analytical structure
+developed from the data), combined with the novelty of agentic AI, contribute
+to significant challenges in organizational adaptation, characterized by
+knowledge gaps, a limited emphasis on stakeholder engagement, and a strong
+focus on control. These factors, by hindering effective adaptation and
+implementation, ultimately compromise the potential for responsible AI and the
+realization of ROI.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11564v1,cs.CY
+HypoBench: Towards Systematic and Principled Benchmarking for Hypothesis Generation,"Haokun Liu, Sicong Huang, Jingyu Hu, Yangqiaoyu Zhou, Chenhao Tan","There is growing interest in hypothesis generation with large language models
+(LLMs). However, fundamental questions remain: what makes a good hypothesis,
+and how can we systematically evaluate methods for hypothesis generation? To
+address this, we introduce HypoBench, a novel benchmark designed to evaluate
+LLMs and hypothesis generation methods across multiple aspects, including
+practical utility, generalizability, and hypothesis discovery rate. HypoBench
+includes 7 real-world tasks and 5 synthetic tasks with 194 distinct datasets.
+We evaluate four state-of-the-art LLMs combined with six existing
+hypothesis-generation methods. Overall, our results suggest that existing
+methods are capable of discovering valid and novel patterns in the data.
+However, the results from synthetic datasets indicate that there is still
+significant room for improvement, as current hypothesis generation methods do
+not fully uncover all relevant or meaningful patterns. Specifically, in
+synthetic settings, as task difficulty increases, performance significantly
+drops, with best models and methods only recovering 38.8% of the ground-truth
+hypotheses. These findings highlight challenges in hypothesis generation and
+demonstrate that HypoBench serves as a valuable resource for improving AI
+systems designed to assist scientific discovery.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11524v1,cs.AI
+"DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and Verifiable Mathematical Dataset for Advancing Reasoning","Zhiwei He, Tian Liang, Jiahao Xu, Qiuzhi Liu, Xingyu Chen, Yue Wang, Linfeng Song, Dian Yu, Zhenwen Liang, Wenxuan Wang, Zhuosheng Zhang, Rui Wang, Zhaopeng Tu, Haitao Mi, Dong Yu","The capacity for complex mathematical reasoning is a key benchmark for
+artificial intelligence. While reinforcement learning (RL) applied to LLMs
+shows promise, progress is significantly hindered by the lack of large-scale
+training data that is sufficiently challenging, possesses verifiable answer
+formats suitable for RL, and is free from contamination with evaluation
+benchmarks. To address these limitations, we introduce DeepMath-103K, a new,
+large-scale dataset comprising approximately 103K mathematical problems,
+specifically designed to train advanced reasoning models via RL. DeepMath-103K
+is curated through a rigorous pipeline involving source analysis, stringent
+decontamination against numerous benchmarks, and filtering for high difficulty
+(primarily Levels 5-9), significantly exceeding existing open resources in
+challenge. Each problem includes a verifiable final answer, enabling rule-based
+RL, and three distinct R1-generated solutions suitable for diverse training
+paradigms like supervised fine-tuning or distillation. Spanning a wide range of
+mathematical topics, DeepMath-103K promotes the development of generalizable
+reasoning. We demonstrate that models trained on DeepMath-103K achieve
+significant improvements on challenging mathematical benchmarks, validating its
+effectiveness. We release DeepMath-103K publicly to facilitate community
+progress in building more capable AI reasoning systems:
+https://github.com/zwhe99/DeepMath.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11456v1,cs.CL
+PARTFIELD: Learning 3D Feature Fields for Part Segmentation and Beyond,"Minghua Liu, Mikaela Angelina Uy, Donglai Xiang, Hao Su, Sanja Fidler, Nicholas Sharp, Jun Gao","We propose PartField, a feedforward approach for learning part-based 3D
+features, which captures the general concept of parts and their hierarchy
+without relying on predefined templates or text-based names, and can be applied
+to open-world 3D shapes across various modalities. PartField requires only a 3D
+feedforward pass at inference time, significantly improving runtime and
+robustness compared to prior approaches. Our model is trained by distilling 2D
+and 3D part proposals from a mix of labeled datasets and image segmentations on
+large unsupervised datasets, via a contrastive learning formulation. It
+produces a continuous feature field which can be clustered to yield a
+hierarchical part decomposition. Comparisons show that PartField is up to 20%
+more accurate and often orders of magnitude faster than other recent
+class-agnostic part-segmentation methods. Beyond single-shape part
+decomposition, consistency in the learned field emerges across shapes, enabling
+tasks such as co-segmentation and correspondence, which we demonstrate in
+several applications of these general-purpose, hierarchical, and consistent 3D
+feature fields. Check our Webpage!
+https://research.nvidia.com/labs/toronto-ai/partfield-release/",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11451v1,cs.CV
+eXplainable AI for data driven control: an inverse optimal control approach,"Federico Porcari, Donatello Materassi, Simone Formentin","Understanding the behavior of black-box data-driven controllers is a key
+challenge in modern control design. In this work, we propose an eXplainable AI
+(XAI) methodology based on Inverse Optimal Control (IOC) to obtain local
+explanations for the behavior of a controller operating around a given region.
+Specifically, we extract the weights assigned to tracking errors and control
+effort in the implicit cost function that a black-box controller is optimizing,
+offering a more transparent and interpretable representation of the
+controller's underlying objectives. This approach presents connections with
+well-established XAI techniques, such as Local Interpretable Model-agnostic
+Explanations (LIME) since it is still based on a local approximation of the
+control policy. However, rather being limited to a standard sensitivity
+analysis, the explanation provided by our method relies on the solution of an
+inverse Linear Quadratic (LQ) problem, offering a structured and more
+control-relevant perspective. Numerical examples demonstrate that the inferred
+cost function consistently provides a deeper understanding of the controller's
+decision-making process, shedding light on otherwise counterintuitive or
+unexpected phenomena.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11446v1,eess.SY
+Early Impacts of M365 Copilot,"Eleanor Wiske Dillon, Sonia Jaffe, Sida Peng, Alexia Cambon","Advances in generative AI have rapidly expanded the potential of computers to
+perform or assist in a wide array of tasks traditionally performed by humans.
+We analyze a large, real-world randomized experiment of over 6,000 workers at
+56 firms to present some of the earliest evidence on how these technologies are
+changing the way knowledge workers do their jobs. We find substantial time
+savings on common core tasks across a wide range of industries and occupations:
+workers who make use of this technology spent half an hour less reading email
+each week and completed documents 12% faster. Despite the newness of the
+technology, nearly 40% of workers who were given access to the tool used it
+regularly in their work throughout the 6-month study.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11443v1,econ.GN
+Shifting Work Patterns with Generative AI,"Eleanor Wiske Dillon, Sonia Jaffe, Nicole Immorlica, Christopher T. Stanton","We present evidence on how generative AI changes the work patterns of
+knowledge workers using data from a 6-month-long, cross-industry, randomized
+field experiment. Half of the 6,000 workers in the study received access to a
+generative AI tool integrated into the applications they already used for
+emails, document creation, and meetings. We find that access to the AI tool
+during the first year of its release primarily impacted behaviors that could be
+changed independently and not behaviors that required coordination to change:
+workers who used the tool spent 3 fewer hours, or 25% less time on email each
+week (intent to treat estimate is 1.4 hours) and seemed to complete documents
+moderately faster, but did not significantly change time spent in meetings.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11436v1,econ.GN
+Embodied World Models Emerge from Navigational Task in Open-Ended Environments,"Li Jin, Liu Jia","Understanding how artificial systems can develop spatial awareness and
+reasoning has long been a challenge in AI research. Traditional models often
+rely on passive observation, but embodied cognition theory suggests that deeper
+understanding emerges from active interaction with the environment. This study
+investigates whether neural networks can autonomously internalize spatial
+concepts through interaction, focusing on planar navigation tasks. Using Gated
+Recurrent Units (GRUs) combined with Meta-Reinforcement Learning (Meta-RL), we
+show that agents can learn to encode spatial properties like direction,
+distance, and obstacle avoidance. We introduce Hybrid Dynamical Systems (HDS)
+to model the agent-environment interaction as a closed dynamical system,
+revealing stable limit cycles that correspond to optimal navigation strategies.
+Ridge Representation allows us to map navigation paths into a fixed-dimensional
+behavioral space, enabling comparison with neural states. Canonical Correlation
+Analysis (CCA) confirms strong alignment between these representations,
+suggesting that the agent's neural states actively encode spatial knowledge.
+Intervention experiments further show that specific neural dimensions are
+causally linked to navigation performance. This work provides an approach to
+bridging the gap between action and perception in AI, offering new insights
+into building adaptive, interpretable models that can generalize across complex
+environments. The causal validation of neural representations also opens new
+avenues for understanding and controlling the internal mechanisms of AI
+systems, pushing the boundaries of how machines learn and reason in dynamic,
+real-world scenarios.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11419v1,cs.AI
+VideoPanda: Video Panoramic Diffusion with Multi-view Attention,"Kevin Xie, Amirmojtaba Sabour, Jiahui Huang, Despoina Paschalidou, Greg Klar, Umar Iqbal, Sanja Fidler, Xiaohui Zeng","High resolution panoramic video content is paramount for immersive
+experiences in Virtual Reality, but is non-trivial to collect as it requires
+specialized equipment and intricate camera setups. In this work, we introduce
+VideoPanda, a novel approach for synthesizing 360$^\circ$ videos conditioned on
+text or single-view video data. VideoPanda leverages multi-view attention
+layers to augment a video diffusion model, enabling it to generate consistent
+multi-view videos that can be combined into immersive panoramic content.
+VideoPanda is trained jointly using two conditions: text-only and single-view
+video, and supports autoregressive generation of long-videos. To overcome the
+computational burden of multi-view video generation, we randomly subsample the
+duration and camera views used during training and show that the model is able
+to gracefully generalize to generating more frames during inference. Extensive
+evaluations on both real-world and synthetic video datasets demonstrate that
+VideoPanda generates more realistic and coherent 360$^\circ$ panoramas across
+all input conditions compared to existing methods. Visit the project website at
+https://research-staging.nvidia.com/labs/toronto-ai/VideoPanda/ for results.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11389v1,cs.GR
+Accelerating Multiscale Modeling with Hybrid Solvers: Coupling FEM and Neural Operators with Domain Decomposition,"Wei Wang, Maryam Hakimzadeh, Haihui Ruan, Somdatta Goswami","Numerical solvers for partial differential equations (PDEs) face challenges
+balancing computational cost and accuracy, especially in multiscale and dynamic
+systems. Neural operators can significantly speed up simulations; however, they
+often face challenges such as error accumulation and limited generalization in
+multiphysics problems. This work introduces a novel hybrid framework that
+integrates physics-informed DeepONet with FEM through domain decomposition. The
+core innovation lies in adaptively coupling FEM and DeepONet subdomains via a
+Schwarz alternating method. This methodology strategically allocates
+computationally demanding regions to a pre-trained Deep Operator Network, while
+the remaining computational domain is solved through FEM. To address dynamic
+systems, we integrate the Newmark time-stepping scheme directly into the
+DeepONet, significantly mitigating error accumulation in long-term simulations.
+Furthermore, an adaptive subdomain evolution enables the ML-resolved region to
+expand dynamically, capturing emerging fine-scale features without remeshing.
+The framework's efficacy has been validated across a range of solid mechanics
+problems, including static, quasi-static, and dynamic regimes, demonstrating
+accelerated convergence rates (up to 20% improvement compared to FE-FE
+approaches), while preserving solution fidelity with error < 1%. Our case
+studies show that our proposed hybrid solver: (1) maintains solution continuity
+across subdomain interfaces, (2) reduces computational costs by eliminating
+fine mesh requirements, (3) mitigates error accumulation in time-dependent
+simulations, and (4) enables automatic adaptation to evolving physical
+phenomena. This work bridges the gap between numerical methods and AI-driven
+surrogates, offering a scalable pathway for high-fidelity simulations in
+engineering and scientific applications.",2025-04-15,2025-04-16,http://arxiv.org/abs/2504.11383v2,cs.LG
+Cancer-Myth: Evaluating AI Chatbot on Patient Questions with False Presuppositions,"Wang Bill Zhu, Tianqi Chen, Ching Ying Lin, Jade Law, Mazen Jizzini, Jorge J. Nieva, Ruishan Liu, Robin Jia","Cancer patients are increasingly turning to large language models (LLMs) as a
+new form of internet search for medical information, making it critical to
+assess how well these models handle complex, personalized questions. However,
+current medical benchmarks focus on medical exams or consumer-searched
+questions and do not evaluate LLMs on real patient questions with detailed
+clinical contexts. In this paper, we first evaluate LLMs on cancer-related
+questions drawn from real patients, reviewed by three hematology oncology
+physicians. While responses are generally accurate, with GPT-4-Turbo scoring
+4.13 out of 5, the models frequently fail to recognize or address false
+presuppositions in the questions-posing risks to safe medical decision-making.
+To study this limitation systematically, we introduce Cancer-Myth, an
+expert-verified adversarial dataset of 585 cancer-related questions with false
+presuppositions. On this benchmark, no frontier LLM -- including GPT-4o,
+Gemini-1.Pro, and Claude-3.5-Sonnet -- corrects these false presuppositions
+more than 30% of the time. Even advanced medical agentic methods do not prevent
+LLMs from ignoring false presuppositions. These findings expose a critical gap
+in the clinical reliability of LLMs and underscore the need for more robust
+safeguards in medical AI systems.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11373v1,cs.CL
+OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution,"Lucio La Cava, Andrea Tagarelli","Open Large Language Models (OLLMs) are increasingly leveraged in generative
+AI applications, posing new challenges for detecting their outputs. We propose
+OpenTuringBench, a new benchmark based on OLLMs, designed to train and evaluate
+machine-generated text detectors on the Turing Test and Authorship Attribution
+problems. OpenTuringBench focuses on a representative set of OLLMs, and
+features a number of challenging evaluation tasks, including
+human/machine-manipulated texts, out-of-domain texts, and texts from previously
+unseen models. We also provide OTBDetector, a contrastive learning framework to
+detect and attribute OLLM-based machine-generated texts. Results highlight the
+relevance and varying degrees of difficulty of the OpenTuringBench tasks, with
+our detector achieving remarkable capabilities across the various tasks and
+outperforming most existing detectors. Resources are available on the
+OpenTuringBench Hugging Face repository at
+https://huggingface.co/datasets/MLNTeam-Unical/OpenTuringBench",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11369v1,cs.CL
+From Gaze to Insight: Bridging Human Visual Attention and Vision Language Model Explanation for Weakly-Supervised Medical Image Segmentation,"Jingkun Chen, Haoran Duan, Xiao Zhang, Boyan Gao, Tao Tan, Vicente Grau, Jungong Han","Medical image segmentation remains challenging due to the high cost of
+pixel-level annotations for training. In the context of weak supervision,
+clinician gaze data captures regions of diagnostic interest; however, its
+sparsity limits its use for segmentation. In contrast, vision-language models
+(VLMs) provide semantic context through textual descriptions but lack the
+explanation precision required. Recognizing that neither source alone suffices,
+we propose a teacher-student framework that integrates both gaze and language
+supervision, leveraging their complementary strengths. Our key insight is that
+gaze data indicates where clinicians focus during diagnosis, while VLMs explain
+why those regions are significant. To implement this, the teacher model first
+learns from gaze points enhanced by VLM-generated descriptions of lesion
+morphology, establishing a foundation for guiding the student model. The
+teacher then directs the student through three strategies: (1) Multi-scale
+feature alignment to fuse visual cues with textual semantics; (2)
+Confidence-weighted consistency constraints to focus on reliable predictions;
+(3) Adaptive masking to limit error propagation in uncertain areas. Experiments
+on the Kvasir-SEG, NCI-ISBI, and ISIC datasets show that our method achieves
+Dice scores of 80.78%, 80.53%, and 84.22%, respectively-improving 3-5% over
+gaze baselines without increasing the annotation burden. By preserving
+correlations among predictions, gaze data, and lesion descriptions, our
+framework also maintains clinical interpretability. This work illustrates how
+integrating human visual attention with AI-generated semantic context can
+effectively overcome the limitations of individual weak supervision signals,
+thereby advancing the development of deployable, annotation-efficient medical
+AI systems. Code is available at: https://github.com/jingkunchen/FGI.git.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11368v1,cs.CV
+"Smartphone-Based Undergraduate Physics Labs: A Comprehensive Review of Innovation, Accessibility, and Pedagogical Impact",Yiping Zhao,"Smartphone-integrated physics laboratories (SmartIPLs) have emerged as
+scalable and cost-effective alternatives to traditional lab instruction,
+providing accessible, hands-on experiences for diverse learning environments.
+This review synthesizes over a decade of research, covering nearly 200
+SmartIPLs across key physics domains such as mechanics, optics, acoustics,
+electromagnetism, thermodynamics, and modern physics. SmartIPLs are categorized
+into two primary types: sensor-based experiments using built-in smartphone
+tools and camera-based video/image analysis for motion and optical studies.
+Empirical studies show that SmartIPLs support equal or greater gains in
+conceptual understanding, science process skills, and student engagement,
+especially in remote and under-resourced settings. The review explores their
+theoretical foundations, compares them to traditional and virtual labs, and
+addresses challenges such as device variability and classroom integration.
+Future directions include broader curricular integration, AI-driven student
+feedback, expansion into underrepresented physics topics, interdisciplinary
+applications, and equity-focused instructional design. Open-access resources,
+such as the UGA SmartPhone Intro Physics Lab and Modern Optics YouTube channels
+and the SPIE book Use of Smartphones in Optical Experimentation, highlight
+community-driven efforts to expand and democratize physics education. As
+smartphone technology advances, SmartIPLs will offer a promising path toward
+adaptive, intelligent, and inclusive laboratory instruction for the 21st
+century.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11363v1,physics.ed-ph
+Explicit and Implicit Representations in AI-based 3D Reconstruction for Radiology: A systematic literature review,"Yuezhe Yang, Boyu Yang, Yaqian Wang, Yang He, Xingbo Dong, Zhe Jin","The demand for high-quality medical imaging in clinical practice and assisted
+diagnosis has made 3D reconstruction in radiological imaging a key research
+focus. Artificial intelligence (AI) has emerged as a promising approach to
+enhancing reconstruction accuracy while reducing acquisition and processing
+time, thereby minimizing patient radiation exposure and discomfort and
+ultimately benefiting clinical diagnosis. This review explores state-of-the-art
+AI-based 3D reconstruction algorithms in radiological imaging, categorizing
+them into explicit and implicit approaches based on their underlying
+principles. Explicit methods include point-based, volume-based, and Gaussian
+representations, while implicit methods encompass implicit prior embedding and
+neural radiance fields. Additionally, we examine commonly used evaluation
+metrics and benchmark datasets. Finally, we discuss the current state of
+development, key challenges, and future research directions in this evolving
+field. Our project available on: https://github.com/Bean-Young/AI4Med.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11349v1,cs.CV
+DeepWheel: Generating a 3D Synthetic Wheel Dataset for Design and Performance Evaluation,"Soyoung Yoo, Namwoo Kang","Data-driven design is emerging as a powerful strategy to accelerate
+engineering innovation. However, its application to vehicle wheel design
+remains limited due to the lack of large-scale, high-quality datasets that
+include 3D geometry and physical performance metrics. To address this gap, this
+study proposes a synthetic design-performance dataset generation framework
+using generative AI. The proposed framework first generates 2D rendered images
+using Stable Diffusion, and then reconstructs the 3D geometry through 2.5D
+depth estimation. Structural simulations are subsequently performed to extract
+engineering performance data. To further expand the design and performance
+space, topology optimization is applied, enabling the generation of a more
+diverse set of wheel designs. The final dataset, named DeepWheel, consists of
+over 6,000 photo-realistic images and 900 structurally analyzed 3D models. This
+multi-modal dataset serves as a valuable resource for surrogate model training,
+data-driven inverse design, and design space exploration. The proposed
+methodology is also applicable to other complex design domains. The dataset is
+released under the Creative Commons Attribution-NonCommercial 4.0
+International(CC BY-NC 4.0) and is available on the
+https://www.smartdesignlab.org/datasets",2025-04-15,2025-04-16,http://arxiv.org/abs/2504.11347v2,cs.CV
+Code Reborn AI-Driven Legacy Systems Modernization from COBOL to Java,Gopichand Bandarupalli,"This study investigates AI-driven modernization of legacy COBOL code into
+Java, addressing a critical challenge in aging software systems. Leveraging the
+Legacy COBOL 2024 Corpus -- 50,000 COBOL files from public and enterprise
+sources -- Java parses the code, AI suggests upgrades, and React visualizes
+gains. Achieving 93% accuracy, complexity drops 35% (from 18 to 11.7) and
+coupling 33% (from 8 to 5.4), surpassing manual efforts (75%) and rule-based
+tools (82%). The approach offers a scalable path to rejuvenate COBOL systems,
+vital for industries like banking and insurance.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11335v1,cs.SE
+The Cambridge Report on Database Research,"Anastasia Ailamaki, Samuel Madden, Daniel Abadi, Gustavo Alonso, Sihem Amer-Yahia, Magdalena Balazinska, Philip A. Bernstein, Peter Boncz, Michael Cafarella, Surajit Chaudhuri, Susan Davidson, David DeWitt, Yanlei Diao, Xin Luna Dong, Michael Franklin, Juliana Freire, Johannes Gehrke, Alon Halevy, Joseph M. Hellerstein, Mark D. Hill, Stratos Idreos, Yannis Ioannidis, Christoph Koch, Donald Kossmann, Tim Kraska, Arun Kumar, Guoliang Li, Volker Markl, Renée Miller, C. Mohan, Thomas Neumann, Beng Chin Ooi, Fatma Ozcan, Aditya Parameswaran, Ippokratis Pandis, Jignesh M. Patel, Andrew Pavlo, Danica Porobic, Viktor Sanca, Michael Stonebraker, Julia Stoyanovich, Dan Suciu, Wang-Chiew Tan, Shiv Venkataraman, Matei Zaharia, Stanley B. Zdonik","On October 19 and 20, 2023, the authors of this report convened in Cambridge,
+MA, to discuss the state of the database research field, its recent
+accomplishments and ongoing challenges, and future directions for research and
+community engagement. This gathering continues a long standing tradition in the
+database community, dating back to the late 1980s, in which researchers meet
+roughly every five years to produce a forward looking report.
+  This report summarizes the key takeaways from our discussions. We begin with
+a retrospective on the academic, open source, and commercial successes of the
+community over the past five years. We then turn to future opportunities, with
+a focus on core data systems, particularly in the context of cloud computing
+and emerging hardware, as well as on the growing impact of data science, data
+governance, and generative AI.
+  This document is not intended as an exhaustive survey of all technical
+challenges or industry innovations in the field. Rather, it reflects the
+perspectives of senior community members on the most pressing challenges and
+promising opportunities ahead.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11259v1,cs.DB
+3DAffordSplat: Efficient Affordance Reasoning with 3D Gaussians,"Zeming Wei, Junyi Lin, Yang Liu, Weixing Chen, Jingzhou Luo, Guanbin Li, Liang Lin","3D affordance reasoning is essential in associating human instructions with
+the functional regions of 3D objects, facilitating precise, task-oriented
+manipulations in embodied AI. However, current methods, which predominantly
+depend on sparse 3D point clouds, exhibit limited generalizability and
+robustness due to their sensitivity to coordinate variations and the inherent
+sparsity of the data. By contrast, 3D Gaussian Splatting (3DGS) delivers
+high-fidelity, real-time rendering with minimal computational overhead by
+representing scenes as dense, continuous distributions. This positions 3DGS as
+a highly effective approach for capturing fine-grained affordance details and
+improving recognition accuracy. Nevertheless, its full potential remains
+largely untapped due to the absence of large-scale, 3DGS-specific affordance
+datasets. To overcome these limitations, we present 3DAffordSplat, the first
+large-scale, multi-modal dataset tailored for 3DGS-based affordance reasoning.
+This dataset includes 23,677 Gaussian instances, 8,354 point cloud instances,
+and 6,631 manually annotated affordance labels, encompassing 21 object
+categories and 18 affordance types. Building upon this dataset, we introduce
+AffordSplatNet, a novel model specifically designed for affordance reasoning
+using 3DGS representations. AffordSplatNet features an innovative cross-modal
+structure alignment module that exploits structural consistency priors to align
+3D point cloud and 3DGS representations, resulting in enhanced affordance
+recognition accuracy. Extensive experiments demonstrate that the 3DAffordSplat
+dataset significantly advances affordance learning within the 3DGS domain,
+while AffordSplatNet consistently outperforms existing methods across both seen
+and unseen settings, highlighting its robust generalization capabilities.",2025-04-15,2025-04-16,http://arxiv.org/abs/2504.11218v2,cs.CV
