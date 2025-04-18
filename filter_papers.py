@@ -6,8 +6,11 @@ KEYWORDS = ["consciousness", "sentience", "awareness", "self-awareness", "mind",
 # Load CSV
 df = pd.read_csv("data/raw/papers_2025-04-18.csv")
 
+# Clean column names
+df.columns = df.columns.str.strip()
+
 # Combine title + summary for filtering
-df["text"] = df["title"].fillna("") + " " + df["summary"].fillna("")
+df["text"] = df["Title"].fillna("") + " " + df["Summary"].fillna("")
 df["text"] = df["text"].str.lower()
 
 # Filter rows based on keywords
