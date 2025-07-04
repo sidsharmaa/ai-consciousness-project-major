@@ -1,0 +1,885 @@
+Title,Summary,Authors,Published,Updated,PDF_URL,Primary_Category,Categories
+TC-Light: Temporally Consistent Relighting for Dynamic Long Videos,"Editing illumination in long videos with complex dynamics has significant
+value in various downstream tasks, including visual content creation and
+manipulation, as well as data scaling up for embodied AI through sim2real and
+real2real transfer. Nevertheless, existing video relighting techniques are
+predominantly limited to portrait videos or fall into the bottleneck of
+temporal consistency and computation efficiency. In this paper, we propose
+TC-Light, a novel paradigm characterized by the proposed two-stage post
+optimization mechanism. Starting from the video preliminarily relighted by an
+inflated video relighting model, it optimizes appearance embedding in the first
+stage to align global illumination. Then it optimizes the proposed canonical
+video representation, i.e., Unique Video Tensor (UVT), to align fine-grained
+texture and lighting in the second stage. To comprehensively evaluate
+performance, we also establish a long and highly dynamic video benchmark.
+Extensive experiments show that our method enables physically plausible
+relighting results with superior temporal coherence and low computation cost.
+The code and video demos are available at
+https://dekuliutesla.github.io/tclight/.","['Yang Liu', 'Chuanchen Luo', 'Zimo Tang', 'Yingyan Li', 'Yuran Yang', 'Yuanyong Ning', 'Lue Fan', 'Junran Peng', 'Zhaoxiang Zhang']",2025-06-23 17:59:58+00:00,2025-06-23 17:59:58+00:00,http://arxiv.org/pdf/2506.18904v1,cs.CV,['cs.CV']
+FilMaster: Bridging Cinematic Principles and Generative AI for Automated Film Generation,"AI-driven content creation has shown potential in film production. However,
+existing film generation systems struggle to implement cinematic principles and
+thus fail to generate professional-quality films, particularly lacking diverse
+camera language and cinematic rhythm. This results in templated visuals and
+unengaging narratives. To address this, we introduce FilMaster, an end-to-end
+AI system that integrates real-world cinematic principles for
+professional-grade film generation, yielding editable, industry-standard
+outputs. FilMaster is built on two key principles: (1) learning cinematography
+from extensive real-world film data and (2) emulating professional,
+audience-centric post-production workflows. Inspired by these principles,
+FilMaster incorporates two stages: a Reference-Guided Generation Stage which
+transforms user input to video clips, and a Generative Post-Production Stage
+which transforms raw footage into audiovisual outputs by orchestrating visual
+and auditory elements for cinematic rhythm. Our generation stage highlights a
+Multi-shot Synergized RAG Camera Language Design module to guide the AI in
+generating professional camera language by retrieving reference clips from a
+vast corpus of 440,000 film clips. Our post-production stage emulates
+professional workflows by designing an Audience-Centric Cinematic Rhythm
+Control module, including Rough Cut and Fine Cut processes informed by
+simulated audience feedback, for effective integration of audiovisual elements
+to achieve engaging content. The system is empowered by generative AI models
+like (M)LLMs and video generation models. Furthermore, we introduce FilmEval, a
+comprehensive benchmark for evaluating AI-generated films. Extensive
+experiments show FilMaster's superior performance in camera language design and
+cinematic rhythm control, advancing generative AI in professional filmmaking.","['Kaiyi Huang', 'Yukun Huang', 'Xintao Wang', 'Zinan Lin', 'Xuefei Ning', 'Pengfei Wan', 'Di Zhang', 'Yu Wang', 'Xihui Liu']",2025-06-23 17:59:16+00:00,2025-06-23 17:59:16+00:00,http://arxiv.org/pdf/2506.18899v1,cs.CV,['cs.CV']
+Steering Conceptual Bias via Transformer Latent-Subspace Activation,"This work examines whether activating latent subspaces in language models
+(LLMs) can steer scientific code generation toward a specific programming
+language. Five causal LLMs were first evaluated on scientific coding prompts to
+quantify their baseline bias among four programming languages. A static
+neuron-attribution method, perturbing the highest activated MLP weight for a
+C++ or CPP token, proved brittle and exhibited limited generalization across
+prompt styles and model scales. To address these limitations, a
+gradient-refined adaptive activation steering framework (G-ACT) was developed:
+per-prompt activation differences are clustered into a small set of steering
+directions, and lightweight per-layer probes are trained and refined online to
+select the appropriate steering vector. In LLaMA-3.2 3B, this approach reliably
+biases generation towards the CPP language by increasing the average probe
+classification accuracy by 15% and the early layers (0-6) improving the probe
+classification accuracy by 61.5% compared to the standard ACT framework. For
+LLaMA-3.3 70B, where attention-head signals become more diffuse, targeted
+injections at key layers still improve language selection. Although per-layer
+probing introduces a modest inference overhead, it remains practical by
+steering only a subset of layers and enables reproducible model behavior. These
+results demonstrate a scalable, interpretable and efficient mechanism for
+concept-level control for practical agentic systems.","['Vansh Sharma', 'Venkat Raman']",2025-06-23 17:56:34+00:00,2025-06-23 17:56:34+00:00,http://arxiv.org/pdf/2506.18887v1,cs.AI,"['cs.AI', 'cs.LG', 'cs.SY', 'eess.SY', 'I.2.7; I.2.6; I.2.1; D.3.3; C.4']"
+Amplifying Machine Learning Attacks Through Strategic Compositions,"Machine learning (ML) models are proving to be vulnerable to a variety of
+attacks that allow the adversary to learn sensitive information, cause
+mispredictions, and more. While these attacks have been extensively studied,
+current research predominantly focuses on analyzing each attack type
+individually. In practice, however, adversaries may employ multiple attack
+strategies simultaneously rather than relying on a single approach. This
+prompts a crucial yet underexplored question: When the adversary has multiple
+attacks at their disposal, are they able to mount or amplify the effect of one
+attack with another? In this paper, we take the first step in studying the
+strategic interactions among different attacks, which we define as attack
+compositions. Specifically, we focus on four well-studied attacks during the
+model's inference phase: adversarial examples, attribute inference, membership
+inference, and property inference. To facilitate the study of their
+interactions, we propose a taxonomy based on three stages of the attack
+pipeline: preparation, execution, and evaluation. Using this taxonomy, we
+identify four effective attack compositions, such as property inference
+assisting attribute inference at its preparation level and adversarial examples
+assisting property inference at its execution level. We conduct extensive
+experiments on the attack compositions using three ML model architectures and
+three benchmark image datasets. Empirical results demonstrate the effectiveness
+of these four attack compositions. We implement and release a modular reusable
+toolkit, COAT. Arguably, our work serves as a call for researchers and
+practitioners to consider advanced adversarial settings involving multiple
+attack strategies, aiming to strengthen the security and robustness of AI
+systems.","['Yugeng Liu', 'Zheng Li', 'Hai Huang', 'Michael Backes', 'Yang Zhang']",2025-06-23 17:38:48+00:00,2025-06-23 17:38:48+00:00,http://arxiv.org/pdf/2506.18870v1,cs.CR,['cs.CR']
+Analytical transit light curves for power-law limb darkening: a comprehensive framework via fractional calculus and differential equations,"We present the first complete analytical framework for computing exoplanetary
+transit light curves with arbitrary power-law limb darkening profiles $I(\mu)
+\propto \mu^\alpha$, where $\alpha$ can be any real number greater than $-1/2$,
+including the physically important non-integer cases. While the groundbreaking
+work of Agol et al. (2020) provided exact analytical solutions for polynomial
+limb darkening through recursion relations, stellar atmosphere models often
+favor power-law forms with fractional exponents (particularly $\alpha = 1/2$)
+that remained analytically intractable until now. We solve this fundamental
+limitation through two complementary mathematical approaches: (1)
+Riemann-Liouville fractional calculus operators that naturally handle
+non-integer powers through exact integral representations, and (2) a continuous
+differential equation framework that generalizes discrete polynomial recursions
+to arbitrary real exponents. Our method provides exact analytical expressions
+for all half-integer powers ($\alpha = k/2$) essential for 4-term limb
+darkening law by Claret (2000), maintains machine precision even at geometric
+contact points where numerical methods fail, and preserves the computational
+speed advantages crucial for parameter fitting. We demonstrate that the
+square-root limb darkening ($\alpha = 1/2$) favored by recent stellar
+atmosphere studies can now be computed analytically with the same efficiency as
+traditional quadratic models, achieving 10--100$\times$ speed improvements over
+numerical integration while providing exact analytical derivatives.","['Farrukh A. Chishtie', 'Mohammad I. Saeed', 'Shaukat N. Goderya']",2025-06-23 17:22:11+00:00,2025-06-23 17:22:11+00:00,http://arxiv.org/pdf/2506.18860v1,astro-ph.EP,"['astro-ph.EP', 'astro-ph.IM', 'astro-ph.SR']"
+ECLEIRS: Exact conservation law embedded identification of reduced states for parameterized partial differential equations from sparse and noisy data,"Multi-query applications such as parameter estimation, uncertainty
+quantification and design optimization for parameterized PDE systems are
+expensive due to the high computational cost of high-fidelity simulations.
+Reduced/Latent state dynamics approaches for parameterized PDEs offer a viable
+method where high-fidelity data and machine learning techniques are used to
+reduce the system's dimensionality and estimate the dynamics of low-dimensional
+reduced states. These reduced state dynamics approaches rely on high-quality
+data and struggle with highly sparse spatiotemporal noisy measurements
+typically obtained from experiments. Furthermore, there is no guarantee that
+these models satisfy governing physical conservation laws, especially for
+parameters that are not a part of the model learning process. In this article,
+we propose a reduced state dynamics approach, which we refer to as ECLEIRS,
+that satisfies conservation laws exactly even for parameters unseen in the
+model training process. ECLEIRS is demonstrated for two applications: 1)
+obtaining clean solution signals from sparse and noisy measurements of
+parametric systems, and 2) predicting dynamics for unseen system parameters. We
+compare ECLEIRS with other reduced state dynamics approaches, those that do not
+enforce any physical constraints and those with physics-informed loss
+functions, for three shock-propagation problems: 1-D advection, 1-D Burgers and
+2-D Euler equations. The numerical experiments conducted in this study
+demonstrate that ECLEIRS provides the most accurate prediction of dynamics for
+unseen parameters even in the presence of highly sparse and noisy data. We also
+demonstrate that ECLEIRS yields solutions and fluxes that satisfy the governing
+conservation law up to machine precision for unseen parameters, while the other
+methods yield much higher errors and do not satisfy conservation laws.","['Aviral Prakash', 'Ben S. Southworth', 'Marc L. Klasky']",2025-06-23 17:18:11+00:00,2025-06-23 17:18:11+00:00,http://arxiv.org/pdf/2506.18855v1,math-ph,"['math-ph', 'math.MP']"
+Comparative analysis of machine learning techniques for feature selection and classification of Fast Radio Bursts,"Fast Radio Bursts (FRBs) are millisecond-duration radio transients of
+extragalactic origin, exhibiting a wide range of physical and observational
+properties. Distinguishing between repeating and non-repeating FRBs remains a
+key challenge in understanding their nature. In this work, we apply
+unsupervised machine learning techniques to classify FRBs based on both primary
+observables from the CHIME catalog and physically motivated derived features.
+We evaluate three hybrid pipelines combining dimensionality reduction with
+clustering: PCA + k-means, t-SNE + HDBSCAN, and t-SNE + Spectral Clustering. To
+identify optimal hyperparameters, we implement a comprehensive grid search
+using a custom scoring function that prioritizes recall while penalizing
+excessive cluster fragmentation and noise. Feature relevance is assessed using
+principal component loadings, mutual information with the known repeater label,
+and permutation-based F\textsubscript{2} score sensitivity. Our results
+demonstrate that the derived features including redshift, luminosity, and
+spectral properties, such as the spectral index and the spectral running,
+significantly enhance the classification performance. Finally, we identify a
+set of FRBs currently labeled as non-repeaters that consistently cluster with
+known repeaters across all methods, highlighting promising candidates for
+future follow-up observations and reinforcing the utility of unsupervised
+approaches in FRB population studies.","['Ailton J. B. Júnior', 'Jéferson A. S. Fortunato', 'Leonardo J. Silvestre', 'Thonimar V. Alencar', 'Wiliam S. Hipólito-Ricaldi']",2025-06-23 17:16:29+00:00,2025-06-23 17:16:29+00:00,http://arxiv.org/pdf/2506.18854v1,astro-ph.HE,"['astro-ph.HE', 'astro-ph.CO', 'astro-ph.IM']"
+Mechanistic Interpretability Needs Philosophy,"Mechanistic interpretability (MI) aims to explain how neural networks work by
+uncovering their underlying causal mechanisms. As the field grows in influence,
+it is increasingly important to examine not just models themselves, but the
+assumptions, concepts and explanatory strategies implicit in MI research. We
+argue that mechanistic interpretability needs philosophy: not as an
+afterthought, but as an ongoing partner in clarifying its concepts, refining
+its methods, and assessing the epistemic and ethical stakes of interpreting AI
+systems. Taking three open problems from the MI literature as examples, this
+position paper illustrates the value philosophy can add to MI research, and
+outlines a path toward deeper interdisciplinary dialogue.","['Iwan Williams', 'Ninell Oldenburg', 'Ruchira Dhar', 'Joshua Hatherley', 'Constanza Fierro', 'Nina Rajcic', 'Sandrine R. Schiller', 'Filippos Stamatiou', 'Anders Søgaard']",2025-06-23 17:13:30+00:00,2025-06-23 17:13:30+00:00,http://arxiv.org/pdf/2506.18852v1,cs.CL,"['cs.CL', 'cs.AI']"
+Generalized energy band alignment model for van der Waals heterostructures with a charge spillage dipole,"The energy band alignment at the interface of van der Waals heterostructures
+(vdWHs) is a key design parameter for next-generation electronic and
+optoelectronic devices. Although the Anderson and midgap models have been
+widely adopted for bulk semiconductor heterostructures, they exhibit severe
+limitations when applied to vdWHs, particularly for type-III systems. Based on
+first-principles calculations for approximately $10^3$ vdWHs, we demonstrate
+these traditional models miss a critical dipole arising from interlayer charge
+spillage. We introduce a generalized linear response (gLR) model that includes
+this dipole through a quantum capacitance term while remaining analytically
+compact. With only two readily computed inputs, the charge neutrality level
+offset and the sum of the isolated-layer bandgaps, the gLR reproduces DFT band
+line-ups with $r^2\sim$0.9 across type-I, II, and III stacks. Machine-learning
+feature analysis confirms that these two descriptors dominate the underlying
+physics, indicating the model is near-minimal and broadly transferable. The gLR
+framework therefore provides both mechanistic insight and a fast, accurate
+surrogate for high-throughput screening of the vast vdW heterostructure design
+space.","['Seungjun Lee', 'Eng Hock Lee', 'Young-Kyun Kwon', 'Steven J. Koester', 'Phaedon Avouris', 'Vladimir Cherkassky', 'Jerry Tersoff', 'Tony Low']",2025-06-23 17:09:07+00:00,2025-06-23 17:09:07+00:00,http://arxiv.org/pdf/2506.18850v1,cond-mat.mtrl-sci,['cond-mat.mtrl-sci']
+Offline Goal-Conditioned Reinforcement Learning with Projective Quasimetric Planning,"Offline Goal-Conditioned Reinforcement Learning seeks to train agents to
+reach specified goals from previously collected trajectories. Scaling that
+promises to long-horizon tasks remains challenging, notably due to compounding
+value-estimation errors. Principled geometric offers a potential solution to
+address these issues. Following this insight, we introduce Projective
+Quasimetric Planning (ProQ), a compositional framework that learns an
+asymmetric distance and then repurposes it, firstly as a repulsive energy
+forcing a sparse set of keypoints to uniformly spread over the learned latent
+space, and secondly as a structured directional cost guiding towards proximal
+sub-goals. In particular, ProQ couples this geometry with a Lagrangian
+out-of-distribution detector to ensure the learned keypoints stay within
+reachable areas. By unifying metric learning, keypoint coverage, and
+goal-conditioned control, our approach produces meaningful sub-goals and
+robustly drives long-horizon goal-reaching on diverse a navigation benchmarks.","['Anthony Kobanda', 'Waris Radji', 'Mathieu Petitbois', 'Odalric-Ambrym Maillard', 'Rémy Portelas']",2025-06-23 17:07:20+00:00,2025-06-23 17:07:20+00:00,http://arxiv.org/pdf/2506.18847v1,cs.LG,['cs.LG']
+LIGHTHOUSE: Fast and precise distance to shoreline calculations from anywhere on earth,"We introduce a new dataset and algorithm for fast and efficient coastal
+distance calculations from Anywhere on Earth (AoE). Existing global coastal
+datasets are only available at coarse resolution (e.g. 1-4 km) which limits
+their utility. Publicly available satellite imagery combined with computer
+vision enable much higher precision. We provide a global coastline dataset at
+10 meter resolution, a 100+ fold improvement in precision over existing data.
+To handle the computational challenge of querying at such an increased scale,
+we introduce a new library: Layered Iterative Geospatial Hierarchical
+Terrain-Oriented Unified Search Engine (Lighthouse). Lighthouse is both
+exceptionally fast and resource-efficient, requiring only 1 CPU and 2 GB of RAM
+to achieve millisecond online inference, making it well suited for real-time
+applications in resource-constrained environments.","['Patrick Beukema', 'Henry Herzog', 'Yawen Zhang', 'Hunter Pitelka', 'Favyen Bastani']",2025-06-23 17:00:34+00:00,2025-06-23 17:00:34+00:00,http://arxiv.org/pdf/2506.18842v1,cs.DB,"['cs.DB', 'cs.CV', 'cs.LG']"
+LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement Learning,"Ultra-long generation by large language models (LLMs) is a widely demanded
+scenario, yet it remains a significant challenge due to their maximum
+generation length limit and overall quality degradation as sequence length
+increases. Previous approaches, exemplified by LongWriter, typically rely on
+''teaching'', which involves supervised fine-tuning (SFT) on synthetic
+long-form outputs. However, this strategy heavily depends on synthetic SFT
+data, which is difficult and costly to construct, often lacks coherence and
+consistency, and tends to be overly artificial and structurally monotonous. In
+this work, we propose an incentivization-based approach that, starting entirely
+from scratch and without relying on any annotated or synthetic data, leverages
+reinforcement learning (RL) to foster the emergence of ultra-long, high-quality
+text generation capabilities in LLMs. We perform RL training starting from a
+base model, similar to R1-Zero, guiding it to engage in reasoning that
+facilitates planning and refinement during the writing process. To support
+this, we employ specialized reward models that steer the LLM towards improved
+length control, writing quality, and structural formatting. Experimental
+evaluations show that our LongWriter-Zero model, trained from Qwen2.5-32B,
+consistently outperforms traditional SFT methods on long-form writing tasks,
+achieving state-of-the-art results across all metrics on WritingBench and
+Arena-Write, and even surpassing 100B+ models such as DeepSeek R1 and
+Qwen3-235B. We open-source our data and model checkpoints under
+https://huggingface.co/THU-KEG/LongWriter-Zero-32B","['Yuhao Wu', 'Yushi Bai', 'Zhiqiang Hu', 'Roy Ka-Wei Lee', 'Juanzi Li']",2025-06-23 16:59:02+00:00,2025-06-23 16:59:02+00:00,http://arxiv.org/pdf/2506.18841v1,cs.CL,"['cs.CL', 'cs.AI', 'cs.LG']"
+Multi-Agent Online Control with Adversarial Disturbances,"Multi-agent control problems involving a large number of agents with
+competing and time-varying objectives are increasingly prevalent in
+applications across robotics, economics, and energy systems. In this paper, we
+study online control in multi-agent linear dynamical systems with disturbances.
+In contrast to most prior work in multi-agent control, we consider an online
+setting where disturbances are adversarial and where each agent seeks to
+minimize its own, adversarial sequence of convex losses. In this setting, we
+investigate the robustness of gradient-based controllers from single-agent
+online control, with a particular focus on understanding how individual regret
+guarantees are influenced by the number of agents in the system. Under minimal
+communication assumptions, we prove near-optimal sublinear regret bounds that
+hold uniformly for all agents. Finally, when the objectives of the agents are
+aligned, we show that the multi-agent control problem induces a time-varying
+potential game for which we derive equilibrium gap guarantees.","['Anas Barakat', 'John Lazarsfeld', 'Georgios Piliouras', 'Antonios Varvitsiotis']",2025-06-23 16:24:31+00:00,2025-06-23 16:24:31+00:00,http://arxiv.org/pdf/2506.18814v1,cs.LG,"['cs.LG', 'cs.GT', 'math.OC']"
+Learning Physical Systems: Symplectification via Gauge Fixing in Dirac Structures,"Physics-informed deep learning has achieved remarkable progress by embedding
+geometric priors, such as Hamiltonian symmetries and variational principles,
+into neural networks, enabling structure-preserving models that extrapolate
+with high accuracy. However, in systems with dissipation and holonomic
+constraints, ubiquitous in legged locomotion and multibody robotics, the
+canonical symplectic form becomes degenerate, undermining the very invariants
+that guarantee stability and long-term prediction. In this work, we tackle this
+foundational limitation by introducing Presymplectification Networks (PSNs),
+the first framework to learn the symplectification lift via Dirac structures,
+restoring a non-degenerate symplectic geometry by embedding constrained systems
+into a higher-dimensional manifold. Our architecture combines a recurrent
+encoder with a flow-matching objective to learn the augmented phase-space
+dynamics end-to-end. We then attach a lightweight Symplectic Network (SympNet)
+to forecast constrained trajectories while preserving energy, momentum, and
+constraint satisfaction. We demonstrate our method on the dynamics of the
+ANYmal quadruped robot, a challenging contact-rich, multibody system. To the
+best of our knowledge, this is the first framework that effectively bridges the
+gap between constrained, dissipative mechanical systems and symplectic
+learning, unlocking a whole new class of geometric machine learning models,
+grounded in first principles yet adaptable from data.","['Aristotelis Papatheodorou', 'Pranav Vaidhyanathan', 'Natalia Ares', 'Ioannis Havoutis']",2025-06-23 16:23:37+00:00,2025-06-23 16:23:37+00:00,http://arxiv.org/pdf/2506.18812v1,cs.RO,"['cs.RO', 'cs.LG']"
+"Trans-dimensional Hamiltonian model selection and parameter estimation from sparse, noisy data","High-throughput characterization often requires estimating parameters and
+model dimension from experimental data of limited quantity and quality. Such
+data may result in an ill-posed inverse problem, where multiple sets of
+parameters and model dimensions are consistent with available data. This
+ill-posed regime may render traditional machine learning and deterministic
+methods unreliable or intractable, particularly in high-dimensional, nonlinear,
+and mixed continuous and discrete parameter spaces. To address these
+challenges, we present a Bayesian framework that hybridizes several Markov
+chain Monte Carlo (MCMC) sampling techniques to estimate both parameters and
+model dimension from sparse, noisy data. By integrating sampling for mixed
+continuous and discrete parameter spaces, reversible-jump MCMC to estimate
+model dimension, and parallel tempering to accelerate exploration of complex
+posteriors, our approach enables principled parameter estimation and model
+selection in data-limited regimes. We apply our framework to a specific
+ill-posed problem in quantum information science: recovering the locations and
+hyperfine couplings of nuclear spins surrounding a spin-defect in a
+semiconductor from sparse, noisy coherence data. We show that a hybridized MCMC
+method can recover meaningful posterior distributions over physical parameters
+using an order of magnitude less data than existing approaches, and we validate
+our results on experimental measurements. More generally, our work provides a
+flexible, extensible strategy for solving a broad class of ill-posed inverse
+problems under realistic experimental constraints.","['Abigail N. Poteshman', 'Jiwon Yun', 'Tim H. Taminiau', 'Giulia Galli']",2025-06-23 16:07:20+00:00,2025-06-23 16:07:20+00:00,http://arxiv.org/pdf/2506.18802v1,quant-ph,['quant-ph']
+A Multi-view Divergence-Convergence Feature Augmentation Framework for Drug-related Microbes Prediction,"In the study of drug function and precision medicine, identifying new
+drug-microbe associations is crucial. However, current methods isolate
+association and similarity analysis of drug and microbe, lacking effective
+inter-view optimization and coordinated multi-view feature fusion. In our
+study, a multi-view Divergence-Convergence Feature Augmentation framework for
+Drug-related Microbes Prediction (DCFA_DMP) is proposed, to better learn and
+integrate association information and similarity information. In the divergence
+phase, DCFA_DMP strengthens the complementarity and diversity between
+heterogeneous information and similarity information by performing Adversarial
+Learning method between the association network view and different similarity
+views, optimizing the feature space. In the convergence phase, a novel
+Bidirectional Synergistic Attention Mechanism is proposed to deeply synergize
+the complementary features between different views, achieving a deep fusion of
+the feature space. Moreover, Transformer graph learning is alternately applied
+on the drug-microbe heterogeneous graph, enabling each drug or microbe node to
+focus on the most relevant nodes. Numerous experiments demonstrate DCFA_DMP's
+significant performance in predicting drug-microbe associations. It also proves
+effectiveness in predicting associations for new drugs and microbes in cold
+start experiments, further confirming its stability and reliability in
+predicting potential drug-microbe associations.","['Xin An', 'Ruijie Li', 'Qiao Ning', 'Shikai Guo', 'Hui Li', 'Qian Ma']",2025-06-23 16:03:46+00:00,2025-06-23 16:03:46+00:00,http://arxiv.org/pdf/2506.18797v1,cs.LG,['cs.LG']
+Context-Aware CodeLLM Eviction for AI-assisted Coding,"AI-assisted coding tools powered by Code Large Language Models (CodeLLMs) are
+increasingly integrated into modern software development workflows. To address
+concerns around privacy, latency, and model customization, many enterprises opt
+to self-host these models. However, the diversity and growing number of
+CodeLLMs, coupled with limited accelerator memory, introduce practical
+challenges in model management and serving efficiency. This paper presents
+CACE, a novel context-aware model eviction strategy designed specifically to
+optimize self-hosted CodeLLM serving under resource constraints. Unlike
+traditional eviction strategies based solely on recency (e.g., Least Recently
+Used), CACE leverages multiple context-aware factors, including model load
+time, task-specific latency sensitivity, expected output length, and recent
+usage and future demand tracked through a sliding window. We evaluate CACE
+using realistic workloads that include both latency-sensitive code completion
+and throughput-intensive code reasoning tasks. Our experiments show that CACE
+reduces Time-to-First-Token (TTFT) and end-to-end (E2E) latency, while
+significantly lowering the number of model evictions compared to
+state-of-the-art systems. Ablation studies further demonstrate the importance
+of multi-factor eviction in balancing responsiveness and resource efficiency.
+This work contributes practical strategies for deploying scalable, low-latency
+AI coding assistants in real-world software engineering environments.","['Kishanthan Thangarajah', 'Boyuan Chen', 'Shi Chang', 'Ahmed E. Hassan']",2025-06-23 16:03:32+00:00,2025-06-23 16:03:32+00:00,http://arxiv.org/pdf/2506.18796v1,cs.SE,['cs.SE']
+Focus Your Attention: Towards Data-Intuitive Lightweight Vision Transformers,"The evolution of Vision Transformers has led to their widespread adaptation
+to different domains. Despite large-scale success, there remain significant
+challenges including their reliance on extensive computational and memory
+resources for pre-training on huge datasets as well as difficulties in
+task-specific transfer learning. These limitations coupled with energy
+inefficiencies mainly arise due to the computation-intensive self-attention
+mechanism. To address these issues, we propose a novel Super-Pixel Based Patch
+Pooling (SPPP) technique that generates context-aware, semantically rich, patch
+embeddings to effectively reduce the architectural complexity and improve
+efficiency. Additionally, we introduce the Light Latent Attention (LLA) module
+in our pipeline by integrating latent tokens into the attention mechanism
+allowing cross-attention operations to significantly reduce the time and space
+complexity of the attention module. By leveraging the data-intuitive patch
+embeddings coupled with dynamic positional encodings, our approach adaptively
+modulates the cross-attention process to focus on informative regions while
+maintaining the global semantic structure. This targeted attention improves
+training efficiency and accelerates convergence. Notably, the SPPP module is
+lightweight and can be easily integrated into existing transformer
+architectures. Extensive experiments demonstrate that our proposed architecture
+provides significant improvements in terms of computational efficiency while
+achieving comparable results with the state-of-the-art approaches, highlighting
+its potential for energy-efficient transformers suitable for edge deployment.
+(The code is available on our GitHub repository:
+https://github.com/zser092/Focused-Attention-ViT).","['Suyash Gaurav', 'Muhammad Farhan Humayun', 'Jukka Heikkonen', 'Jatin Chaudhary']",2025-06-23 16:00:57+00:00,2025-06-23 16:00:57+00:00,http://arxiv.org/pdf/2506.18791v1,cs.CV,"['cs.CV', 'cs.LG']"
+Shift Happens: Mixture of Experts based Continual Adaptation in Federated Learning,"Federated Learning (FL) enables collaborative model training across
+decentralized clients without sharing raw data, yet faces significant
+challenges in real-world settings where client data distributions evolve
+dynamically over time. This paper tackles the critical problem of covariate and
+label shifts in streaming FL environments, where non-stationary data
+distributions degrade model performance and require adaptive middleware
+solutions. We introduce ShiftEx, a shift-aware mixture of experts framework
+that dynamically creates and trains specialized global models in response to
+detected distribution shifts using Maximum Mean Discrepancy for covariate
+shifts. The framework employs a latent memory mechanism for expert reuse and
+implements facility location-based optimization to jointly minimize covariate
+mismatch, expert creation costs, and label imbalance. Through theoretical
+analysis and comprehensive experiments on benchmark datasets, we demonstrate
+5.5-12.9 percentage point accuracy improvements and 22-95 % faster adaptation
+compared to state-of-the-art FL baselines across diverse shift scenarios. The
+proposed approach offers a scalable, privacy-preserving middleware solution for
+FL systems operating in non-stationary, real-world conditions while minimizing
+communication and computational overhead.","['Rahul Atul Bhope', 'K. R. Jayaram', 'Praveen Venkateswaran', 'Nalini Venkatasubramanian']",2025-06-23 15:59:21+00:00,2025-06-23 15:59:21+00:00,http://arxiv.org/pdf/2506.18789v1,cs.LG,"['cs.LG', 'cs.AI']"
+Flow-Aware Diffusion for Real-Time VR Restoration: Enhancing Spatiotemporal Coherence and Efficiency,"Cybersickness remains a critical barrier to the widespread adoption of
+Virtual Reality (VR), particularly in scenarios involving intense or artificial
+motion cues. Among the key contributors is excessive optical flow-perceived
+visual motion that, when unmatched by vestibular input, leads to sensory
+conflict and discomfort. While previous efforts have explored geometric or
+hardware based mitigation strategies, such methods often rely on predefined
+scene structures, manual tuning, or intrusive equipment. In this work, we
+propose U-MAD, a lightweight, real-time, AI-based solution that suppresses
+perceptually disruptive optical flow directly at the image level. Unlike prior
+handcrafted approaches, this method learns to attenuate high-intensity motion
+patterns from rendered frames without requiring mesh-level editing or scene
+specific adaptation. Designed as a plug and play module, U-MAD integrates
+seamlessly into existing VR pipelines and generalizes well to procedurally
+generated environments. The experiments show that U-MAD consistently reduces
+average optical flow and enhances temporal stability across diverse scenes. A
+user study further confirms that reducing visual motion leads to improved
+perceptual comfort and alleviated cybersickness symptoms. These findings
+demonstrate that perceptually guided modulation of optical flow provides an
+effective and scalable approach to creating more user-friendly immersive
+experiences. The code will be released at https://github.com/XXXXX (upon
+publication).","['Yitong Zhu', 'Guanxuan Jiang', 'Zhuowen Liang', 'Yuyang Wang']",2025-06-23 15:56:33+00:00,2025-06-23 15:56:33+00:00,http://arxiv.org/pdf/2506.18786v1,cs.HC,['cs.HC']
+TRIZ Agents: A Multi-Agent LLM Approach for TRIZ-Based Innovation,"TRIZ, the Theory of Inventive Problem Solving, is a structured,
+knowledge-based framework for innovation and abstracting problems to find
+inventive solutions. However, its application is often limited by the
+complexity and deep interdisciplinary knowledge required. Advancements in Large
+Language Models (LLMs) have revealed new possibilities for automating parts of
+this process. While previous studies have explored single LLMs in TRIZ
+applications, this paper introduces a multi-agent approach. We propose an
+LLM-based multi-agent system, called TRIZ agents, each with specialized
+capabilities and tool access, collaboratively solving inventive problems based
+on the TRIZ methodology. This multi-agent system leverages agents with various
+domain expertise to efficiently navigate TRIZ steps. The aim is to model and
+simulate an inventive process with language agents. We assess the effectiveness
+of this team of agents in addressing complex innovation challenges based on a
+selected case study in engineering. We demonstrate the potential of agent
+collaboration to produce diverse, inventive solutions. This research
+contributes to the future of AI-driven innovation, showcasing the advantages of
+decentralized problem-solving in complex ideation tasks.","['Kamil Szczepanik', 'Jarosław A. Chudziak']",2025-06-23 15:53:14+00:00,2025-06-23 15:53:14+00:00,http://arxiv.org/pdf/2506.18783v1,cs.AI,"['cs.AI', 'cs.MA', '68T07', 'I.2.11; I.2.7; I.2.8']"
+Existing LLMs Are Not Self-Consistent For Simple Tasks,"Large Language Models (LLMs) have grown increasingly powerful, yet ensuring
+their decisions remain transparent and trustworthy requires self-consistency --
+no contradictions in their internal reasoning. Our study reveals that even on
+simple tasks, such as comparing points on a line or a plane, or reasoning in a
+family tree, all smaller models are highly inconsistent, and even
+state-of-the-art models like DeepSeek-R1 and GPT-o4-mini are not fully
+self-consistent. To quantify and mitigate these inconsistencies, we introduce
+inconsistency metrics and propose two automated methods -- a graph-based and an
+energy-based approach. While these fixes provide partial improvements, they
+also highlight the complexity and importance of self-consistency in building
+more reliable and interpretable AI. The code and data are available at
+https://github.com/scorpio-nova/llm-self-consistency.","['Zhenru Lin', 'Jiawen Tao', 'Yang Yuan', 'Andrew Chi-Chih Yao']",2025-06-23 15:50:21+00:00,2025-06-23 15:50:21+00:00,http://arxiv.org/pdf/2506.18781v1,cs.CL,['cs.CL']
+Likelihood Ratio test for Poisson graph,"Directed acyclic graphs are widely used to describe the causal effects among
+random variables, and the inference of those causal effects has become an
+popular topic in statistics and machine learning, and has wide applications in
+neuroinformatics, bioinformatics and so on. However, most studies focus on the
+estimation or inference of the directional relations among continuous random
+variables, those among discrete random variables have not gained much
+attentions. In this article we focus on the inference of directed linkages and
+directed pathways in a Poisson directed graphical model. We employ likelihood
+ratio tests subject to non-convex acyclicity constraints, and derive the
+asymptotic distributions of the test statistic under the null hypothesis is
+true in high-dimensional situations. The power analysis and simulations suggest
+that the tests achieve the desired objectives of inference. An analysis of a
+basketball statistics dataset of NBA players during 2016-2017 season
+illustrates the utility of the proposed method to infer directed linkages and
+directed pathways in player's statistics network.","['Chen Shuyan', 'Liu Xin', 'Wang Shaoli']",2025-06-23 15:47:09+00:00,2025-06-23 15:47:09+00:00,http://arxiv.org/pdf/2506.18778v1,stat.ME,"['stat.ME', 'math.ST', 'stat.TH', 'Primary: 62F03, Secondary: 62F30']"
+Programming by Backprop: LLMs Acquire Reusable Algorithmic Abstractions During Code Training,"Training large language models (LLMs) on source code significantly enhances
+their general-purpose reasoning abilities, but the mechanisms underlying this
+generalisation are poorly understood. In this paper, we propose Programming by
+Backprop (PBB) as a potential driver of this effect - teaching a model to
+evaluate a program for inputs by training on its source code alone, without
+ever seeing I/O examples. To explore this idea, we finetune LLMs on two sets of
+programs representing simple maths problems and algorithms: one with source
+code and I/O examples (w/ IO), the other with source code only (w/o IO). We
+find evidence that LLMs have some ability to evaluate w/o IO programs for
+inputs in a range of experimental settings, and make several observations.
+Firstly, PBB works significantly better when programs are provided as code
+rather than semantically equivalent language descriptions. Secondly, LLMs can
+produce outputs for w/o IO programs directly, by implicitly evaluating the
+program within the forward pass, and more reliably when stepping through the
+program in-context via chain-of-thought. We further show that PBB leads to more
+robust evaluation of programs across inputs than training on I/O pairs drawn
+from a distribution that mirrors naturally occurring data. Our findings suggest
+a mechanism for enhanced reasoning through code training: it allows LLMs to
+internalise reusable algorithmic abstractions. Significant scope remains for
+future work to enable LLMs to more effectively learn from symbolic procedures,
+and progress in this direction opens other avenues like model alignment by
+training on formal constitutional principles.","['Jonathan Cook', 'Silvia Sapora', 'Arash Ahmadian', 'Akbir Khan', 'Tim Rocktaschel', 'Jakob Foerster', 'Laura Ruis']",2025-06-23 15:45:44+00:00,2025-06-23 15:45:44+00:00,http://arxiv.org/pdf/2506.18777v1,cs.AI,"['cs.AI', 'cs.CL', 'cs.LG']"
+Leveraging Transfer Learning to Overcome Data Limitations in Czochralski Crystal Growth,"The Czochralski (Cz) method is a widely used process for growing high-quality
+single crystals, critical for applications in semiconductors, optics, and
+advanced materials. Achieving optimal growth conditions requires precise
+control of process and furnace design parameters. Still, data scarcity --
+especially for new materials -- limits the application of machine learning (ML)
+in predictive modeling and optimization. This study proposes a transfer
+learning approach to overcome this limitation by adapting ML models trained on
+a higher data volume of one source material (Si) to a lower data volume of
+another target material (Ge and GaAs). The materials were deliberately selected
+to assess the robustness of the transfer learning approach in handling varying
+data similarity, with Cz-Ge being similar to Cz-Si, and GaAs grown via the
+liquid encapsulated Czochralski method (LEC), which differs from Cz-Si. We
+explore various transfer learning strategies, including Warm Start, Merged
+Training, and Hyperparameters Transfer, and evaluate multiple ML architectures
+across two different materials. Our results demonstrate that transfer learning
+significantly enhances predictive accuracy with minimal data, providing a
+practical framework for optimizing Cz growth parameters across diverse
+materials.","['Milena Petkovic', 'Natasha Dropka', 'Xia Tang', 'Janina Zittel']",2025-06-23 15:43:54+00:00,2025-06-23 15:43:54+00:00,http://arxiv.org/pdf/2506.18774v1,cond-mat.mtrl-sci,"['cond-mat.mtrl-sci', 'math.OC']"
+DPG loss functions for learning parameter-to-solution maps by neural networks,"We develop, analyze, and experimentally explore residual-based loss functions
+for machine learning of parameter-to-solution maps in the context of
+parameter-dependent families of partial differential equations (PDEs). Our
+primary concern is on rigorous accuracy certification to enhance prediction
+capability of resulting deep neural network reduced models. This is achieved by
+the use of variationally correct loss functions. Through one specific example
+of an elliptic PDE, details for establishing the variational correctness of a
+loss function from an ultraweak Discontinuous Petrov Galerkin (DPG)
+discretization are worked out. Despite the focus on the example, the proposed
+concepts apply to a much wider scope of problems, namely problems for which
+stable DPG formulations are available. The issue of {high-contrast} diffusion
+fields and ensuing difficulties with degrading ellipticity are discussed. Both
+numerical results and theoretical arguments illustrate that for high-contrast
+diffusion parameters the proposed DPG loss functions deliver much more robust
+performance than simpler least-squares losses.","['Pablo Cortés Castillo', 'Wolfgang Dahmen', 'Jay Gopalakrishnan']",2025-06-23 15:40:56+00:00,2025-06-23 15:40:56+00:00,http://arxiv.org/pdf/2506.18773v1,math.NA,"['math.NA', 'cs.LG', 'cs.NA']"
+Neural Total Variation Distance Estimators for Changepoint Detection in News Data,"Detecting when public discourse shifts in response to major events is crucial
+for understanding societal dynamics. Real-world data is high-dimensional,
+sparse, and noisy, making changepoint detection in this domain a challenging
+endeavor. In this paper, we leverage neural networks for changepoint detection
+in news data, introducing a method based on the so-called learning-by-confusion
+scheme, which was originally developed for detecting phase transitions in
+physical systems. We train classifiers to distinguish between articles from
+different time periods. The resulting classification accuracy is used to
+estimate the total variation distance between underlying content distributions,
+where significant distances highlight changepoints. We demonstrate the
+effectiveness of this method on both synthetic datasets and real-world data
+from The Guardian newspaper, successfully identifying major historical events
+including 9/11, the COVID-19 pandemic, and presidential elections. Our approach
+requires minimal domain knowledge, can autonomously discover significant shifts
+in public discourse, and yields a quantitative measure of change in content,
+making it valuable for journalism, policy analysis, and crisis monitoring.","['Csaba Zsolnai', 'Niels Lörch', 'Julian Arnold']",2025-06-23 15:33:30+00:00,2025-06-23 15:33:30+00:00,http://arxiv.org/pdf/2506.18764v1,cs.LG,"['cs.LG', 'cs.CL', 'cs.CY', 'cs.SI']"
+Local Averaging Accurately Distills Manifold Structure From Noisy Data,"High-dimensional data are ubiquitous, with examples ranging from natural
+images to scientific datasets, and often reside near low-dimensional manifolds.
+Leveraging this geometric structure is vital for downstream tasks, including
+signal denoising, reconstruction, and generation. However, in practice, the
+manifold is typically unknown and only noisy samples are available. A
+fundamental approach to uncovering the manifold structure is local averaging,
+which is a cornerstone of state-of-the-art provable methods for manifold
+fitting and denoising. However, to the best of our knowledge, there are no
+works that rigorously analyze the accuracy of local averaging in a manifold
+setting in high-noise regimes. In this work, we provide theoretical analyses of
+a two-round mini-batch local averaging method applied to noisy samples drawn
+from a $d$-dimensional manifold $\mathcal M \subset \mathbb{R}^D$, under a
+relatively high-noise regime where the noise size is comparable to the reach
+$\tau$. We show that with high probability, the averaged point $\hat{\mathbf
+q}$ achieves the bound $d(\hat{\mathbf q}, \mathcal M) \leq \sigma
+\sqrt{d\left(1+\frac{\kappa\mathrm{diam}(\mathcal {M})}{\log(D)}\right)}$,
+where $\sigma, \mathrm{diam(\mathcal M)},\kappa$ denote the standard deviation
+of the Gaussian noise, manifold's diameter and a bound on its extrinsic
+curvature, respectively. This is the first analysis of local averaging accuracy
+over the manifold in the relatively high noise regime where $\sigma \sqrt{D}
+\approx \tau$. The proposed method can serve as a preprocessing step for a wide
+range of provable methods designed for lower-noise regimes. Additionally, our
+framework can provide a theoretical foundation for a broad spectrum of
+denoising and dimensionality reduction methods that rely on local averaging
+techniques.","['Yihan Shen', 'Shiyu Wang', 'Arnaud Lamy', 'Mariam Avagyan', 'John Wright']",2025-06-23 15:32:16+00:00,2025-06-23 15:32:16+00:00,http://arxiv.org/pdf/2506.18761v1,stat.ML,"['stat.ML', 'cs.CG', 'cs.LG']"
+Patient-Centred Explainability in IVF Outcome Prediction,"This paper evaluates the user interface of an in vitro fertility (IVF)
+outcome prediction tool, focussing on its understandability for patients or
+potential patients. We analyse four years of anonymous patient feedback,
+followed by a user survey and interviews to quantify trust and
+understandability. Results highlight a lay user's need for prediction model
+\emph{explainability} beyond the model feature space. We identify user concerns
+about data shifts and model exclusions that impact trust. The results call
+attention to the shortcomings of current practices in explainable AI research
+and design and the need for explainability beyond model feature space and
+epistemic assumptions, particularly in high-stakes healthcare contexts where
+users gather extensive information and develop complex mental models. To
+address these challenges, we propose a dialogue-based interface and explore
+user expectations for personalised explanations.","['Adarsa Sivaprasad', 'Ehud Reiter', 'David McLernon', 'Nava Tintarev', 'Siladitya Bhattacharya', 'Nir Oren']",2025-06-23 15:30:13+00:00,2025-06-23 15:30:13+00:00,http://arxiv.org/pdf/2506.18760v1,cs.HC,['cs.HC']
+Sensitivity Analysis of Image Classification Models using Generalized Polynomial Chaos,"Integrating advanced communication protocols in production has accelerated
+the adoption of data-driven predictive quality methods, notably machine
+learning (ML) models. However, ML models in image classification often face
+significant uncertainties arising from model, data, and domain shifts. These
+uncertainties lead to overconfidence in the classification model's output. To
+better understand these models, sensitivity analysis can help to analyze the
+relative influence of input parameters on the output. This work investigates
+the sensitivity of image classification models used for predictive quality. We
+propose modeling the distributional domain shifts of inputs with random
+variables and quantifying their impact on the model's outputs using Sobol
+indices computed via generalized polynomial chaos (GPC). This approach is
+validated through a case study involving a welding defect classification
+problem, utilizing a fine-tuned ResNet18 model and an emblem classification
+model used in BMW Group production facilities.","['Lukas Bahr', 'Lucas Poßner', 'Konstantin Weise', 'Sophie Gröger', 'Rüdiger Daub']",2025-06-23 15:22:31+00:00,2025-06-23 15:22:31+00:00,http://arxiv.org/pdf/2506.18751v1,cs.LG,"['cs.LG', 'cs.AI']"
+ContinualFlow: Learning and Unlearning with Neural Flow Matching,"We introduce ContinualFlow, a principled framework for targeted unlearning in
+generative models via Flow Matching. Our method leverages an energy-based
+reweighting loss to softly subtract undesired regions of the data distribution
+without retraining from scratch or requiring direct access to the samples to be
+unlearned. Instead, it relies on energy-based proxies to guide the unlearning
+process. We prove that this induces gradients equivalent to Flow Matching
+toward a soft mass-subtracted target, and validate the framework through
+experiments on 2D and image domains, supported by interpretable visualizations
+and quantitative evaluations.","['Lorenzo Simone', 'Davide Bacciu', 'Shuangge Ma']",2025-06-23 15:20:58+00:00,2025-06-23 15:20:58+00:00,http://arxiv.org/pdf/2506.18747v1,cs.LG,"['cs.LG', 'cs.AI']"
+Fast State-Augmented Learning for Wireless Resource Allocation with Dual Variable Regression,"We consider resource allocation problems in multi-user wireless networks,
+where the goal is to optimize a network-wide utility function subject to
+constraints on the ergodic average performance of users. We demonstrate how a
+state-augmented graph neural network (GNN) parametrization for the resource
+allocation policy circumvents the drawbacks of the ubiquitous dual subgradient
+methods by representing the network configurations (or states) as graphs and
+viewing dual variables as dynamic inputs to the model, viewed as graph signals
+supported over the graphs. Lagrangian maximizing state-augmented policies are
+learned during the offline training phase, and the dual variables evolve
+through gradient updates while executing the learned state-augmented policies
+during the inference phase. Our main contributions are to illustrate how
+near-optimal initialization of dual multipliers for faster inference can be
+accomplished with dual variable regression, leveraging a secondary GNN
+parametrization, and how maximization of the Lagrangian over the multipliers
+sampled from the dual descent dynamics substantially improves the training of
+state-augmented models. We demonstrate the superior performance of the proposed
+algorithm with extensive numerical experiments in a case study of transmit
+power control. Finally, we prove a convergence result and an exponential
+probability bound on the excursions of the dual function (iterate) optimality
+gaps.","['Yigit Berkay Uslu', 'Navid NaderiAlizadeh', 'Mark Eisen', 'Alejandro Ribeiro']",2025-06-23 15:20:58+00:00,2025-06-23 15:20:58+00:00,http://arxiv.org/pdf/2506.18748v1,eess.SP,"['eess.SP', 'cs.LG']"
+The Within-Orbit Adaptive Leapfrog No-U-Turn Sampler,"Locally adapting parameters within Markov chain Monte Carlo methods while
+preserving reversibility is notoriously difficult. The success of the No-U-Turn
+Sampler (NUTS) largely stems from its clever local adaptation of the
+integration time in Hamiltonian Monte Carlo via a geometric U-turn condition.
+However, posterior distributions frequently exhibit multi-scale geometries with
+extreme variations in scale, making it necessary to also adapt the leapfrog
+integrator's step size locally and dynamically. Despite its practical
+importance, this problem has remained largely open since the introduction of
+NUTS by Hoffman and Gelman (2014). To address this issue, we introduce the
+Within-orbit Adaptive Leapfrog No-U-Turn Sampler (WALNUTS), a generalization of
+NUTS that adapts the leapfrog step size at fixed intervals of simulated time as
+the orbit evolves. At each interval, the algorithm selects the largest step
+size from a dyadic schedule that keeps the energy error below a user-specified
+threshold. Like NUTS, WALNUTS employs biased progressive state selection to
+favor states with positions that are further from the initial point along the
+orbit. Empirical evaluations on multiscale target distributions, including
+Neal's funnel and the Stock-Watson stochastic volatility time-series model,
+demonstrate that WALNUTS achieves substantial improvements in sampling
+efficiency and robustness compared to standard NUTS.","['Nawaf Bou-Rabee', 'Bob Carpenter', 'Tore Selland Kleppe', 'Sifan Liu']",2025-06-23 15:20:46+00:00,2025-06-23 15:20:46+00:00,http://arxiv.org/pdf/2506.18746v1,stat.CO,"['stat.CO', 'math.PR', 'stat.ML']"
+"Experimenting, Fast and Slow: Bayesian Optimization of Long-term Outcomes with Online Experiments","Online experiments in internet systems, also known as A/B tests, are used for
+a wide range of system tuning problems, such as optimizing recommender system
+ranking policies and learning adaptive streaming controllers. Decision-makers
+generally wish to optimize for long-term treatment effects of the system
+changes, which often requires running experiments for a long time as short-term
+measurements can be misleading due to non-stationarity in treatment effects
+over time. The sequential experimentation strategies--which typically involve
+several iterations--can be prohibitively long in such cases. We describe a
+novel approach that combines fast experiments (e.g., biased experiments run
+only for a few hours or days) and/or offline proxies (e.g., off-policy
+evaluation) with long-running, slow experiments to perform sequential, Bayesian
+optimization over large action spaces in a short amount of time.","['Qing Feng', 'Samuel Dalton', 'Benjamin Letham', 'Maximilian Balandat', 'Eytan Bakshy']",2025-06-23 15:18:54+00:00,2025-06-23 15:18:54+00:00,http://arxiv.org/pdf/2506.18744v1,cs.LG,['cs.LG']
+On the Existence of Universal Simulators of Attention,"Prior work on the learnability of transformers has established its capacity
+to approximate specific algorithmic patterns through training under restrictive
+architectural assumptions. Fundamentally, these arguments remain data-driven
+and therefore can only provide a probabilistic guarantee. Expressivity, on the
+contrary, has theoretically been explored to address the problems
+\emph{computable} by such architecture. These results proved the
+Turing-completeness of transformers, investigated bounds focused on circuit
+complexity, and formal logic. Being at the crossroad between learnability and
+expressivity, the question remains: \emph{can transformer architectures exactly
+simulate an arbitrary attention mechanism, or in particular, the underlying
+operations?} In this study, we investigate the transformer encoder's ability to
+simulate a vanilla attention mechanism. By constructing a universal simulator
+$\mathcal{U}$ composed of transformer encoders, we present algorithmic
+solutions to identically replicate attention outputs and the underlying
+elementary matrix and activation operations via RASP, a formal framework for
+transformer computation. Our proofs, for the first time, show the existence of
+an algorithmically achievable data-agnostic solution, previously known to be
+approximated only by learning.","['Debanjan Dutta', 'Faizanuddin Ansari', 'Anish Chakrabarty', 'Swagatam Das']",2025-06-23 15:15:25+00:00,2025-06-23 15:15:25+00:00,http://arxiv.org/pdf/2506.18739v1,cs.LG,"['cs.LG', 'cs.AI']"
+Towards Group Fairness with Multiple Sensitive Attributes in Federated Foundation Models,"The deep integration of foundation models (FM) with federated learning (FL)
+enhances personalization and scalability for diverse downstream tasks, making
+it crucial in sensitive domains like healthcare. Achieving group fairness has
+become an increasingly prominent issue in the era of federated foundation
+models (FFMs), since biases in sensitive attributes might lead to inequitable
+treatment for under-represented demographic groups. Existing studies mostly
+focus on achieving fairness with respect to a single sensitive attribute. This
+renders them unable to provide clear interpretability of dependencies among
+multiple sensitive attributes which is required to achieve group fairness. Our
+paper takes the first attempt towards a causal analysis of the relationship
+between group fairness across various sensitive attributes in the FFM. We
+extend the FFM structure to trade off multiple sensitive attributes
+simultaneously and quantify the causal effect behind the group fairness through
+causal discovery and inference. Extensive experiments validate its
+effectiveness, offering insights into interpretability towards building
+trustworthy and fair FFM systems.","['Yuning Yang', 'Han Yu', 'Tianrun Gao', 'Xiaodong Xu', 'Guangyu Wang']",2025-06-23 15:09:14+00:00,2025-06-23 15:09:14+00:00,http://arxiv.org/pdf/2506.18732v1,cs.LG,['cs.LG']
+MuseControlLite: Multifunctional Music Generation with Lightweight Conditioners,"We propose MuseControlLite, a lightweight mechanism designed to fine-tune
+text-to-music generation models for precise conditioning using various
+time-varying musical attributes and reference audio signals. The key finding is
+that positional embeddings, which have been seldom used by text-to-music
+generation models in the conditioner for text conditions, are critical when the
+condition of interest is a function of time. Using melody control as an
+example, our experiments show that simply adding rotary positional embeddings
+to the decoupled cross-attention layers increases control accuracy from 56.6%
+to 61.1%, while requiring 6.75 times fewer trainable parameters than
+state-of-the-art fine-tuning mechanisms, using the same pre-trained diffusion
+Transformer model of Stable Audio Open. We evaluate various forms of musical
+attribute control, audio inpainting, and audio outpainting, demonstrating
+improved controllability over MusicGen-Large and Stable Audio Open ControlNet
+at a significantly lower fine-tuning cost, with only 85M trainble parameters.
+Source code, model checkpoints, and demo examples are available at:
+https://musecontrollite.github.io/web/.","['Fang-Duo Tsai', 'Shih-Lun Wu', 'Weijaw Lee', 'Sheng-Ping Yang', 'Bo-Rui Chen', 'Hao-Chung Cheng', 'Yi-Hsuan Yang']",2025-06-23 15:08:03+00:00,2025-06-24 15:53:56+00:00,http://arxiv.org/pdf/2506.18729v2,cs.SD,"['cs.SD', 'cs.AI', 'eess.AS']"
+PARALLELPROMPT: Extracting Parallelism from Large Language Model Queries,"LLM serving systems typically treat user prompts as monolithic inputs,
+optimizing inference through decoding tricks or inter-query batching. However,
+many real-world prompts contain latent semantic parallelism--decomposable
+structures where subtasks can be executed independently to reduce latency while
+preserving meaning. We introduce PARALLELPROMPT, the first benchmark for
+measuring intra-query parallelism in natural user prompts. Our dataset
+comprises over 37,000 real-world prompts from public LLM chat logs, each
+annotated with a structured schema capturing task templates, shared context,
+and iteration inputs. These schemas are extracted using LLM-assisted prompting
+with rule-based multilingual validation. To evaluate the benefits of
+decomposition, we provide an execution suite that benchmarks serial vs.
+parallel strategies, measuring latency, structural adherence, and semantic
+fidelity. Our results show that intra-query parallelism can be successfully
+parsed in over 75% of curated datasets, unlocking up to 5x speedups on tasks
+like translation, comprehension, and comparative analysis, with minimal quality
+degradation. By releasing this benchmark, curation pipeline, and evaluation
+suite, we provide the first standardized testbed for studying structure-aware
+execution in LLM serving pipelines.","['Steven Kolawole', 'Keshav Santhanam', 'Virginia Smith', 'Pratiksha Thaker']",2025-06-23 15:05:54+00:00,2025-06-23 15:05:54+00:00,http://arxiv.org/pdf/2506.18728v1,cs.LG,['cs.LG']
+TDACloud: Point Cloud Recognition Using Topological Data Analysis,"Point cloud-based object/place recognition remains a problem of interest in
+applications such as autonomous driving, scene reconstruction, and
+localization. Extracting meaningful local descriptors from a query point cloud
+that can be matched with the descriptors of the collected point clouds is a
+challenging problem. Furthermore, when the query point cloud is noisy or has
+been transformed (e.g., rotated), it adds to the complexity. To this end, we
+propose a novel methodology, named TDACloud, using Topological Data Analysis
+(TDA) for local descriptor extraction from a point cloud, which does not need
+resource-intensive GPU-based machine learning training. More specifically, we
+used the ATOL vectorization method to generate vectors for point clouds. Unlike
+voxelization, our proposed technique can take raw point clouds as inputs and
+outputs a fixed-size TDA-descriptor vector. To test the quality of the proposed
+TDACloud technique, we have implemented it on multiple real-world (e.g., Oxford
+RobotCar, KITTI-360) and realistic (e.g., ShapeNet) point cloud datasets for
+object and place recognition. We have also tested TDACloud on noisy and
+transformed test cases where the query point cloud has been scaled, translated,
+or rotated. Our results demonstrate high recognition accuracies in noisy
+conditions and large-scale real-world place recognition while outperforming the
+baselines by up to approximately 14%.","['Anirban Ghosh', 'Ian Dahlin', 'Ayan Dutta']",2025-06-23 14:59:39+00:00,2025-06-23 14:59:39+00:00,http://arxiv.org/pdf/2506.18725v1,cs.RO,"['cs.RO', 'cs.CG', 'cs.CV']"
+Including Semantic Information via Word Embeddings for Skeleton-based Action Recognition,"Effective human action recognition is widely used for cobots in Industry 4.0
+to assist in assembly tasks. However, conventional skeleton-based methods often
+lose keypoint semantics, limiting their effectiveness in complex interactions.
+In this work, we introduce a novel approach to skeleton-based action
+recognition that enriches input representations by leveraging word embeddings
+to encode semantic information. Our method replaces one-hot encodings with
+semantic volumes, enabling the model to capture meaningful relationships
+between joints and objects. Through extensive experiments on multiple assembly
+datasets, we demonstrate that our approach significantly improves
+classification performance, and enhances generalization capabilities by
+simultaneously supporting different skeleton types and object classes. Our
+findings highlight the potential of incorporating semantic information to
+enhance skeleton-based action recognition in dynamic and diverse environments.","['Dustin Aganian', 'Erik Franze', 'Markus Eisenbach', 'Horst-Michael Gross']",2025-06-23 14:57:06+00:00,2025-06-23 14:57:06+00:00,http://arxiv.org/pdf/2506.18721v1,cs.CV,"['cs.CV', 'cs.LG', 'cs.RO']"
+Multi-modal Anchor Gated Transformer with Knowledge Distillation for Emotion Recognition in Conversation,"Emotion Recognition in Conversation (ERC) aims to detect the emotions of
+individual utterances within a conversation. Generating efficient and
+modality-specific representations for each utterance remains a significant
+challenge. Previous studies have proposed various models to integrate features
+extracted using different modality-specific encoders. However, they neglect the
+varying contributions of modalities to this task and introduce high complexity
+by aligning modalities at the frame level. To address these challenges, we
+propose the Multi-modal Anchor Gated Transformer with Knowledge Distillation
+(MAGTKD) for the ERC task. Specifically, prompt learning is employed to enhance
+textual modality representations, while knowledge distillation is utilized to
+strengthen representations of weaker modalities. Furthermore, we introduce a
+multi-modal anchor gated transformer to effectively integrate utterance-level
+representations across modalities. Extensive experiments on the IEMOCAP and
+MELD datasets demonstrate the effectiveness of knowledge distillation in
+enhancing modality representations and achieve state-of-the-art performance in
+emotion recognition. Our code is available at:
+https://github.com/JieLi-dd/MAGTKD.","['Jie Li', 'Shifei Ding', 'Lili Guo', 'Xuan Li']",2025-06-23 14:53:22+00:00,2025-06-23 14:53:22+00:00,http://arxiv.org/pdf/2506.18716v1,cs.LG,"['cs.LG', 'cs.CL']"
+Benchmarking the Pedagogical Knowledge of Large Language Models,"Benchmarks like Massive Multitask Language Understanding (MMLU) have played a
+pivotal role in evaluating AI's knowledge and abilities across diverse domains.
+However, existing benchmarks predominantly focus on content knowledge, leaving
+a critical gap in assessing models' understanding of pedagogy - the method and
+practice of teaching. This paper introduces The Pedagogy Benchmark, a novel
+dataset designed to evaluate large language models on their Cross-Domain
+Pedagogical Knowledge (CDPK) and Special Education Needs and Disability (SEND)
+pedagogical knowledge. These benchmarks are built on a carefully curated set of
+questions sourced from professional development exams for teachers, which cover
+a range of pedagogical subdomains such as teaching strategies and assessment
+methods. Here we outline the methodology and development of these benchmarks.
+We report results for 97 models, with accuracies spanning a range from 28% to
+89% on the pedagogical knowledge questions. We consider the relationship
+between cost and accuracy and chart the progression of the Pareto value
+frontier over time. We provide online leaderboards at
+https://rebrand.ly/pedagogy which are updated with new models and allow
+interactive exploration and filtering based on various model properties, such
+as cost per token and open-vs-closed weights, as well as looking at performance
+in different subjects. LLMs and generative AI have tremendous potential to
+influence education and help to address the global learning crisis.
+Education-focused benchmarks are crucial to measure models' capacities to
+understand pedagogical concepts, respond appropriately to learners' needs, and
+support effective teaching practices across diverse contexts. They are needed
+for informing the responsible and evidence-based deployment of LLMs and
+LLM-based tools in educational settings, and for guiding both development and
+policy decisions.","['Maxime Lelièvre', 'Amy Waldock', 'Meng Liu', 'Natalia Valdés Aspillaga', 'Alasdair Mackintosh', 'María José Ogando Portela', 'Jared Lee', 'Paul Atherton', 'Robin A. A. Ince', 'Oliver G. B. Garrod']",2025-06-23 14:49:01+00:00,2025-06-24 12:36:22+00:00,http://arxiv.org/pdf/2506.18710v2,cs.CL,"['cs.CL', 'cs.AI']"
+"Fanfiction in the Age of AI: Community Perspectives on Creativity, Authenticity and Adoption","The integration of Generative AI (GenAI) into creative communities, like
+fanfiction, is reshaping how stories are created, shared, and valued. This
+study investigates the perceptions of 157 active fanfiction members, both
+readers and writers, regarding AI-generated content in fanfiction. Our research
+explores the impact of GenAI on community dynamics, examining how AI affects
+the participatory and collaborative nature of these spaces. The findings reveal
+responses ranging from cautious acceptance of AI's potential for creative
+enhancement to concerns about authenticity, ethical issues, and the erosion of
+human-centered values. Participants emphasized the importance of transparency
+and expressed worries about losing social connections. Our study highlights the
+need for thoughtful AI integration in creative platforms using design
+interventions that enable ethical practices, promote transparency, increase
+engagement and connection, and preserve the community's core values.","['Roi Alfassi', 'Angelora Cooper', 'Zoe Mitchell', 'Mary Calabro', 'Orit Shaer', 'Osnat Mokryn']",2025-06-23 14:45:37+00:00,2025-06-23 14:45:37+00:00,http://arxiv.org/pdf/2506.18706v1,cs.HC,['cs.HC']
+Context Biasing for Pronunciations-Orthography Mismatch in Automatic Speech Recognition,"Neural sequence-to-sequence systems deliver state-of-the-art performance for
+automatic speech recognition. When using appropriate modeling units, e.g.,
+byte-pair encoded characters, these systems are in principal open vocabulary
+systems. In practice, however, they often fail to recognize words not seen
+during training, e.g., named entities, acronyms, or domain-specific special
+words. To address this problem, many context biasing methods have been
+proposed; however, for words with a pronunciation-orthography mismatch, these
+methods may still struggle. We propose a method which allows corrections of
+substitution errors to improve the recognition accuracy of such challenging
+words. Users can add corrections on the fly during inference. We show that with
+this method we get a relative improvement in biased word error rate of up to
+11\%, while maintaining a competitive overall word error rate.","['Christian Huber', 'Alexander Waibel']",2025-06-23 14:42:03+00:00,2025-06-23 14:42:03+00:00,http://arxiv.org/pdf/2506.18703v1,cs.CL,"['cs.CL', 'cs.LG']"
+SaGIF: Improving Individual Fairness in Graph Neural Networks via Similarity Encoding,"Individual fairness (IF) in graph neural networks (GNNs), which emphasizes
+the need for similar individuals should receive similar outcomes from GNNs, has
+been a critical issue. Despite its importance, research in this area has been
+largely unexplored in terms of (1) a clear understanding of what induces
+individual unfairness in GNNs and (2) a comprehensive consideration of
+identifying similar individuals. To bridge these gaps, we conduct a preliminary
+analysis to explore the underlying reason for individual unfairness and observe
+correlations between IF and similarity consistency, a concept introduced to
+evaluate the discrepancy in identifying similar individuals based on graph
+structure versus node features. Inspired by our observations, we introduce two
+metrics to assess individual similarity from two distinct perspectives:
+topology fusion and feature fusion. Building upon these metrics, we propose
+Similarity-aware GNNs for Individual Fairness, named SaGIF. The key insight
+behind SaGIF is the integration of individual similarities by independently
+learning similarity representations, leading to an improvement of IF in GNNs.
+Our experiments on several real-world datasets validate the effectiveness of
+our proposed metrics and SaGIF. Specifically, SaGIF consistently outperforms
+state-of-the-art IF methods while maintaining utility performance. Code is
+available at: https://github.com/ZzoomD/SaGIF.","['Yuchang Zhu', 'Jintang Li', 'Huizhe Zhang', 'Liang Chen', 'Zibin Zheng']",2025-06-23 14:34:26+00:00,2025-06-23 14:34:26+00:00,http://arxiv.org/pdf/2506.18696v1,cs.LG,['cs.LG']
+Cluster Expansion Toward Nonlinear Modeling and Classification,"A quantitative first-principles description of complex substitutional
+materials like alloys is challenging due to the vast number of configurations
+and the high computational cost of solving the quantum-mechanical problem.
+Therefore, materials properties must be modeled. The Cluster Expansion (CE)
+method is widely used for this purpose, but it struggles with properties that
+exhibit non-linear dependencies on composition, often failing even in a
+qualitative description. By looking at CE through the lens of machine learning,
+we resolve this severe problem and introduce a non-linear CE approach, yielding
+extremely accurate and computationally efficient results as demonstrated by
+distinct examples.","['Adrian Stroth', 'Claudia Draxl', 'Santiago Rigamonti']",2025-06-23 14:34:23+00:00,2025-06-23 14:34:23+00:00,http://arxiv.org/pdf/2506.18695v1,cond-mat.mtrl-sci,['cond-mat.mtrl-sci']
+A Random Matrix Analysis of In-context Memorization for Nonlinear Attention,"Attention mechanisms have revolutionized machine learning (ML) by enabling
+efficient modeling of global dependencies across inputs. Their inherently
+parallelizable structures allow for efficient scaling with the exponentially
+increasing size of both pretrained data and model parameters. Yet, despite
+their central role as the computational backbone of modern large language
+models (LLMs), the theoretical understanding of Attentions, especially in the
+nonlinear setting, remains limited.
+  In this paper, we provide a precise characterization of the \emph{in-context
+memorization error} of \emph{nonlinear Attention}, in the high-dimensional
+proportional regime where the number of input tokens $n$ and their embedding
+dimension $p$ are both large and comparable. Leveraging recent advances in the
+theory of large kernel random matrices, we show that nonlinear Attention
+typically incurs higher memorization error than linear ridge regression on
+random inputs. However, this gap vanishes, and can even be reversed, when the
+input exhibits statistical structure, particularly when the Attention weights
+align with the input signal direction. Our results reveal how nonlinearity and
+input structure interact with each other to govern the memorization performance
+of nonlinear Attention. The theoretical insights are supported by numerical
+experiments.","['Zhenyu Liao', 'Jiaqing Liu', 'TianQi Hou', 'Difan Zou', 'Zenan Ling']",2025-06-23 13:56:43+00:00,2025-06-23 13:56:43+00:00,http://arxiv.org/pdf/2506.18656v1,stat.ML,"['stat.ML', 'cs.LG', 'math.ST', 'stat.TH']"
+Deceptive Game Design? Investigating the Impact of Visual Card Style on Player Perception,"The visual style of game elements considerably contributes to the overall
+experience. Aesthetics influence player appeal, while the abilities of game
+pieces define their in-game functionality. In this paper, we investigate how
+the visual style of collectible cards influences the players' perception of the
+card's actual strength in the game. Using the popular trading card game Magic:
+The Gathering, we conduct a single-blind survey study that examines how players
+perceive the strength of AI-generated cards that are shown in two contrasting
+visual styles: cute and harmless, or heroic and mighty. Our analysis reveals
+that some participants are influenced by a card's visual appearance when
+judging its in-game strength. Overall, differences in style perception are
+normally distributed around a neutral center, but individual participants vary
+in both directions: some generally perceive the cute style to be stronger,
+whereas others believe that the heroic style is better.","['Leonie Kallabis', 'Timo Bertram', 'Florian Rupp']",2025-06-23 13:53:13+00:00,2025-06-23 13:53:13+00:00,http://arxiv.org/pdf/2506.18648v1,cs.HC,['cs.HC']
+Tight Generalization Error Bounds for Stochastic Gradient Descent in Non-convex Learning,"Stochastic Gradient Descent (SGD) is fundamental for training deep neural
+networks, especially in non-convex settings. Understanding SGD's generalization
+properties is crucial for ensuring robust model performance on unseen data. In
+this paper, we analyze the generalization error bounds of SGD for non-convex
+learning by introducing the Type II perturbed SGD (T2pm-SGD), which
+accommodates both sub-Gaussian and bounded loss functions. The generalization
+error bound is decomposed into two components: the trajectory term and the
+flatness term. Our analysis improves the trajectory term to $O(n^{-1})$,
+significantly enhancing the previous $O((nb)^{-1/2})$ bound for bounded losses,
+where n is the number of training samples and b is the batch size. By selecting
+an optimal variance for the perturbation noise, the overall bound is further
+refined to $O(n^{-2/3})$. For sub-Gaussian loss functions, a tighter trajectory
+term is also achieved. In both cases, the flatness term remains stable across
+iterations and is smaller than those reported in previous literature, which
+increase with iterations. This stability, ensured by T2pm-SGD, leads to tighter
+generalization error bounds for both loss function types. Our theoretical
+results are validated through extensive experiments on benchmark datasets,
+including MNIST and CIFAR-10, demonstrating the effectiveness of T2pm-SGD in
+establishing tighter generalization bounds.","['Wenjun Xiong', 'Juan Ding', 'Xinlei Zuo', 'Qizhai Li']",2025-06-23 13:47:25+00:00,2025-06-23 13:47:25+00:00,http://arxiv.org/pdf/2506.18645v1,stat.ML,"['stat.ML', 'cs.LG', 'stat.ME']"
+On Union-Closedness of Language Generation,"We investigate language generation in the limit - a model by Kleinberg and
+Mullainathan [NeurIPS 2024] and extended by Li, Raman, and Tewari [COLT 2025].
+While Kleinberg and Mullainathan proved generation is possible for all
+countable collections, Li et al. defined a hierarchy of generation notions
+(uniform, non-uniform, and generatable) and explored their feasibility for
+uncountable collections.
+  Our first set of results resolve two open questions of Li et al. by proving
+finite unions of generatable or non-uniformly generatable classes need not be
+generatable. These follow from a stronger result: there is a non-uniformly
+generatable class and a uniformly generatable class whose union is
+non-generatable. This adds to the aspects along which language generation in
+the limit is different from traditional tasks in statistical learning theory
+like classification, which are closed under finite unions. In particular, it
+implies that given two generators for different collections, one cannot combine
+them to obtain a single ""more powerful"" generator, prohibiting this notion of
+boosting.
+  Our construction also addresses a third open question of Li et al. on whether
+there are uncountable classes that are non-uniformly generatable and do not
+satisfy the eventually unbounded closure (EUC) condition introduced by Li,
+Raman, and Tewari. Our approach utilizes carefully constructed classes along
+with a novel diagonalization argument that could be of independent interest in
+the growing area of language generation.","['Steve Hanneke', 'Amin Karbasi', 'Anay Mehrotra', 'Grigoris Velegkas']",2025-06-23 13:42:25+00:00,2025-06-23 13:42:25+00:00,http://arxiv.org/pdf/2506.18642v1,cs.LG,['cs.LG']

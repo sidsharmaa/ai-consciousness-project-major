@@ -1,0 +1,917 @@
+Title,Summary,Authors,Published,Updated,PDF_URL,Primary_Category,Categories
+How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation Models on Standard Computer Vision Tasks,"Multimodal foundation models, such as GPT-4o, have recently made remarkable
+progress, but it is not clear where exactly these models stand in terms of
+understanding vision. In this paper, we benchmark the performance of popular
+multimodal foundation models (GPT-4o, o4-mini, Gemini 1.5 Pro and Gemini 2.0
+Flash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2) on standard computer vision
+tasks (semantic segmentation, object detection, image classification, depth and
+surface normal prediction) using established datasets (e.g., COCO, ImageNet and
+its variants, etc).
+  The main challenges to performing this are: 1) most models are trained to
+output text and cannot natively express versatile domains, such as segments or
+3D geometry, and 2) many leading models are proprietary and accessible only at
+an API level, i.e., there is no weight access to adapt them. We address these
+challenges by translating standard vision tasks into equivalent text-promptable
+and API-compatible tasks via prompt chaining to create a standardized
+benchmarking framework.
+  We observe that 1) the models are not close to the state-of-the-art
+specialist models at any task. However, 2) they are respectable generalists;
+this is remarkable as they are presumably trained on primarily image-text-based
+tasks. 3) They perform semantic tasks notably better than geometric ones. 4)
+While the prompt-chaining techniques affect performance, better models exhibit
+less sensitivity to prompt variations. 5) GPT-4o performs the best among
+non-reasoning models, securing the top position in 4 out of 6 tasks, 6)
+reasoning models, e.g. o3, show improvements in geometric tasks, and 7) a
+preliminary analysis of models with native image generation, like the latest
+GPT-4o, shows they exhibit quirks like hallucinations and spatial
+misalignments.","['Rahul Ramachandran', 'Ali Garjani', 'Roman Bachmann', 'Andrei Atanov', 'Oğuzhan Fatih Kar', 'Amir Zamir']",2025-07-02 17:59:07+00:00,2025-07-02 17:59:07+00:00,http://arxiv.org/pdf/2507.01955v1,cs.CV,"['cs.CV', 'cs.AI', 'cs.LG']"
+Test-Time Scaling with Reflective Generative Model,"We introduce our first reflective generative model MetaStone-S1, which
+obtains OpenAI o3's performance via the self-supervised process reward model
+(SPRM). Through sharing the backbone network and using task-specific heads for
+next token prediction and process scoring respectively, SPRM successfully
+integrates the policy model and process reward model(PRM) into a unified
+interface without extra process annotation, reducing over 99% PRM parameters
+for efficient reasoning. Equipped with SPRM, MetaStone-S1 is naturally suitable
+for test time scaling (TTS), and we provide three reasoning effort modes (low,
+medium, and high), based on the controllable thinking length. Moreover, we
+empirically establish a scaling law that reveals the relationship between total
+thinking computation and TTS performance. Experiments demonstrate that our
+MetaStone-S1 achieves comparable performance to OpenAI-o3-mini's series with
+only 32B parameter size. To support the research community, we have
+open-sourced MetaStone-S1 at https://github.com/MetaStone-AI/MetaStone-S1.","['Zixiao Wang', 'Yuxin Wang', 'Xiaorui Wang', 'Mengting Xing', 'Jie Gao', 'Jianjun Xu', 'Guangcan Liu', 'Chenhui Jin', 'Zhuo Wang', 'Shengzhuo Zhang', 'Hongtao Xie']",2025-07-02 17:58:01+00:00,2025-07-02 17:58:01+00:00,http://arxiv.org/pdf/2507.01951v1,cs.LG,"['cs.LG', 'cs.CL']"
+Characterizing control between interacting subsystems with deep Jacobian estimation,"Biological function arises through the dynamical interactions of multiple
+subsystems, including those between brain areas, within gene regulatory
+networks, and more. A common approach to understanding these systems is to
+model the dynamics of each subsystem and characterize communication between
+them. An alternative approach is through the lens of control theory: how the
+subsystems control one another. This approach involves inferring the
+directionality, strength, and contextual modulation of control between
+subsystems. However, methods for understanding subsystem control are typically
+linear and cannot adequately describe the rich contextual effects enabled by
+nonlinear complex systems. To bridge this gap, we devise a data-driven
+nonlinear control-theoretic framework to characterize subsystem interactions
+via the Jacobian of the dynamics. We address the challenge of learning
+Jacobians from time-series data by proposing the JacobianODE, a deep learning
+method that leverages properties of the Jacobian to directly estimate it for
+arbitrary dynamical systems from data alone. We show that JacobianODEs
+outperform existing Jacobian estimation methods on challenging systems,
+including high-dimensional chaos. Applying our approach to a multi-area
+recurrent neural network (RNN) trained on a working memory selection task, we
+show that the ""sensory"" area gains greater control over the ""cognitive"" area
+over learning. Furthermore, we leverage the JacobianODE to directly control the
+trained RNN, enabling precise manipulation of its behavior. Our work lays the
+foundation for a theoretically grounded and data-driven understanding of
+interactions among biological subsystems.","['Adam J. Eisen', 'Mitchell Ostrow', 'Sarthak Chandra', 'Leo Kozachkov', 'Earl K. Miller', 'Ila R. Fiete']",2025-07-02 17:55:53+00:00,2025-07-02 17:55:53+00:00,http://arxiv.org/pdf/2507.01946v1,q-bio.QM,"['q-bio.QM', 'cs.LG', 'math.DS', 'q-bio.NC']"
+ML-Driven Strong Lens Discoveries: Down to $θ_E \sim 0.03''$ and $M_\mathrm{halo}< 10^{11} M_\odot$,"We present results on extending the strong lens discovery space down to much
+smaller Einstein radii ($\theta_E\lesssim0.03''$) and much lower halo mass
+($M_\mathrm{halo}<10^{11}M_\odot$) through the combination of JWST observations
+and machine learning (ML) techniques. First, we forecast detectable strong
+lenses with JWST using CosmoDC2 as the lens catalog, and a source catalog down
+to 29th magnitude. By further incorporating the VELA hydrodynamical simulations
+of high-redshift galaxies, we simulate strong lenses. We train a ResNet on
+these images, achieving near-100\% completeness and purity for ``conventional""
+strong lenses ($\theta_E\gtrsim 0.5''$), applicable to JWST, HST, the Roman
+Space Telescope and Euclid VIS. For the first time, we also search for very low
+halo mass strong lenses ($M_{halo}<10^{11}M_\odot$) in simulations, with
+$\theta_E\ll 0.5''$, down to the best resolution ($0.03''$) and depth
+(10,000~sec) limits of JWST using ResNet. A U-Net model is employed to pinpoint
+these small lenses in images, which are otherwise virtually impossible for
+human detection. Our results indicate that JWST can find $\sim 17$/deg$^2$ such
+low-halo-mass lenses, with the locations of $\sim 1.1$/deg$^2$ of these
+detectable by the U-Net at $\sim100$\% precision (and $\sim 7.0$/deg$^2$ at a
+99.0\% precision). To validate our model for finding ``conventional"" strong
+lenses, we apply it to HST images, discovering two new strong lens candidates
+previously missed by human classifiers in a crowdsourcing project (Garvin et
+al. 2022). This study demonstrates the (potentially ``superhuman"") advantages
+of ML combined with current and future space telescopes for detecting
+conventional, and especially, low-halo-mass strong lenses, which are critical
+for testing CDM models.","['Ethan Silver', 'R. Wang', 'Xiaosheng Huang', 'A. Bolton', 'C. Storfer', 'S. Banka']",2025-07-02 17:53:18+00:00,2025-07-02 17:53:18+00:00,http://arxiv.org/pdf/2507.01943v1,astro-ph.CO,"['astro-ph.CO', 'astro-ph.GA']"
+SpecCLIP: Aligning and Translating Spectroscopic Measurements for Stars,"In recent years, large language models (LLMs) have transformed natural
+language understanding through vast datasets and large-scale parameterization.
+Inspired by this success, we present SpecCLIP, a foundation model framework
+that extends LLM-inspired methodologies to stellar spectral analysis. Stellar
+spectra, akin to structured language, encode rich physical and chemical
+information about stars. By training foundation models on large-scale spectral
+datasets, our goal is to learn robust and informative embeddings that support
+diverse downstream applications. As a proof of concept, SpecCLIP involves
+pre-training on two spectral types--LAMOST low-resolution and Gaia XP--followed
+by contrastive alignment using the CLIP (Contrastive Language-Image
+Pre-training) framework, adapted to associate spectra from different
+instruments. This alignment is complemented by auxiliary decoders that preserve
+spectrum-specific information and enable translation (prediction) between
+spectral types, with the former achieved by maximizing mutual information
+between embeddings and input spectra. The result is a cross-spectrum framework
+enabling intrinsic calibration and flexible applications across instruments. We
+demonstrate that fine-tuning these models on moderate-sized labeled datasets
+improves adaptability to tasks such as stellar-parameter estimation and
+chemical-abundance determination. SpecCLIP also enhances the accuracy and
+precision of parameter estimates benchmarked against external survey data.
+Additionally, its similarity search and cross-spectrum prediction capabilities
+offer potential for anomaly detection. Our results suggest that contrastively
+trained foundation models enriched with spectrum-aware decoders can advance
+precision stellar spectroscopy.","['Xiaosheng Zhao', 'Yang Huang', 'Guirong Xue', 'Xiao Kong', 'Jifeng Liu', 'Xiaoyu Tang', 'Timothy C. Beers', 'Yuan-Sen Ting', 'A-Li Luo']",2025-07-02 17:49:52+00:00,2025-07-02 17:49:52+00:00,http://arxiv.org/pdf/2507.01939v1,astro-ph.IM,"['astro-ph.IM', 'astro-ph.SR', 'cs.AI', 'cs.LG']"
+The Thin Line Between Comprehension and Persuasion in LLMs,"Large language models (LLMs) are excellent at maintaining high-level,
+convincing dialogues. They are being fast deployed as chatbots and evaluators
+in sensitive areas, such as peer review and mental health applications. This,
+along with the disparate accounts on their reasoning capabilities, calls for a
+closer examination of LLMs and their comprehension of dialogue. In this work we
+begin by evaluating LLMs' ability to maintain a debate--one of the purest yet
+most complex forms of human communication. Then we measure how this capability
+relates to their understanding of what is being talked about, namely, their
+comprehension of dialogical structures and the pragmatic context. We find that
+LLMs are capable of maintaining coherent, persuasive debates, often swaying the
+beliefs of participants and audiences alike. We also note that awareness or
+suspicion of AI involvement encourage people to be more critical of the
+arguments made. When polling LLMs on their comprehension of deeper structures
+of dialogue, however, they cannot demonstrate said understanding. Our findings
+tie the shortcomings of LLMs-as-evaluators to their (in)ability to understand
+the context. More broadly, for the field of argumentation theory we posit that,
+if an agent can convincingly maintain a dialogue, it is not necessary for it to
+know what it is talking about. Hence, the modelling of pragmatic context and
+coherence are secondary to effectiveness.","['Adrian de Wynter', 'Tangming Yuan']",2025-07-02 17:46:56+00:00,2025-07-02 17:46:56+00:00,http://arxiv.org/pdf/2507.01936v1,cs.CL,"['cs.CL', 'cs.CY']"
+A first-order method for nonconvex-nonconcave minimax problems under a local Kurdyka-Łojasiewicz condition,"We study a class of nonconvex-nonconcave minimax problems in which the inner
+maximization problem satisfies a local Kurdyka-{\L}ojasiewicz (KL) condition
+that may vary with the outer minimization variable. In contrast to the global
+KL or Polyak-{\L}ojasiewicz (PL) conditions commonly assumed in the literature
+-- which are significantly stronger and often too restrictive in practice --
+this local KL condition accommodates a broader range of practical scenarios.
+However, it also introduces new analytical challenges. In particular, as an
+optimization algorithm progresses toward a stationary point of the problem, the
+region over which the KL condition holds may shrink, resulting in a more
+intricate and potentially ill-conditioned landscape. To address this challenge,
+we show that the associated maximal function is locally H\""older smooth.
+Leveraging this key property, we develop an inexact proximal gradient method
+for solving the minimax problem, where the inexact gradient of the maximal
+function is computed by applying a proximal gradient method to a KL-structured
+subproblem. Under mild assumptions, we establish complexity guarantees for
+computing an approximate stationary point of the minimax problem.","['Zhaosong Lu', 'Xiangyuan Wang']",2025-07-02 17:45:10+00:00,2025-07-02 17:45:10+00:00,http://arxiv.org/pdf/2507.01932v1,math.OC,"['math.OC', 'cs.LG', 'cs.NA', 'math.NA', 'stat.ML', '90C26, 90C30, 90C47, 90C99, 65K05']"
+Exploring a Hybrid Deep Learning Approach for Anomaly Detection in Mental Healthcare Provider Billing: Addressing Label Scarcity through Semi-Supervised Anomaly Detection,"The complexity of mental healthcare billing enables anomalies, including
+fraud. While machine learning methods have been applied to anomaly detection,
+they often struggle with class imbalance, label scarcity, and complex
+sequential patterns. This study explores a hybrid deep learning approach
+combining Long Short-Term Memory (LSTM) networks and Transformers, with
+pseudo-labeling via Isolation Forests (iForest) and Autoencoders (AE). Prior
+work has not evaluated such hybrid models trained on pseudo-labeled data in the
+context of healthcare billing. The approach is evaluated on two real-world
+billing datasets related to mental healthcare. The iForest LSTM baseline
+achieves the highest recall (0.963) on declaration-level data. On the
+operation-level data, the hybrid iForest-based model achieves the highest
+recall (0.744), though at the cost of lower precision. These findings highlight
+the potential of combining pseudo-labeling with hybrid deep learning in
+complex, imbalanced anomaly detection settings.","['Samirah Bakker', 'Yao Ma', 'Seyed Sahand Mohammadi Ziabari']",2025-07-02 17:33:47+00:00,2025-07-02 17:33:47+00:00,http://arxiv.org/pdf/2507.01924v1,cs.LG,"['cs.LG', 'cs.AI']"
+End-to-End Large Portfolio Optimization for Variance Minimization with Neural Networks through Covariance Cleaning,"We develop a rotation-invariant neural network that provides the global
+minimum-variance portfolio by jointly learning how to lag-transform historical
+returns and how to regularise both the eigenvalues and the marginal
+volatilities of large equity covariance matrices. This explicit mathematical
+mapping offers clear interpretability of each module's role, so the model
+cannot be regarded as a pure black-box. The architecture mirrors the analytical
+form of the global minimum-variance solution yet remains agnostic to dimension,
+so a single model can be calibrated on panels of a few hundred stocks and
+applied, without retraining, to one thousand US equities-a cross-sectional jump
+that demonstrates robust out-of-sample generalisation. The loss function is the
+future realized minimum portfolio variance and is optimized end-to-end on real
+daily returns. In out-of-sample tests from January 2000 to December 2024 the
+estimator delivers systematically lower realised volatility, smaller maximum
+drawdowns, and higher Sharpe ratios than the best analytical competitors,
+including state-of-the-art non-linear shrinkage. Furthermore, although the
+model is trained end-to-end to produce an unconstrained (long-short)
+minimum-variance portfolio, we show that its learned covariance representation
+can be used in general optimizers under long-only constraints with virtually no
+loss in its performance advantage over competing estimators. These gains
+persist when the strategy is executed under a highly realistic implementation
+framework that models market orders at the auctions, empirical slippage,
+exchange fees, and financing charges for leverage, and they remain stable
+during episodes of acute market stress.","['Christian Bongiorno', 'Efstratios Manolakis', 'Rosario Nunzio Mantegna']",2025-07-02 17:27:29+00:00,2025-07-02 17:27:29+00:00,http://arxiv.org/pdf/2507.01918v1,q-fin.PM,"['q-fin.PM', 'cs.AI', 'math.OC', 'physics.data-an', 'stat.ML', '91G10 (Primary) 68T07, 91G60, 62P05 (Secondary)', 'I.2.6; I.5.1; G.3; J.4']"
+Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models,"Reinforcement Learning from Human Feedback (RLHF) has emerged as a powerful
+technique for aligning large language models (LLMs) with human preferences.
+However, effectively aligning LLMs with diverse human preferences remains a
+significant challenge, particularly when they are conflict. To address this
+issue, we frame human value alignment as a multi-objective optimization
+problem, aiming to maximize a set of potentially conflicting objectives. We
+introduce Gradient-Adaptive Policy Optimization (GAPO), a novel fine-tuning
+paradigm that employs multiple-gradient descent to align LLMs with diverse
+preference distributions. GAPO adaptively rescales the gradients for each
+objective to determine an update direction that optimally balances the
+trade-offs between objectives. Additionally, we introduce P-GAPO, which
+incorporates user preferences across different objectives and achieves Pareto
+solutions that better align with the user's specific needs. Our theoretical
+analysis demonstrates that GAPO converges towards a Pareto optimal solution for
+multiple objectives. Empirical results on Mistral-7B show that GAPO outperforms
+current state-of-the-art methods, achieving superior performance in both
+helpfulness and harmlessness.","['Chengao Li', 'Hanyu Zhang', 'Yunkun Xu', 'Hongyan Xue', 'Xiang Ao', 'Qing He']",2025-07-02 17:25:26+00:00,2025-07-02 17:25:26+00:00,http://arxiv.org/pdf/2507.01915v1,cs.CL,"['cs.CL', 'cs.AI', 'cs.LG']"
+Advancing Magnetic Materials Discovery -- A structure-based machine learning approach for magnetic ordering and magnetic moment prediction,"Accurately predicting magnetic behavior across diverse materials systems
+remains a longstanding challenge due to the complex interplay of structural and
+electronic factors and is pivotal for the accelerated discovery and design of
+next-generation magnetic materials. In this work, a refined descriptor is
+proposed that significantly improves the prediction of two critical magnetic
+properties -- magnetic ordering (Ferromagnetic vs. Ferrimagnetic) and magnetic
+moment per atom -- using only the structural information of materials. Unlike
+previous models limited to Mn-based or lanthanide-transition metal compounds,
+the present approach generalizes across a diverse dataset of 5741 stable,
+binary and ternary, ferromagnetic and ferrimagnetic compounds sourced from the
+Materials Project. Leveraging an enriched elemental vector representation and
+advanced feature engineering, including nonlinear terms and reduced matrix
+sparsity, the LightGBM-based model achieves an accuracy of 82.4% for magnetic
+ordering classification and balanced recall across FM and FiM classes,
+addressing a key limitation in prior studies. The model predicts magnetic
+moment per atom with a correlation coefficient of 0.93, surpassing the Hund's
+matrix and orbital field matrix descriptors. Additionally, it accurately
+estimates formation energy per atom, enabling assessment of both magnetic
+behavior and material stability. This generalized and computationally efficient
+framework offers a robust tool for high-throughput screening of magnetic
+materials with tailored properties.","['Apoorv Verma', 'Junaid Jami', 'Amrita Bhattacharya']",2025-07-02 17:24:50+00:00,2025-07-02 17:24:50+00:00,http://arxiv.org/pdf/2507.01913v1,cond-mat.mtrl-sci,"['cond-mat.mtrl-sci', 'cs.LG']"
+3D Reconstruction and Information Fusion between Dormant and Canopy Seasons in Commercial Orchards Using Deep Learning and Fast GICP,"In orchard automation, dense foliage during the canopy season severely
+occludes tree structures, minimizing visibility to various canopy parts such as
+trunks and branches, which limits the ability of a machine vision system.
+However, canopy structure is more open and visible during the dormant season
+when trees are defoliated. In this work, we present an information fusion
+framework that integrates multi-seasonal structural data to support robotic and
+automated crop load management during the entire growing season. The framework
+combines high-resolution RGB-D imagery from both dormant and canopy periods
+using YOLOv9-Seg for instance segmentation, Kinect Fusion for 3D
+reconstruction, and Fast Generalized Iterative Closest Point (Fast GICP) for
+model alignment. Segmentation outputs from YOLOv9-Seg were used to extract
+depth-informed masks, which enabled accurate 3D point cloud reconstruction via
+Kinect Fusion; these reconstructed models from each season were subsequently
+aligned using Fast GICP to achieve spatially coherent multi-season fusion. The
+YOLOv9-Seg model, trained on manually annotated images, achieved a mean squared
+error (MSE) of 0.0047 and segmentation mAP@50 scores up to 0.78 for trunks in
+dormant season dataset. Kinect Fusion enabled accurate reconstruction of tree
+geometry, validated with field measurements resulting in root mean square
+errors (RMSE) of 5.23 mm for trunk diameter, 4.50 mm for branch diameter, and
+13.72 mm for branch spacing. Fast GICP achieved precise cross-seasonal
+registration with a minimum fitness score of 0.00197, allowing integrated,
+comprehensive tree structure modeling despite heavy occlusions during the
+growing season. This fused structural representation enables robotic systems to
+access otherwise obscured architectural information, improving the precision of
+pruning, thinning, and other automated orchard operations.","['Ranjan Sapkota', 'Zhichao Meng', 'Martin Churuvija', 'Xiaoqiang Du', 'Zenghong Ma', 'Manoj Karkee']",2025-07-02 17:24:18+00:00,2025-07-02 17:24:18+00:00,http://arxiv.org/pdf/2507.01912v1,cs.CV,['cs.CV']
+AI4Research: A Survey of Artificial Intelligence for Scientific Research,"Recent advancements in artificial intelligence (AI), particularly in large
+language models (LLMs) such as OpenAI-o1 and DeepSeek-R1, have demonstrated
+remarkable capabilities in complex domains such as logical reasoning and
+experimental coding. Motivated by these advancements, numerous studies have
+explored the application of AI in the innovation process, particularly in the
+context of scientific research. These AI technologies primarily aim to develop
+systems that can autonomously conduct research processes across a wide range of
+scientific disciplines. Despite these significant strides, a comprehensive
+survey on AI for Research (AI4Research) remains absent, which hampers our
+understanding and impedes further development in this field. To address this
+gap, we present a comprehensive survey and offer a unified perspective on
+AI4Research. Specifically, the main contributions of our work are as follows:
+(1) Systematic taxonomy: We first introduce a systematic taxonomy to classify
+five mainstream tasks in AI4Research. (2) New frontiers: Then, we identify key
+research gaps and highlight promising future directions, focusing on the rigor
+and scalability of automated experiments, as well as the societal impact. (3)
+Abundant applications and resources: Finally, we compile a wealth of resources,
+including relevant multidisciplinary applications, data corpora, and tools. We
+hope our work will provide the research community with quick access to these
+resources and stimulate innovative breakthroughs in AI4Research.","['Qiguang Chen', 'Mingda Yang', 'Libo Qin', 'Jinhao Liu', 'Zheng Yan', 'Jiannan Guan', 'Dengyun Peng', 'Yiyan Ji', 'Hanjing Li', 'Mengkang Hu', 'Yimeng Zhang', 'Yihao Liang', 'Yuhang Zhou', 'Jiaqi Wang', 'Zhi Chen', 'Wanxiang Che']",2025-07-02 17:19:20+00:00,2025-07-02 17:19:20+00:00,http://arxiv.org/pdf/2507.01903v1,cs.CL,"['cs.CL', 'cs.AI']"
+High-Layer Attention Pruning with Rescaling,"Pruning is a highly effective approach for compressing large language models
+(LLMs), significantly reducing inference latency. However, conventional
+training-free structured pruning methods often employ a heuristic metric that
+indiscriminately removes some attention heads across all pruning layers,
+without considering their positions within the network architecture. In this
+work, we propose a novel pruning algorithm that strategically prunes attention
+heads in the model's higher layers. Since the removal of attention heads can
+alter the magnitude of token representations, we introduce an adaptive
+rescaling parameter that calibrates the representation scale post-pruning to
+counteract this effect. We conduct comprehensive experiments on a wide range of
+LLMs, including LLaMA3.1-8B, Mistral-7B-v0.3, Qwen2-7B, and Gemma2-9B. Our
+evaluation includes both generation and discriminative tasks across 27
+datasets. The results consistently demonstrate that our method outperforms
+existing structured pruning methods. This improvement is particularly notable
+in generation tasks, where our approach significantly outperforms existing
+baselines.","['Songtao Liu', 'Peng Liu']",2025-07-02 17:15:05+00:00,2025-07-02 17:15:05+00:00,http://arxiv.org/pdf/2507.01900v1,cs.CL,"['cs.CL', 'cs.LG']"
+STEM Diffraction Pattern Analysis with Deep Learning Networks,"Accurate grain orientation mapping is essential for understanding and
+optimizing the performance of polycrystalline materials, particularly in
+energy-related applications. Lithium nickel oxide (LiNiO$_{2}$) is a promising
+cathode material for next-generation lithium-ion batteries, and its
+electrochemical behaviour is closely linked to microstructural features such as
+grain size and crystallographic orientations. Traditional orientation mapping
+methods--such as manual indexing, template matching (TM), or Hough
+transform-based techniques--are often slow and noise-sensitive when handling
+complex or overlapping patterns, creating a bottleneck in large-scale
+microstructural analysis. This work presents a machine learning-based approach
+for predicting Euler angles directly from scanning transmission electron
+microscopy (STEM) diffraction patterns (DPs). This enables the automated
+generation of high-resolution crystal orientation maps, facilitating the
+analysis of internal microstructures at the nanoscale. Three deep learning
+architectures--convolutional neural networks (CNNs), Dense Convolutional
+Networks (DenseNets), and Shifted Windows (Swin) Transformers--are evaluated,
+using an experimentally acquired dataset labelled via a commercial TM
+algorithm. While the CNN model serves as a baseline, both DenseNets and Swin
+Transformers demonstrate superior performance, with the Swin Transformer
+achieving the highest evaluation scores and the most consistent microstructural
+predictions. The resulting crystal maps exhibit clear grain boundary
+delineation and coherent intra-grain orientation distributions, underscoring
+the potential of attention-based architectures for analyzing diffraction-based
+image data. These findings highlight the promise of combining advanced machine
+learning models with STEM data for robust, high-throughput microstructural
+characterization.","['Sebastian Wissel', 'Jonas Scheunert', 'Aaron Dextre', 'Shamail Ahmed', 'Andreas Bayer', 'Kerstin Volz', 'Bai-Xiang Xu']",2025-07-02 16:58:09+00:00,2025-07-02 16:58:09+00:00,http://arxiv.org/pdf/2507.01889v1,cond-mat.dis-nn,"['cond-mat.dis-nn', 'cond-mat.mtrl-sci', 'cs.LG']"
+Improving GANs by leveraging the quantum noise from real hardware,"We propose a novel approach to generative adversarial networks (GANs) in
+which the standard i.i.d. Gaussian latent prior is replaced or hybridized with
+a quantum-correlated prior derived from measurements of a 16-qubit entangling
+circuit. Each latent sample is generated by grouping repeated shots per qubit
+into a binary fraction, applying the inverse Gaussian CDF to obtain a
+16-dimensional Gaussian vector whose joint copula reflects genuine quantum
+entanglement, and then projecting into the high-dimensional space via a fixed
+random matrix. By pre-sampling tens of millions of bitstrings, either from a
+noiseless simulator or from IBM hardware, we build large pools of independent
+but internally quantum-correlated latents. We integrate this prior into three
+representative architectures (WGAN, SNGAN, BigGAN) on CIFAR-10, making no
+changes to the neural network structure or training hyperparameters. The hybrid
+latent representations incorporating hardware-derived noise consistently lower
+the FID relative to both the classical baseline and the simulator variant,
+especially when the quantum component constitutes a substantial fraction of the
+prior. In addition, we execute on the QPU in parallel to not only save
+computing time but also further decrease the FID up to 17% in BigGAN. These
+results indicate that intrinsic quantum randomness and device-specific
+imperfections can provide a structured inductive bias that enhances GAN
+performance. Our work demonstrates a practical pipeline for leveraging noisy
+quantum hardware to enrich deep-generative modeling, opening a new interface
+between quantum information and machine learning. All code and data are
+available at https://github.com/Neon8988/GAN_QN.git.","['Hongni Jin', 'Kenneth M. Merz Jr']",2025-07-02 16:56:09+00:00,2025-07-02 16:56:09+00:00,http://arxiv.org/pdf/2507.01886v1,quant-ph,['quant-ph']
+A computationally frugal open-source foundation model for thoracic disease detection in lung cancer screening programs,"Low-dose computed tomography (LDCT) imaging employed in lung cancer screening
+(LCS) programs is increasing in uptake worldwide. LCS programs herald a
+generational opportunity to simultaneously detect cancer and non-cancer-related
+early-stage lung disease. Yet these efforts are hampered by a shortage of
+radiologists to interpret scans at scale. Here, we present TANGERINE, a
+computationally frugal, open-source vision foundation model for volumetric LDCT
+analysis. Designed for broad accessibility and rapid adaptation, TANGERINE can
+be fine-tuned off the shelf for a wide range of disease-specific tasks with
+limited computational resources and training data. Relative to models trained
+from scratch, TANGERINE demonstrates fast convergence during fine-tuning,
+thereby requiring significantly fewer GPU hours, and displays strong label
+efficiency, achieving comparable or superior performance with a fraction of
+fine-tuning data. Pretrained using self-supervised learning on over 98,000
+thoracic LDCTs, including the UK's largest LCS initiative to date and 27 public
+datasets, TANGERINE achieves state-of-the-art performance across 14 disease
+classification tasks, including lung cancer and multiple respiratory diseases,
+while generalising robustly across diverse clinical centres. By extending a
+masked autoencoder framework to 3D imaging, TANGERINE offers a scalable
+solution for LDCT analysis, departing from recent closed, resource-intensive
+models by combining architectural simplicity, public availability, and modest
+computational requirements. Its accessible, open-source lightweight design lays
+the foundation for rapid integration into next-generation medical imaging tools
+that could transform LCS initiatives, allowing them to pivot from a singular
+focus on lung cancer detection to comprehensive respiratory disease management
+in high-risk populations.","['Niccolò McConnell', 'Pardeep Vasudev', 'Daisuke Yamada', 'Daryl Cheng', 'Mehran Azimbagirad', 'John McCabe', 'Shahab Aslani', 'Ahmed H. Shahin', 'Yukun Zhou', 'The SUMMIT Consortium', 'Andre Altmann', 'Yipeng Hu', 'Paul Taylor', 'Sam M. Janes', 'Daniel C. Alexander', 'Joseph Jacob']",2025-07-02 16:52:10+00:00,2025-07-02 16:52:10+00:00,http://arxiv.org/pdf/2507.01881v1,eess.IV,"['eess.IV', 'cs.CV', 'cs.LG']"
+Evolving HPC services to enable ML workloads on HPE Cray EX,"The Alps Research Infrastructure leverages GH200 technology at scale,
+featuring 10,752 GPUs. Accessing Alps provides a significant computational
+advantage for researchers in Artificial Intelligence (AI) and Machine Learning
+(ML). While Alps serves a broad range of scientific communities, traditional
+HPC services alone are not sufficient to meet the dynamic needs of the ML
+community. This paper presents an initial investigation into extending HPC
+service capabilities to better support ML workloads. We identify key challenges
+and gaps we have observed since the early-access phase (2023) of Alps by the
+Swiss AI community and propose several technological enhancements. These
+include a user environment designed to facilitate the adoption of HPC for ML
+workloads, balancing performance with flexibility; a utility for rapid
+performance screening of ML applications during development; observability
+capabilities and data products for inspecting ongoing large-scale ML workloads;
+a utility to simplify the vetting of allocated nodes for compute readiness; a
+service plane infrastructure to deploy various types of workloads, including
+support and inference services; and a storage infrastructure tailored to the
+specific needs of ML workloads. These enhancements aim to facilitate the
+execution of ML workloads on HPC systems, increase system usability and
+resilience, and better align with the needs of the ML community. We also
+discuss our current approach to security aspects. This paper concludes by
+placing these proposals in the broader context of changes in the communities
+served by HPC infrastructure like ours.","['Stefano Schuppli', 'Fawzi Mohamed', 'Henrique Mendonça', 'Nina Mujkanovic', 'Elia Palme', 'Dino Conciatore', 'Lukas Drescher', 'Miguel Gila', 'Pim Witlox', 'Joost VandeVondele', 'Maxime Martinasso', 'Thomas C. Schulthess', 'Torsten Hoefler']",2025-07-02 16:50:49+00:00,2025-07-02 16:50:49+00:00,http://arxiv.org/pdf/2507.01880v1,cs.DC,"['cs.DC', 'cs.LG']"
+Joint Power Control and Precoding for Cell-Free Massive MIMO Systems With Sparse Multi-Dimensional Graph Neural Networks,"Cell-free massive multiple-input multiple-output (CF mMIMO) has emerged as a
+prominent candidate for future networks due to its ability to significantly
+enhance spectral efficiency by eliminating inter-cell interference. However,
+its practical deployment faces considerable challenges, such as high
+computational complexity and the optimization of its complex processing. To
+address these challenges, this correspondence proposes a framework based on a
+sparse multi-dimensional graph neural network (SP-MDGNN), which sparsifies the
+connections between access points (APs) and user equipments (UEs) to
+significantly reduce computational complexity while maintaining high
+performance. In addition, the weighted minimum mean square error (WMMSE)
+algorithm is introduced as a comparative method to further analyze the
+trade-off between performance and complexity. Simulation results demonstrate
+that the sparse method achieves an optimal balance between performance and
+complexity, significantly reducing the computational complexity of the original
+MDGNN method while incurring only a slight performance degradation, providing
+insights for the practical deployment of CF mMIMO systems in large-scale
+network.","['Yukun Ma', 'Jiayi Zhang', 'Ziheng Liu', 'Guowei Shi', 'Bo Ai']",2025-07-02 16:41:35+00:00,2025-07-02 16:41:35+00:00,http://arxiv.org/pdf/2507.01876v1,cs.IT,"['cs.IT', 'eess.SP', 'math.IT']"
+Towards Foundation Auto-Encoders for Time-Series Anomaly Detection,"We investigate a novel approach to time-series modeling, inspired by the
+successes of large pretrained foundation models. We introduce FAE (Foundation
+Auto-Encoders), a foundation generative-AI model for anomaly detection in
+time-series data, based on Variational Auto-Encoders (VAEs). By foundation, we
+mean a model pretrained on massive amounts of time-series data which can learn
+complex temporal patterns useful for accurate modeling, forecasting, and
+detection of anomalies on previously unseen datasets. FAE leverages VAEs and
+Dilated Convolutional Neural Networks (DCNNs) to build a generic model for
+univariate time-series modeling, which could eventually perform properly in
+out-of-the-box, zero-shot anomaly detection applications. We introduce the main
+concepts of FAE, and present preliminary results in different multi-dimensional
+time-series datasets from various domains, including a real dataset from an
+operational mobile ISP, and the well known KDD 2021 Anomaly Detection dataset.","['Gastón García González', 'Pedro Casas', 'Emilio Martínez', 'Alicia Fernández']",2025-07-02 16:39:36+00:00,2025-07-02 16:39:36+00:00,http://arxiv.org/pdf/2507.01875v1,cs.LG,"['cs.LG', 'cs.AI']"
+Breaking the $n^{1.5}$ Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition,"We study differentially private algorithms for graph cut sparsification, a
+fundamental problem in algorithms, privacy, and machine learning. While
+significant progress has been made, the best-known private and efficient cut
+sparsifiers on $n$-node graphs approximate each cut within
+$\widetilde{O}(n^{1.5})$ additive error and $1+\gamma$ multiplicative error for
+any $\gamma > 0$ [Gupta, Roth, Ullman TCC'12]. In contrast, ""inefficient""
+algorithms, i.e., those requiring exponential time, can achieve an
+$\widetilde{O}(n)$ additive error and $1+\gamma$ multiplicative error
+[Eli{\'a}{\v{s}}, Kapralov, Kulkarni, Lee SODA'20]. In this work, we break the
+$n^{1.5}$ additive error barrier for private and efficient cut sparsification.
+We present an $(\varepsilon,\delta)$-DP polynomial time algorithm that, given a
+non-negative weighted graph, outputs a private synthetic graph approximating
+all cuts with multiplicative error $1+\gamma$ and additive error $n^{1.25 +
+o(1)}$ (ignoring dependencies on $\varepsilon, \delta, \gamma$).
+  At the heart of our approach lies a private algorithm for expander
+decomposition, a popular and powerful technique in (non-private) graph
+algorithms.","['Anders Aamand', 'Justin Y. Chen', 'Mina Dalirrooyfard', 'Slobodan Mitrović', 'Yuriy Nevmyvaka', 'Sandeep Silwal', 'Yinzhan Xu']",2025-07-02 16:38:51+00:00,2025-07-02 16:38:51+00:00,http://arxiv.org/pdf/2507.01873v1,cs.DS,['cs.DS']
+Direct Vertex Reconstruction of $Λ$ Baryons from Hits in CLAS12 using Graph Neural Networks,"Machine learning techniques, including Graph Neural Networks (GNNs), have
+been used extensively for data analysis in high energy and nuclear physics.
+Here we report on the use of a GNN to reconstruct decay vertices of $\Lambda$
+hyperons directly from hits in the tracking detector at the CLAS12 experiment
+at Jefferson Laboratory (JLab). We show that we can improve the vertex
+reconstruction in simulation compared to the standard, track based, algorithm.
+We believe this warrants further study. The current study is limited by
+available training resources but points to an interesting possibility to forgo
+vertex reconstruction by track fitting in a complicated magnetic field for a
+more direct approach where the hit to vertex mapping is encoded in a neural
+network.","['Keegan Menkce', 'Matthew McEneaney', 'Anselm Vossen']",2025-07-02 16:35:11+00:00,2025-07-02 16:35:11+00:00,http://arxiv.org/pdf/2507.01868v1,hep-ex,['hep-ex']
+An in-silico lung phantom to assess the performance of pulmonary artery segmentation using angiogram,"Pulmonary hypertension (PH) can lead to significant vascular remodeling,
+resulting in altered pulmonary blood flow. Estimating the patient-specific
+contributions of each remodeling event is necessary to optimize and
+individualize clinical intervention strategies. In-silico modeling has emerged
+as a powerful tool to simulate pulmonary hemodynamics, and one of the primary
+requirements for robust in-silico modeling is an accurate representation of the
+pulmonary vasculature structure. Computed tomography (CT) imaging can be used
+to segment and reconstruct the proximal vasculature. However, contrast-enhanced
+imaging, such as CT pulmonary angiography, is required to obtain a
+comprehensive and high-fidelity view of the pulmonary vasculature. The clinical
+use of CT pulmonary angiography is limited by the complications associated with
+the injection of contrast agents. Machine learning (ML) approaches have emerged
+to effectively segment and reconstruct the pulmonary vasculature without the
+need for contrast-enhanced imaging. We have developed a method to create
+in-silico pulmonary angiogram phantoms with varying simulated contrast levels.
+The results indicated that adding simulated contrast can allow for successful
+segmentation of the pulmonary vasculature. We expect this method to assist with
+developing and training ML-based segmentation frameworks and aid in their
+validation, thereby improving the capability to segment and reconstruct
+pulmonary vasculature without using contrast-enhanced imaging.","['Sunder Neelakantan', 'Tanmay Mukherjee', 'Emilio A. Mendiola', 'Kyle Myers', 'Reza Avazmohammadi']",2025-07-02 16:34:38+00:00,2025-07-02 16:34:38+00:00,http://arxiv.org/pdf/2507.01867v1,physics.bio-ph,['physics.bio-ph']
+Low-Perplexity LLM-Generated Sequences and Where To Find Them,"As Large Language Models (LLMs) become increasingly widespread, understanding
+how specific training data shapes their outputs is crucial for transparency,
+accountability, privacy, and fairness. To explore how LLMs leverage and
+replicate their training data, we introduce a systematic approach centered on
+analyzing low-perplexity sequences - high-probability text spans generated by
+the model. Our pipeline reliably extracts such long sequences across diverse
+topics while avoiding degeneration, then traces them back to their sources in
+the training data. Surprisingly, we find that a substantial portion of these
+low-perplexity spans cannot be mapped to the corpus. For those that do match,
+we quantify the distribution of occurrences across source documents,
+highlighting the scope and nature of verbatim recall and paving a way toward
+better understanding of how LLMs training data impacts their behavior.","['Arthur Wuhrmann', 'Anastasiia Kucherenko', 'Andrei Kucharavy']",2025-07-02 15:58:51+00:00,2025-07-02 15:58:51+00:00,http://arxiv.org/pdf/2507.01844v1,cs.CL,"['cs.CL', 'cs.LG']"
+Automatic Rank Determination for Low-Rank Adaptation via Submodular Function Maximization,"In this paper, we propose SubLoRA, a rank determination method for Low-Rank
+Adaptation (LoRA) based on submodular function maximization. In contrast to
+prior approaches, such as AdaLoRA, that rely on first-order (linearized)
+approximations of the loss function, SubLoRA utilizes second-order information
+to capture the potentially complex loss landscape by incorporating the Hessian
+matrix. We show that the linearization becomes inaccurate and ill-conditioned
+when the LoRA parameters have been well optimized, motivating the need for a
+more reliable and nuanced second-order formulation. To this end, we reformulate
+the rank determination problem as a combinatorial optimization problem with a
+quadratic objective. However, solving this problem exactly is NP-hard in
+general. To overcome the computational challenge, we introduce a submodular
+function maximization framework and devise a greedy algorithm with
+approximation guarantees. We derive a sufficient and necessary condition under
+which the rank-determination objective becomes submodular, and construct a
+closed-form projection of the Hessian matrix that satisfies this condition
+while maintaining computational efficiency. Our method combines solid
+theoretical foundations, second-order accuracy, and practical computational
+efficiency. We further extend SubLoRA to a joint optimization setting,
+alternating between LoRA parameter updates and rank determination under a rank
+budget constraint. Extensive experiments on fine-tuning physics-informed neural
+networks (PINNs) for solving partial differential equations (PDEs) demonstrate
+the effectiveness of our approach. Results show that SubLoRA outperforms
+existing methods in both rank determination and joint training performance.","['Yihang Gao', 'Vincent Y. F. Tan']",2025-07-02 15:56:40+00:00,2025-07-02 15:56:40+00:00,http://arxiv.org/pdf/2507.01841v1,cs.LG,"['cs.LG', 'cs.IT', 'eess.SP', 'math.IT', 'math.OC']"
+Out-of-Distribution Detection Methods Answer the Wrong Questions,"To detect distribution shifts and improve model safety, many
+out-of-distribution (OOD) detection methods rely on the predictive uncertainty
+or features of supervised models trained on in-distribution data. In this
+paper, we critically re-examine this popular family of OOD detection
+procedures, and we argue that these methods are fundamentally answering the
+wrong questions for OOD detection. There is no simple fix to this misalignment,
+since a classifier trained only on in-distribution classes cannot be expected
+to identify OOD points; for instance, a cat-dog classifier may confidently
+misclassify an airplane if it contains features that distinguish cats from
+dogs, despite generally appearing nothing alike. We find that uncertainty-based
+methods incorrectly conflate high uncertainty with being OOD, while
+feature-based methods incorrectly conflate far feature-space distance with
+being OOD. We show how these pathologies manifest as irreducible errors in OOD
+detection and identify common settings where these methods are ineffective.
+Additionally, interventions to improve OOD detection such as feature-logit
+hybrid methods, scaling of model and data size, epistemic uncertainty
+representation, and outlier exposure also fail to address this fundamental
+misalignment in objectives. We additionally consider unsupervised density
+estimation and generative models for OOD detection, which we show have their
+own fundamental limitations.","['Yucen Lily Li', 'Daohan Lu', 'Polina Kirichenko', 'Shikai Qiu', 'Tim G. J. Rudner', 'C. Bayan Bruss', 'Andrew Gordon Wilson']",2025-07-02 15:45:17+00:00,2025-07-02 15:45:17+00:00,http://arxiv.org/pdf/2507.01831v1,cs.LG,"['cs.LG', 'stat.ML']"
+mGRADE: Minimal Recurrent Gating Meets Delay Convolutions for Lightweight Sequence Modeling,"Edge devices for temporal processing demand models that capture both short-
+and long- range dynamics under tight memory constraints. While Transformers
+excel at sequence modeling, their quadratic memory scaling with sequence length
+makes them impractical for such settings. Recurrent Neural Networks (RNNs)
+offer constant memory but train sequentially, and Temporal Convolutional
+Networks (TCNs), though efficient, scale memory with kernel size. To address
+this, we propose mGRADE (mininally Gated Recurrent Architecture with Delay
+Embedding), a hybrid-memory system that integrates a temporal 1D-convolution
+with learnable spacings followed by a minimal gated recurrent unit (minGRU).
+This design allows the convolutional layer to realize a flexible delay
+embedding that captures rapid temporal variations, while the recurrent module
+efficiently maintains global context with minimal memory overhead. We validate
+our approach on two synthetic tasks, demonstrating that mGRADE effectively
+separates and preserves multi-scale temporal features. Furthermore, on
+challenging pixel-by-pixel image classification benchmarks, mGRADE consistently
+outperforms both pure convolutional and pure recurrent counterparts using
+approximately 20% less memory footprint, highlighting its suitability for
+memory-constrained temporal processing at the edge. This highlights mGRADE's
+promise as an efficient solution for memory-constrained multi-scale temporal
+processing at the edge.","['Tristan Torchet', 'Christian Metzner', 'Laura Kriener', 'Melika Payvand']",2025-07-02 15:44:35+00:00,2025-07-02 15:44:35+00:00,http://arxiv.org/pdf/2507.01829v1,cs.LG,"['cs.LG', 'cs.AI']"
+MILP-SAT-GNN: Yet Another Neural SAT Solver,"We proposes a novel method that enables Graph Neural Networks (GNNs) to solve
+SAT problems by leveraging a technique developed for applying GNNs to Mixed
+Integer Linear Programming (MILP). Specifically, k-CNF formulae are mapped into
+MILP problems, which are then encoded as weighted bipartite graphs and
+subsequently fed into a GNN for training and testing. From a theoretical
+perspective: (i) we establish permutation and equivalence invariance results,
+demonstrating that the method produces outputs that are stable under reordering
+of clauses and variables; (ii) we identify a theoretical limitation, showing
+that for a class of formulae called foldable formulae, standard GNNs cannot
+always distinguish satisfiable from unsatisfiable instances; (iii) we prove a
+universal approximation theorem, establishing that with Random Node
+Initialization (RNI), the method can approximate SAT solving to arbitrary
+precision on finite datasets, that is, the GNN becomes approximately sound and
+complete on such datasets. Furthermore, we show that for unfoldable formulae,
+the same approximation guarantee can be achieved without the need for RNI.
+Finally, we conduct an experimental evaluation of our approach, which show
+that, despite the simplicity of the neural architecture, the method achieves
+promising results.","['Franco Alberto Cardillo', 'Hamza Khyari', 'Umberto Straccia']",2025-07-02 15:39:45+00:00,2025-07-02 15:39:45+00:00,http://arxiv.org/pdf/2507.01825v1,cs.LG,"['cs.LG', 'cs.AI']"
+TD-MPC-Opt: Distilling Model-Based Multi-Task Reinforcement Learning Agents,"We present a novel approach to knowledge transfer in model-based
+reinforcement learning, addressing the critical challenge of deploying large
+world models in resource-constrained environments. Our method efficiently
+distills a high-capacity multi-task agent (317M parameters) into a compact
+model (1M parameters) on the MT30 benchmark, significantly improving
+performance across diverse tasks. Our distilled model achieves a
+state-of-the-art normalized score of 28.45, surpassing the original 1M
+parameter model score of 18.93. This improvement demonstrates the ability of
+our distillation technique to capture and consolidate complex multi-task
+knowledge. We further optimize the distilled model through FP16 post-training
+quantization, reducing its size by $\sim$50\%. Our approach addresses practical
+deployment limitations and offers insights into knowledge representation in
+large world models, paving the way for more efficient and accessible multi-task
+reinforcement learning systems in robotics and other resource-constrained
+applications. Code available at https://github.com/dmytro-kuzmenko/td-mpc-opt.","['Dmytro Kuzmenko', 'Nadiya Shvai']",2025-07-02 15:38:49+00:00,2025-07-02 15:38:49+00:00,http://arxiv.org/pdf/2507.01823v1,cs.LG,"['cs.LG', 'cs.RO']"
+The Cosmological analysis of X-ray cluster surveys VII. Bypassing scaling relations with Lagrangian Deep Learning and Simulation-based inference,"Galaxy clusters, the pinnacle of structure formation in our universe, are a
+powerful cosmological probe. Several approaches have been proposed to express
+cluster number counts, but all these methods rely on empirical explicit scaling
+relations that link observed properties to the total cluster mass. These
+scaling relations are over-parametrised, inducing some degeneracy with
+cosmology. Moreover, they do not provide a direct handle on the numerous
+non-gravitational phenomena that affect the physics of the intra-cluster
+medium. We present a proof-of-concept to model cluster number counts, that
+bypasses the explicit use of scaling relations. We rather implement the effect
+of several astrophysical processes to describe the cluster properties. We then
+evaluate the performances of this modelling for the cosmological inference. We
+developed an accelerated machine learning baryonic field-emulator, built upon
+the Lagrangian Deep Learning method and trained on the CAMELS simulations. We
+then created a pipeline that simulates cluster counts in terms of XMM
+observable quantities. We finally compare the performances of our model, with
+that involving scaling relations, for the purpose of cosmological inference
+based on simulations. Our model correctly reproduces the cluster population
+from the calibration simulations at the fiducial parameter values, and allows
+us to constrain feedback mechanisms. The cosmological-inference analyses
+indicate that our simulation-based model is less degenerate than the approach
+using scaling relations. This novel approach to model observed cluster number
+counts from simulations opens interesting perspectives for cluster cosmology.
+It has the potential to overcome the limitations of the standard approach,
+provided that the resolution and the volume of the simulations will allow a
+most realistic implementation of the complex phenomena driving cluster
+evolution.","['Nicolas Cerardi', 'Marguerite Pierre', 'François Lanusse', 'Xavier Corap']",2025-07-02 15:36:12+00:00,2025-07-02 15:36:12+00:00,http://arxiv.org/pdf/2507.01820v1,astro-ph.CO,['astro-ph.CO']
+Where are all the dark galaxies? Predicting galaxy/halo locations from their bright neighbors,"Astronomical objects in our universe that are too faint to be directly
+detectable exist and are important - an obvious example being dark matter. The
+same can also apply to very faint baryonic objects, such as low luminosity
+dwarf galaxies and gravitationally compact objects (e.g., rogue planets, white
+dwarfs, neutron stars, black holes, dark sirens). While they are very difficult
+to observe directly, they have locations that are highly important when
+studying astrophysical phenomena. Here, we use a machine learning algorithm
+known as symbolic regression to model the probability of a dark object's
+existence as a function of their separation distances to their closest two
+``bright"" (directly observable) neighbors, and the distances of these bright
+objects to each other. An advantage of this algorithm is that it is
+interpretable by humans and can be used to make reproducible predictions.
+Galaxies with masses above $10^9 M_{\odot}$ and halos above $10^{12} M_{\odot}
+$ are the objects that we separate into ``bright"" and ``dark"" to be used in our
+analysis. We find that it is possible to predict the density of dark objects
+using an analytic expression that depends on their distances to their closest
+bright neighbors in Illustris-TNG galaxy formation simulations, which is
+significantly better than the (linear) scale-dependent biasing prediction for
+$k \sim 1.0~ h$Mpc$^{-1}$ (and potentially beyond, if allowed by the
+resolution). This could potentially open the avenue for finding dark objects
+based on their vicinity to directly observable bright sources and make future
+surveys more targeted and efficient.","['Alice Chen', 'Niayesh Afshordi']",2025-07-02 15:32:03+00:00,2025-07-02 15:32:03+00:00,http://arxiv.org/pdf/2507.01814v1,astro-ph.CO,"['astro-ph.CO', 'astro-ph.GA']"
+Empowering Manufacturers with Privacy-Preserving AI Tools: A Case Study in Privacy-Preserving Machine Learning to Solve Real-World Problems,"Small- and medium-sized manufacturers need innovative data tools but, because
+of competition and privacy concerns, often do not want to share their
+proprietary data with researchers who might be interested in helping. This
+paper introduces a privacy-preserving platform by which manufacturers may
+safely share their data with researchers through secure methods, so that those
+researchers then create innovative tools to solve the manufacturers' real-world
+problems, and then provide tools that execute solutions back onto the platform
+for others to use with privacy and confidentiality guarantees. We illustrate
+this problem through a particular use case which addresses an important problem
+in the large-scale manufacturing of food crystals, which is that quality
+control relies on image analysis tools. Previous to our research, food crystals
+in the images were manually counted, which required substantial and
+time-consuming human efforts, but we have developed and deployed a crystal
+analysis tool which makes this process both more rapid and accurate. The tool
+enables automatic characterization of the crystal size distribution and numbers
+from microscope images while the natural imperfections from the sample
+preparation are automatically removed; a machine learning model to count high
+resolution translucent crystals and agglomeration of crystals was also
+developed to aid in these efforts. The resulting algorithm was then packaged
+for real-world use on the factory floor via a web-based app secured through the
+originating privacy-preserving platform, allowing manufacturers to use it while
+keeping their proprietary data secure. After demonstrating this full process,
+future directions are also explored.","['Xiaoyu Ji', 'Jessica Shorland', 'Joshua Shank', 'Pascal Delpe-Brice', 'Latanya Sweeney', 'Jan Allebach', 'Ali Shakouri']",2025-07-02 15:25:43+00:00,2025-07-02 15:25:43+00:00,http://arxiv.org/pdf/2507.01808v1,cs.CR,"['cs.CR', 'cs.AI', 'cs.CV', 'cs.ET', '68T01, 68T05, 68T45, 94A60']"
+LoRA Fine-Tuning Without GPUs: A CPU-Efficient Meta-Generation Framework for LLMs,"Low-Rank Adapters (LoRAs) have transformed the fine-tuning of Large Language
+Models (LLMs) by enabling parameter-efficient updates. However, their
+widespread adoption remains limited by the reliance on GPU-based training. In
+this work, we propose a theoretically grounded approach to LoRA fine-tuning
+designed specifically for users with limited computational resources,
+particularly those restricted to standard laptop CPUs. Our method learns a
+meta-operator that maps any input dataset, represented as a probability
+distribution, to a set of LoRA weights by leveraging a large bank of
+pre-trained adapters for the Mistral-7B-Instruct-v0.2 model. Instead of
+performing new gradient-based updates, our pipeline constructs adapters via
+lightweight combinations of existing LoRAs directly on CPU. While the resulting
+adapters do not match the performance of GPU-trained counterparts, they
+consistently outperform the base Mistral model on downstream tasks, offering a
+practical and accessible alternative to traditional GPU-based fine-tuning.","['Reza Arabpour', 'Haitz Sáez de Ocáriz Borde', 'Anastasis Kratsios']",2025-07-02 15:24:47+00:00,2025-07-02 15:24:47+00:00,http://arxiv.org/pdf/2507.01806v1,cs.LG,"['cs.LG', 'cs.AI', 'cs.CL', 'stat.ML']"
+Towards Decentralized and Sustainable Foundation Model Training with the Edge,"Foundation models are at the forefront of AI research, appealing for their
+ability to learn from vast datasets and cater to diverse tasks. Yet, their
+significant computational demands raise issues of environmental impact and the
+risk of centralized control in their development. We put forward a vision
+towards decentralized and sustainable foundation model training that leverages
+the collective compute of sparingly used connected edge AI devices. We present
+the rationale behind our vision, particularly in support of its sustainability
+benefit. We further outline a set of challenges that need to be addressed to
+turn this vision into reality.","['Leyang Xue', 'Meghana Madhyastha', 'Randal Burns', 'Myungjin Lee', 'Mahesh K. Marina']",2025-07-02 15:21:40+00:00,2025-07-02 15:21:40+00:00,http://arxiv.org/pdf/2507.01803v1,cs.LG,['cs.LG']
+The Anatomy of Evidence: An Investigation Into Explainable ICD Coding,"Automatic medical coding has the potential to ease documentation and billing
+processes. For this task, transparency plays an important role for medical
+coders and regulatory bodies, which can be achieved using explainability
+methods. However, the evaluation of these approaches has been mostly limited to
+short text and binary settings due to a scarcity of annotated data. Recent
+efforts by Cheng et al. (2023) have introduced the MDACE dataset, which
+provides a valuable resource containing code evidence in clinical records. In
+this work, we conduct an in-depth analysis of the MDACE dataset and perform
+plausibility evaluation of current explainable medical coding systems from an
+applied perspective. With this, we contribute to a deeper understanding of
+automatic medical coding and evidence extraction. Our findings reveal that
+ground truth evidence aligns with code descriptions to a certain degree. An
+investigation into state-of-the-art approaches shows a high overlap with ground
+truth evidence. We propose match measures and highlight success and failure
+cases. Based on our findings, we provide recommendations for developing and
+evaluating explainable medical coding systems.","['Katharina Beckh', 'Elisa Studeny', 'Sujan Sai Gannamaneni', 'Dario Antweiler', 'Stefan Rüping']",2025-07-02 15:21:29+00:00,2025-07-02 15:21:29+00:00,http://arxiv.org/pdf/2507.01802v1,cs.CL,"['cs.CL', 'cs.LG']"
+Measurement-based Evaluation of CNN-based Detection and Estimation for ISAC Systems,"In wireless sensing applications, such as ISAC, one of the first crucial
+signal processing steps is the detection and estimation targets from a channel
+estimate. Effective algorithms in this context must be robust across a broad
+SNR range, capable of handling an unknown number of targets, and
+computationally efficient for real-time implementation. During the last decade,
+different Machine Learning methods have emerged as promising solutions, either
+as standalone models or as complementing existing techniques. However, since
+models are often trained and evaluated on synthetic data from existing models,
+applying them to measurement is challenging. All the while, training directly
+on measurement data is prohibitive in complex propagation scenarios as a
+groundtruth is not available. Therefore, in this paper, we train a CNN approach
+for target detection and estimation on synthetic data and evaluate it on
+measurement data from a suburban outdoor measurement. Using knowledge of the
+environment as well as available groundtruth positions, we study the detection
+probability and accuracy of our approach. The results demonstrate that our
+approach works on measurement data and is suitable for joint detection and
+estimation of sensing targets in ISAC systems.","['Steffen Schieler', 'Sebastian Semper', 'Christian Schneider', 'Reiner Thomä']",2025-07-02 15:19:52+00:00,2025-07-02 15:19:52+00:00,http://arxiv.org/pdf/2507.01799v1,eess.SP,['eess.SP']
+Kinematic Distortions of the High-Redshift Universe as Seen from Quasar Proper Motions,"Advances in optical astrometry allow us to infer the non-radial kinematic
+structure of the Universe directly from observations. Here I use a supervised
+machine learning neural network method to predict 1.57 million redshifts based
+on several photometric and metadata classifier parameters from the unWISE
+mid-infrared database and from Gaia. These estimates are used to divide the
+sample into three redshift bins: 1-2, 2-3, and $>3$. For each subset, all
+available Gaia proper motions are used in a global vector spherical harmonic
+solution to degree 3 (30 fitting vector functions). I find significant
+differences in a few fitted proper motion patterns at different redshifts. The
+largest signals are seen in the comparison of the vector spherical harmonic
+fits for the 1-2 and 2-3 redshift bins. The significant harmonics include a
+rigid spin, a dipole glide from the north Galactic pole to the south and an
+additional quadrupole distortion. Validation tests with filtered subsamples
+indicate that the detected effect can be caused by hidden systematic errors in
+astrometry. The results are verified by using an independent source of
+redshifts and computing the observer's Galactocentric acceleration. This study
+offers a new observational test of alternative cosmological models.",['Valeri V. Makarov'],2025-07-02 15:19:46+00:00,2025-07-02 15:19:46+00:00,http://arxiv.org/pdf/2507.01798v1,astro-ph.GA,"['astro-ph.GA', 'astro-ph.CO']"
+Neural Entropy-stable conservative flux form neural networks for learning hyperbolic conservation laws,"We propose a neural entropy-stable conservative flux form neural network
+(NESCFN) for learning hyperbolic conservation laws and their associated entropy
+functions directly from solution trajectories, without requiring any predefined
+numerical discretization. While recent neural network architectures have
+successfully integrated classical numerical principles into learned models,
+most rely on prior knowledge of the governing equations or assume a fixed
+discretization. Our approach removes this dependency by embedding
+entropy-stable design principles into the learning process itself, enabling the
+discovery of physically consistent dynamics in a fully data-driven setting. By
+jointly learning both the numerical flux function and a corresponding entropy,
+the proposed method ensures conservation and entropy dissipation, critical for
+long-term stability and fidelity in the system of hyperbolic conservation laws.
+Numerical results demonstrate that the method achieves stability and
+conservation over extended time horizons and accurately captures shock
+propagation speeds, even without oracle access to future-time solution profiles
+in the training data.","['Lizuo Liu', 'Lu Zhang', 'Anne Gelb']",2025-07-02 15:18:04+00:00,2025-07-02 15:18:04+00:00,http://arxiv.org/pdf/2507.01795v1,math.NA,"['math.NA', 'cs.LG', 'cs.NA', 'math-ph', 'math.MP', '65M08, 68T07, 65M22, 65M32, 65D25']"
+Machine learning prediction of a chemical reaction over 8 decades of energy,"Recent progress in machine learning has sparked increased interest in
+utilizing this technology to predict the outcomes of chemical reactions. The
+ultimate aim of such endeavors is to develop a universal model that can predict
+products for any chemical reaction given reactants and physical conditions. In
+pursuit of ever more universal chemical predictors, machine learning models for
+atom-diatom and diatom-diatom reactions have been developed, yet no such models
+exist for termolecular reactions. Accordingly, we introduce neural networks
+trained to predict opacity functions of atom recombination reactions. Our
+models predict the recombination of Sr$^+$ + Cs + Cs $\rightarrow$ SrCs$^+$ +
+Cs and Sr$^+$ + Cs + Cs $\rightarrow$ Cs$_2$ + Sr$^+$ over multiple orders of
+magnitude of energy, yielding overall results with a relative error $\lesssim
+10\%$. Even far beyond the range of energies seen during training, our models
+predict the atom recombination reaction rate accurately. As a result, the
+machine is capable of learning the physics behind the atom recombination
+reaction dynamics.","['Daniel Julian', 'Jesús Pérez-Ríos']",2025-07-02 15:17:17+00:00,2025-07-02 15:17:17+00:00,http://arxiv.org/pdf/2507.01793v1,physics.chem-ph,"['physics.chem-ph', 'physics.atom-ph']"
+How Do Vision-Language Models Process Conflicting Information Across Modalities?,"AI models are increasingly required to be multimodal, integrating disparate
+input streams into a coherent state representation on which subsequent
+behaviors and actions can be based. This paper seeks to understand how such
+models behave when input streams present conflicting information. Focusing
+specifically on vision-language models, we provide inconsistent inputs (e.g.,
+an image of a dog paired with the caption ""A photo of a cat"") and ask the model
+to report the information present in one of the specific modalities (e.g.,
+""What does the caption say / What is in the image?""). We find that models often
+favor one modality over the other, e.g., reporting the image regardless of what
+the caption says, but that different models differ in which modality they
+favor. We find evidence that the behaviorally preferred modality is evident in
+the internal representational structure of the model, and that specific
+attention heads can restructure the representations to favor one modality over
+the other. Moreover, we find modality-agnostic ""router heads"" which appear to
+promote answers about the modality requested in the instruction, and which can
+be manipulated or transferred in order to improve performance across datasets
+and modalities. Together, the work provides essential steps towards identifying
+and controlling if and how models detect and resolve conflicting signals within
+complex multimodal environments.","['Tianze Hua', 'Tian Yun', 'Ellie Pavlick']",2025-07-02 15:15:14+00:00,2025-07-02 15:15:14+00:00,http://arxiv.org/pdf/2507.01790v1,cs.CL,"['cs.CL', 'cs.AI', 'cs.CV', 'cs.LG']"
+Probing Evaluation Awareness of Language Models,"Language models can distinguish between testing and deployment phases -- a
+capability known as evaluation awareness. This has significant safety and
+policy implications, potentially undermining the reliability of evaluations
+that are central to AI governance frameworks and voluntary industry
+commitments. In this paper, we study evaluation awareness in
+Llama-3.3-70B-Instruct. We show that linear probes can separate real-world
+evaluation and deployment prompts, suggesting that current models internally
+represent this distinction. We also find that current safety evaluations are
+correctly classified by the probes, suggesting that they already appear
+artificial or inauthentic to models. Our findings underscore the importance of
+ensuring trustworthy evaluations and understanding deceptive capabilities. More
+broadly, our work showcases how model internals may be leveraged to support
+blackbox methods in safety audits, especially for future models more competent
+at evaluation awareness and deception.","['Jord Nguyen', 'Khiem Hoang', 'Carlo Leonardo Attubato', 'Felix Hofstätter']",2025-07-02 15:12:43+00:00,2025-07-02 15:12:43+00:00,http://arxiv.org/pdf/2507.01786v1,cs.CL,"['cs.CL', 'cs.AI']"
+MuRating: A High Quality Data Selecting Approach to Multilingual Large Language Model Pretraining,"Data quality is a critical driver of large language model performance, yet
+existing model-based selection methods focus almost exclusively on English. We
+introduce MuRating, a scalable framework that transfers high-quality English
+data-quality signals into a single rater for 17 target languages. MuRating
+aggregates multiple English ""raters"" via pairwise comparisons to learn unified
+document-quality scores,then projects these judgments through translation to
+train a multilingual evaluator on monolingual, cross-lingual, and parallel text
+pairs. Applied to web data, MuRating selects balanced subsets of English and
+multilingual content to pretrain a 1.2 B-parameter LLaMA model. Compared to
+strong baselines, including QuRater, AskLLM, DCLM and so on, our approach
+boosts average accuracy on both English benchmarks and multilingual
+evaluations, with especially large gains on knowledge-intensive tasks. We
+further analyze translation fidelity, selection biases, and underrepresentation
+of narrative material, outlining directions for future work.","['Zhixun Chen', 'Ping Guo', 'Wenhan Han', 'Yifan Zhang', 'Binbin Liu', 'Haobin Lin', 'Fengze Liu', 'Yan Zhao', 'Bingni Zhang', 'Taifeng Wang', 'Yin Zheng', 'Meng Fang']",2025-07-02 15:11:12+00:00,2025-07-02 15:11:12+00:00,http://arxiv.org/pdf/2507.01785v1,cs.CL,"['cs.CL', 'cs.AI', 'cs.LG']"
+BranchNet: A Neuro-Symbolic Learning Framework for Structured Multi-Class Classification,"We introduce BranchNet, a neuro-symbolic learning framework that transforms
+decision tree ensembles into sparse, partially connected neural networks. Each
+branch, defined as a decision path from root to a parent of leaves, is mapped
+to a hidden neuron, preserving symbolic structure while enabling gradient-based
+optimization. The resulting models are compact, interpretable, and require no
+manual architecture tuning. Evaluated on a suite of structured multi-class
+classification benchmarks, BranchNet consistently outperforms XGBoost in
+accuracy, with statistically significant gains. We detail the architecture,
+training procedure, and sparsity dynamics, and discuss the model's strengths in
+symbolic interpretability as well as its current limitations, particularly on
+binary tasks where further adaptive calibration may be beneficial.","['Dalia Rodríguez-Salas', 'Christian Riess']",2025-07-02 15:07:58+00:00,2025-07-02 15:07:58+00:00,http://arxiv.org/pdf/2507.01781v1,cs.LG,"['cs.LG', 'cs.AI', '68T07 (Primary) 62H30, 68T05 (Secondary)']"
+Human-Machine Collaboration-Guided Space Design: Combination of Machine Learning Models and Humanistic Design Concepts,"The integration of machine learning (ML) into spatial design holds immense
+potential for optimizing space utilization, enhancing functionality, and
+streamlining design processes. ML can automate tasks, predict performance
+outcomes, and tailor spaces to user preferences. However, the emotional,
+cultural, and aesthetic dimensions of design remain crucial for creating spaces
+that truly resonate with users-elements that ML alone cannot address. The key
+challenge lies in harmonizing data-driven efficiency with the nuanced,
+subjective aspects of design. This paper proposes a human-machine collaboration
+framework to bridge this gap. An effective framework should recognize that
+while ML enhances design efficiency through automation and prediction, it must
+be paired with human creativity to ensure spaces are emotionally engaging and
+culturally relevant. Human designers contribute intuition, empathy, and
+cultural insight, guiding ML-generated solutions to align with users' emotional
+and cultural needs. Additionally, we explore how various ML models can be
+integrated with human-centered design principles. These models can automate
+design generation and optimization, while human designers refine the outputs to
+ensure emotional resonance and aesthetic appeal. Through case studies in office
+and residential design, we illustrate how this framework fosters both
+creativity and cultural relevance. By merging ML with human creativity, spatial
+design can achieve a balance of efficiency and emotional impact, resulting in
+environments that are both functional and deeply human.",['Yuxuan Yang'],2025-07-02 15:01:51+00:00,2025-07-02 15:01:51+00:00,http://arxiv.org/pdf/2507.01776v1,cs.HC,"['cs.HC', 'cs.MM']"
+"Frontiers of Generative AI for Network Optimization: Theories, Limits, and Visions","While interest in the application of generative AI (GenAI) in network
+optimization has surged in recent years, its rapid progress has often
+overshadowed critical limitations intrinsic to generative models that remain
+insufficiently examined in existing literature. This survey provides a
+comprehensive review and critical analysis of GenAI in network optimization. We
+focus on the two dominant paradigms of GenAI including generative diffusion
+models (GDMs) and large pre-trained models (LPTMs), and organize our discussion
+around a categorization we introduce, dividing network optimization problems
+into two primary formulations: one-shot optimization and Markov decision
+process (MDP). We first trace key works, including foundational contributions
+from the AI community, and categorize current efforts in network optimization.
+We also review frontier applications of GDMs and LPTMs in other networking
+tasks, providing additional context. Furthermore, we present theoretical
+generalization bounds for GDMs in both one-shot and MDP settings, offering
+insights into the fundamental factors affecting model performance. Most
+importantly, we reflect on the overestimated perception of GenAI's general
+capabilities and caution against the all-in-one illusion it may convey. We
+highlight critical limitations, including difficulties in constraint
+satisfying, limited concept understanding, and the inherent probabilistic
+nature of outputs. We also propose key future directions, such as bridging the
+gap between generation and optimization. Although they are increasingly
+integrated in implementations, they differ fundamentally in both objectives and
+underlying mechanisms, necessitating a deeper understanding of their
+theoretical connections. Ultimately, this survey aims to provide a structured
+overview and a deeper insight into the strengths, limitations, and potential of
+GenAI in network optimization.","['Bo Yang', 'Ruihuai Liang', 'Weixin Li', 'Han Wang', 'Xuelin Cao', 'Zhiwen Yu', 'Samson Lasaulce', 'Mérouane Debbah', 'Mohamed-Slim Alouini', 'H. Vincent Poor', 'Chau Yuen']",2025-07-02 14:59:49+00:00,2025-07-02 14:59:49+00:00,http://arxiv.org/pdf/2507.01773v1,cs.NI,['cs.NI']
+Enhanced Generative Model Evaluation with Clipped Density and Coverage,"Although generative models have made remarkable progress in recent years,
+their use in critical applications has been hindered by their incapacity to
+reliably evaluate sample quality. Quality refers to at least two complementary
+concepts: fidelity and coverage. Current quality metrics often lack reliable,
+interpretable values due to an absence of calibration or insufficient
+robustness to outliers. To address these shortcomings, we introduce two novel
+metrics, Clipped Density and Clipped Coverage. By clipping individual sample
+contributions and, for fidelity, the radii of nearest neighbor balls, our
+metrics prevent out-of-distribution samples from biasing the aggregated values.
+Through analytical and empirical calibration, these metrics exhibit linear
+score degradation as the proportion of poor samples increases. Thus, they can
+be straightforwardly interpreted as equivalent proportions of good samples.
+Extensive experiments on synthetic and real-world datasets demonstrate that
+Clipped Density and Clipped Coverage outperform existing methods in terms of
+robustness, sensitivity, and interpretability for evaluating generative models.","['Nicolas Salvy', 'Hugues Talbot', 'Bertrand Thirion']",2025-07-02 14:40:00+00:00,2025-07-02 14:40:00+00:00,http://arxiv.org/pdf/2507.01761v1,cs.LG,"['cs.LG', 'cs.AI', 'stat.ML']"
+Scheduling on identical machines with conflicts to minimize the mean flow time,"This paper addresses the problem of scheduling jobs on identical machines
+with conflict constraints, where certain jobs cannot be scheduled
+simultaneously on different machines. We focus on the case where conflicts can
+be represented by a simple undirected graph, and the objective is to minimize
+the mean flow time. We show that the problem is NP-hard even on two machines
+and two distinct processing times. For unit-time jobs, the problem becomes
+NP-hard when the number of machines increases to three. We also identify
+polynomial-time solvable cases for specific classes of conflict graphs. For the
+general problem, we propose mathematical models, lower bounds, and a genetic
+algorithm. We evaluate their performance through computational experiments on a
+wide range of instances derived from well-known benchmark instances in the
+literature.","['Nour ElHouda Tellache', 'Lydia Aoudia', 'Mourad Boudhar']",2025-07-02 14:36:35+00:00,2025-07-02 14:36:35+00:00,http://arxiv.org/pdf/2507.01759v1,cs.DM,"['cs.DM', 'math.OC']"
+Tuning without Peeking: Provable Privacy and Generalization Bounds for LLM Post-Training,"Gradient-based optimization is the workhorse of deep learning, offering
+efficient and scalable training via backpropagation. However, its reliance on
+large volumes of labeled data raises privacy and security concerns such as
+susceptibility to data poisoning attacks and the risk of overfitting. In
+contrast, black box optimization methods, which treat the model as an opaque
+function, relying solely on function evaluations to guide optimization, offer a
+promising alternative in scenarios where data access is restricted, adversarial
+risks are high, or overfitting is a concern. However, black box methods also
+pose significant challenges, including poor scalability to high-dimensional
+parameter spaces, as prevalent in large language models (LLMs), and high
+computational costs due to reliance on numerous model evaluations. This paper
+introduces BBoxER, an evolutionary black-box method for LLM post-training that
+induces an information bottleneck via implicit compression of the training
+data. Leveraging the tractability of information flow, we provide strong
+theoretical bounds on generalization, differential privacy, susceptibility to
+data poisoning attacks, and robustness to extraction attacks. BBoxER operates
+on top of pre-trained LLMs, offering a lightweight and modular enhancement
+suitable for deployment in restricted or privacy-sensitive environments, in
+addition to non-vacuous generalization guarantees. In experiments with LLMs, we
+demonstrate empirically that Retrofitting methods are able to learn, showing
+how a few iterations of BBoxER improve performance and generalize well on a
+benchmark of reasoning datasets. This positions BBoxER as an attractive add-on
+on top of gradient-based optimization.","['Ismail Labiad', 'Mathurin Videau', 'Matthieu Kowalski', 'Marc Schoenauer', 'Alessandro Leite', 'Julia Kempe', 'Olivier Teytaud']",2025-07-02 14:29:30+00:00,2025-07-02 14:29:30+00:00,http://arxiv.org/pdf/2507.01752v1,cs.LG,"['cs.LG', 'cs.AI', 'cs.CL', 'cs.CR']"
+A Real-Time Digital Twin for Type 1 Diabetes using Simulation-Based Inference,"Accurately estimating parameters of physiological models is essential to
+achieving reliable digital twins. For Type 1 Diabetes, this is particularly
+challenging due to the complexity of glucose-insulin interactions. Traditional
+methods based on Markov Chain Monte Carlo struggle with high-dimensional
+parameter spaces and fit parameters from scratch at inference time, making them
+slow and computationally expensive. In this study, we propose a
+Simulation-Based Inference approach based on Neural Posterior Estimation to
+efficiently capture the complex relationships between meal intake, insulin, and
+glucose level, providing faster, amortized inference. Our experiments
+demonstrate that SBI not only outperforms traditional methods in parameter
+estimation but also generalizes better to unseen conditions, offering real-time
+posterior inference with reliable uncertainty quantification.","['Trung-Dung Hoang', 'Alceu Bissoto', 'Vihangkumar V. Naik', 'Tim Flühmann', 'Artemii Shlychkov', 'José Garcia-Tirado', 'Lisa M. Koch']",2025-07-02 14:21:03+00:00,2025-07-02 14:21:03+00:00,http://arxiv.org/pdf/2507.01740v1,cs.LG,"['cs.LG', 'q-bio.QM']"
+ECCV 2024 W-CODA: 1st Workshop on Multimodal Perception and Comprehension of Corner Cases in Autonomous Driving,"In this paper, we present details of the 1st W-CODA workshop, held in
+conjunction with the ECCV 2024. W-CODA aims to explore next-generation
+solutions for autonomous driving corner cases, empowered by state-of-the-art
+multimodal perception and comprehension techniques. 5 Speakers from both
+academia and industry are invited to share their latest progress and opinions.
+We collect research papers and hold a dual-track challenge, including both
+corner case scene understanding and generation. As the pioneering effort, we
+will continuously bridge the gap between frontier autonomous driving techniques
+and fully intelligent, reliable self-driving agents robust towards corner
+cases.","['Kai Chen', 'Ruiyuan Gao', 'Lanqing Hong', 'Hang Xu', 'Xu Jia', 'Holger Caesar', 'Dengxin Dai', 'Bingbing Liu', 'Dzmitry Tsishkou', 'Songcen Xu', 'Chunjing Xu', 'Qiang Xu', 'Huchuan Lu', 'Dit-Yan Yeung']",2025-07-02 14:10:25+00:00,2025-07-02 14:10:25+00:00,http://arxiv.org/pdf/2507.01735v1,cs.CV,"['cs.CV', 'cs.AI', 'cs.CL', 'cs.LG']"

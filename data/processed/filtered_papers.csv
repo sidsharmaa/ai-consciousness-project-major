@@ -1,209 +1,65 @@
-Title,Authors,Summary,Published,Updated,URL,Primary Category,text
-Creating benchmarkable components to measure the quality ofAI-enhanced developer tools,"Elise Paradis, Ambar Murillo, Maulishree Pandey, Sarah D'Angelo, Matthew Hughes, Andrew Macvean, Ben Ferrari-Church","In the AI community, benchmarks to evaluate model quality are well
-established, but an equivalent approach to benchmarking products built upon
-generative AI models is still missing. This has had two consequences. First, it
-has made teams focus on model quality over the developer experience, while
-successful products combine both. Second, product team have struggled to answer
-questions about their products in relation to their competitors.
-  In this case study, we share: (1) our process to create robust,
-enterprise-grade and modular components to support the benchmarking of the
-developer experience (DX) dimensions of our team's AI for code offerings, and
-(2) the components we have created to do so, including demographics and
-attitudes towards AI surveys, a benchmarkable task, and task and feature
-surveys. By doing so, we hope to lower the barrier to the DX benchmarking of
-genAI-enhanced code products.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12211v1,cs.SE,"creating benchmarkable components to measure the quality ofai-enhanced developer tools in the ai community, benchmarks to evaluate model quality are well
-established, but an equivalent approach to benchmarking products built upon
-generative ai models is still missing. this has had two consequences. first, it
-has made teams focus on model quality over the developer experience, while
-successful products combine both. second, product team have struggled to answer
-questions about their products in relation to their competitors.
-  in this case study, we share: (1) our process to create robust,
-enterprise-grade and modular components to support the benchmarking of the
-developer experience (dx) dimensions of our team's ai for code offerings, and
-(2) the components we have created to do so, including demographics and
-attitudes towards ai surveys, a benchmarkable task, and task and feature
-surveys. by doing so, we hope to lower the barrier to the dx benchmarking of
-genai-enhanced code products."
-Nonequilibrium physics of brain dynamics,"Ramón Nartallo-Kaluarachchi, Morten L. Kringelbach, Gustavo Deco, Renaud Lambiotte, Alain Goriely","Information processing in the brain is coordinated by the dynamic activity of
-neurons and neural populations at a range of spatiotemporal scales. These
-dynamics, captured in the form of electrophysiological recordings and
-neuroimaging, show evidence of time-irreversibility and broken detailed balance
-suggesting that the brain operates in a nonequilibrium stationary state.
-Furthermore, the level of nonequilibrium, measured by entropy production or
-irreversibility appears to be a crucial signature of cognitive complexity and
-consciousness. The subsequent study of neural dynamics from the perspective of
-nonequilibrium statistical physics is an emergent field that challenges the
-assumptions of symmetry and maximum-entropy that are common in traditional
-models. In this review, we discuss the plethora of exciting results emerging at
-the interface of nonequilibrium dynamics and neuroscience. We begin with an
-introduction to the mathematical paradigms necessary to understand
-nonequilibrium dynamics in both continuous and discrete state-spaces. Next, we
-review both model-free and model-based approaches to analysing nonequilibrium
-dynamics in both continuous-state recordings and neural spike-trains, as well
-as the results of such analyses. We briefly consider the topic of
-nonequilibrium computation in neural systems, before concluding with a
-discussion and outlook on the field.",2025-04-16,2025-04-16,http://arxiv.org/abs/2504.12188v1,q-bio.NC,"nonequilibrium physics of brain dynamics information processing in the brain is coordinated by the dynamic activity of
-neurons and neural populations at a range of spatiotemporal scales. these
-dynamics, captured in the form of electrophysiological recordings and
-neuroimaging, show evidence of time-irreversibility and broken detailed balance
-suggesting that the brain operates in a nonequilibrium stationary state.
-furthermore, the level of nonequilibrium, measured by entropy production or
-irreversibility appears to be a crucial signature of cognitive complexity and
-consciousness. the subsequent study of neural dynamics from the perspective of
-nonequilibrium statistical physics is an emergent field that challenges the
-assumptions of symmetry and maximum-entropy that are common in traditional
-models. in this review, we discuss the plethora of exciting results emerging at
-the interface of nonequilibrium dynamics and neuroscience. we begin with an
-introduction to the mathematical paradigms necessary to understand
-nonequilibrium dynamics in both continuous and discrete state-spaces. next, we
-review both model-free and model-based approaches to analysing nonequilibrium
-dynamics in both continuous-state recordings and neural spike-trains, as well
-as the results of such analyses. we briefly consider the topic of
-nonequilibrium computation in neural systems, before concluding with a
-discussion and outlook on the field."
-Perceptions of Agentic AI in Organizations: Implications for Responsible AI and ROI,Lee Ackerman,"As artificial intelligence (AI) systems rapidly gain autonomy, the need for
-robust responsible AI frameworks becomes paramount. This paper investigates how
-organizations perceive and adapt such frameworks amidst the emerging landscape
-of increasingly sophisticated agentic AI. Employing an interpretive qualitative
-approach, the study explores the lived experiences of AI professionals.
-Findings highlight that the inherent complexity of agentic AI systems and their
-responsible implementation, rooted in the intricate interconnectedness of
-responsible AI dimensions and the thematic framework (an analytical structure
-developed from the data), combined with the novelty of agentic AI, contribute
-to significant challenges in organizational adaptation, characterized by
-knowledge gaps, a limited emphasis on stakeholder engagement, and a strong
-focus on control. These factors, by hindering effective adaptation and
-implementation, ultimately compromise the potential for responsible AI and the
-realization of ROI.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11564v1,cs.CY,"perceptions of agentic ai in organizations: implications for responsible ai and roi as artificial intelligence (ai) systems rapidly gain autonomy, the need for
-robust responsible ai frameworks becomes paramount. this paper investigates how
-organizations perceive and adapt such frameworks amidst the emerging landscape
-of increasingly sophisticated agentic ai. employing an interpretive qualitative
-approach, the study explores the lived experiences of ai professionals.
-findings highlight that the inherent complexity of agentic ai systems and their
-responsible implementation, rooted in the intricate interconnectedness of
-responsible ai dimensions and the thematic framework (an analytical structure
-developed from the data), combined with the novelty of agentic ai, contribute
-to significant challenges in organizational adaptation, characterized by
-knowledge gaps, a limited emphasis on stakeholder engagement, and a strong
-focus on control. these factors, by hindering effective adaptation and
-implementation, ultimately compromise the potential for responsible ai and the
-realization of roi."
-Embodied World Models Emerge from Navigational Task in Open-Ended Environments,"Li Jin, Liu Jia","Understanding how artificial systems can develop spatial awareness and
-reasoning has long been a challenge in AI research. Traditional models often
-rely on passive observation, but embodied cognition theory suggests that deeper
-understanding emerges from active interaction with the environment. This study
-investigates whether neural networks can autonomously internalize spatial
-concepts through interaction, focusing on planar navigation tasks. Using Gated
-Recurrent Units (GRUs) combined with Meta-Reinforcement Learning (Meta-RL), we
-show that agents can learn to encode spatial properties like direction,
-distance, and obstacle avoidance. We introduce Hybrid Dynamical Systems (HDS)
-to model the agent-environment interaction as a closed dynamical system,
-revealing stable limit cycles that correspond to optimal navigation strategies.
-Ridge Representation allows us to map navigation paths into a fixed-dimensional
-behavioral space, enabling comparison with neural states. Canonical Correlation
-Analysis (CCA) confirms strong alignment between these representations,
-suggesting that the agent's neural states actively encode spatial knowledge.
-Intervention experiments further show that specific neural dimensions are
-causally linked to navigation performance. This work provides an approach to
-bridging the gap between action and perception in AI, offering new insights
-into building adaptive, interpretable models that can generalize across complex
-environments. The causal validation of neural representations also opens new
-avenues for understanding and controlling the internal mechanisms of AI
-systems, pushing the boundaries of how machines learn and reason in dynamic,
-real-world scenarios.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11419v1,cs.AI,"embodied world models emerge from navigational task in open-ended environments understanding how artificial systems can develop spatial awareness and
-reasoning has long been a challenge in ai research. traditional models often
-rely on passive observation, but embodied cognition theory suggests that deeper
-understanding emerges from active interaction with the environment. this study
-investigates whether neural networks can autonomously internalize spatial
-concepts through interaction, focusing on planar navigation tasks. using gated
-recurrent units (grus) combined with meta-reinforcement learning (meta-rl), we
-show that agents can learn to encode spatial properties like direction,
-distance, and obstacle avoidance. we introduce hybrid dynamical systems (hds)
-to model the agent-environment interaction as a closed dynamical system,
-revealing stable limit cycles that correspond to optimal navigation strategies.
-ridge representation allows us to map navigation paths into a fixed-dimensional
-behavioral space, enabling comparison with neural states. canonical correlation
-analysis (cca) confirms strong alignment between these representations,
-suggesting that the agent's neural states actively encode spatial knowledge.
-intervention experiments further show that specific neural dimensions are
-causally linked to navigation performance. this work provides an approach to
-bridging the gap between action and perception in ai, offering new insights
-into building adaptive, interpretable models that can generalize across complex
-environments. the causal validation of neural representations also opens new
-avenues for understanding and controlling the internal mechanisms of ai
-systems, pushing the boundaries of how machines learn and reason in dynamic,
-real-world scenarios."
-VideoPanda: Video Panoramic Diffusion with Multi-view Attention,"Kevin Xie, Amirmojtaba Sabour, Jiahui Huang, Despoina Paschalidou, Greg Klar, Umar Iqbal, Sanja Fidler, Xiaohui Zeng","High resolution panoramic video content is paramount for immersive
-experiences in Virtual Reality, but is non-trivial to collect as it requires
-specialized equipment and intricate camera setups. In this work, we introduce
-VideoPanda, a novel approach for synthesizing 360$^\circ$ videos conditioned on
-text or single-view video data. VideoPanda leverages multi-view attention
-layers to augment a video diffusion model, enabling it to generate consistent
-multi-view videos that can be combined into immersive panoramic content.
-VideoPanda is trained jointly using two conditions: text-only and single-view
-video, and supports autoregressive generation of long-videos. To overcome the
-computational burden of multi-view video generation, we randomly subsample the
-duration and camera views used during training and show that the model is able
-to gracefully generalize to generating more frames during inference. Extensive
-evaluations on both real-world and synthetic video datasets demonstrate that
-VideoPanda generates more realistic and coherent 360$^\circ$ panoramas across
-all input conditions compared to existing methods. Visit the project website at
-https://research-staging.nvidia.com/labs/toronto-ai/VideoPanda/ for results.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11389v1,cs.GR,"videopanda: video panoramic diffusion with multi-view attention high resolution panoramic video content is paramount for immersive
-experiences in virtual reality, but is non-trivial to collect as it requires
-specialized equipment and intricate camera setups. in this work, we introduce
-videopanda, a novel approach for synthesizing 360$^\circ$ videos conditioned on
-text or single-view video data. videopanda leverages multi-view attention
-layers to augment a video diffusion model, enabling it to generate consistent
-multi-view videos that can be combined into immersive panoramic content.
-videopanda is trained jointly using two conditions: text-only and single-view
-video, and supports autoregressive generation of long-videos. to overcome the
-computational burden of multi-view video generation, we randomly subsample the
-duration and camera views used during training and show that the model is able
-to gracefully generalize to generating more frames during inference. extensive
-evaluations on both real-world and synthetic video datasets demonstrate that
-videopanda generates more realistic and coherent 360$^\circ$ panoramas across
-all input conditions compared to existing methods. visit the project website at
-https://research-staging.nvidia.com/labs/toronto-ai/videopanda/ for results."
-"Smartphone-Based Undergraduate Physics Labs: A Comprehensive Review of Innovation, Accessibility, and Pedagogical Impact",Yiping Zhao,"Smartphone-integrated physics laboratories (SmartIPLs) have emerged as
-scalable and cost-effective alternatives to traditional lab instruction,
-providing accessible, hands-on experiences for diverse learning environments.
-This review synthesizes over a decade of research, covering nearly 200
-SmartIPLs across key physics domains such as mechanics, optics, acoustics,
-electromagnetism, thermodynamics, and modern physics. SmartIPLs are categorized
-into two primary types: sensor-based experiments using built-in smartphone
-tools and camera-based video/image analysis for motion and optical studies.
-Empirical studies show that SmartIPLs support equal or greater gains in
-conceptual understanding, science process skills, and student engagement,
-especially in remote and under-resourced settings. The review explores their
-theoretical foundations, compares them to traditional and virtual labs, and
-addresses challenges such as device variability and classroom integration.
-Future directions include broader curricular integration, AI-driven student
-feedback, expansion into underrepresented physics topics, interdisciplinary
-applications, and equity-focused instructional design. Open-access resources,
-such as the UGA SmartPhone Intro Physics Lab and Modern Optics YouTube channels
-and the SPIE book Use of Smartphones in Optical Experimentation, highlight
-community-driven efforts to expand and democratize physics education. As
-smartphone technology advances, SmartIPLs will offer a promising path toward
-adaptive, intelligent, and inclusive laboratory instruction for the 21st
-century.",2025-04-15,2025-04-15,http://arxiv.org/abs/2504.11363v1,physics.ed-ph,"smartphone-based undergraduate physics labs: a comprehensive review of innovation, accessibility, and pedagogical impact smartphone-integrated physics laboratories (smartipls) have emerged as
-scalable and cost-effective alternatives to traditional lab instruction,
-providing accessible, hands-on experiences for diverse learning environments.
-this review synthesizes over a decade of research, covering nearly 200
-smartipls across key physics domains such as mechanics, optics, acoustics,
-electromagnetism, thermodynamics, and modern physics. smartipls are categorized
-into two primary types: sensor-based experiments using built-in smartphone
-tools and camera-based video/image analysis for motion and optical studies.
-empirical studies show that smartipls support equal or greater gains in
-conceptual understanding, science process skills, and student engagement,
-especially in remote and under-resourced settings. the review explores their
-theoretical foundations, compares them to traditional and virtual labs, and
-addresses challenges such as device variability and classroom integration.
-future directions include broader curricular integration, ai-driven student
-feedback, expansion into underrepresented physics topics, interdisciplinary
-applications, and equity-focused instructional design. open-access resources,
-such as the uga smartphone intro physics lab and modern optics youtube channels
-and the spie book use of smartphones in optical experimentation, highlight
-community-driven efforts to expand and democratize physics education. as
-smartphone technology advances, smartipls will offer a promising path toward
-adaptive, intelligent, and inclusive laboratory instruction for the 21st
-century."
+Title,Summary,Authors,Published,Updated,PDF_URL,Primary_Category,Categories,text
+The Thin Line Between Comprehension and Persuasion in LLMs,"Large language models (LLMs) are excellent at maintaining high-level,
+convincing dialogues. They are being fast deployed as chatbots and evaluators
+in sensitive areas, such as peer review and mental health applications. This,
+along with the disparate accounts on their reasoning capabilities, calls for a
+closer examination of LLMs and their comprehension of dialogue. In this work we
+begin by evaluating LLMs' ability to maintain a debate--one of the purest yet
+most complex forms of human communication. Then we measure how this capability
+relates to their understanding of what is being talked about, namely, their
+comprehension of dialogical structures and the pragmatic context. We find that
+LLMs are capable of maintaining coherent, persuasive debates, often swaying the
+beliefs of participants and audiences alike. We also note that awareness or
+suspicion of AI involvement encourage people to be more critical of the
+arguments made. When polling LLMs on their comprehension of deeper structures
+of dialogue, however, they cannot demonstrate said understanding. Our findings
+tie the shortcomings of LLMs-as-evaluators to their (in)ability to understand
+the context. More broadly, for the field of argumentation theory we posit that,
+if an agent can convincingly maintain a dialogue, it is not necessary for it to
+know what it is talking about. Hence, the modelling of pragmatic context and
+coherence are secondary to effectiveness.","['Adrian de Wynter', 'Tangming Yuan']",2025-07-02 17:46:56+00:00,2025-07-02 17:46:56+00:00,http://arxiv.org/pdf/2507.01936v1,cs.CL,"['cs.CL', 'cs.CY']","the thin line between comprehension and persuasion in llms large language models (llms) are excellent at maintaining high-level,
+convincing dialogues. they are being fast deployed as chatbots and evaluators
+in sensitive areas, such as peer review and mental health applications. this,
+along with the disparate accounts on their reasoning capabilities, calls for a
+closer examination of llms and their comprehension of dialogue. in this work we
+begin by evaluating llms' ability to maintain a debate--one of the purest yet
+most complex forms of human communication. then we measure how this capability
+relates to their understanding of what is being talked about, namely, their
+comprehension of dialogical structures and the pragmatic context. we find that
+llms are capable of maintaining coherent, persuasive debates, often swaying the
+beliefs of participants and audiences alike. we also note that awareness or
+suspicion of ai involvement encourage people to be more critical of the
+arguments made. when polling llms on their comprehension of deeper structures
+of dialogue, however, they cannot demonstrate said understanding. our findings
+tie the shortcomings of llms-as-evaluators to their (in)ability to understand
+the context. more broadly, for the field of argumentation theory we posit that,
+if an agent can convincingly maintain a dialogue, it is not necessary for it to
+know what it is talking about. hence, the modelling of pragmatic context and
+coherence are secondary to effectiveness."
+Probing Evaluation Awareness of Language Models,"Language models can distinguish between testing and deployment phases -- a
+capability known as evaluation awareness. This has significant safety and
+policy implications, potentially undermining the reliability of evaluations
+that are central to AI governance frameworks and voluntary industry
+commitments. In this paper, we study evaluation awareness in
+Llama-3.3-70B-Instruct. We show that linear probes can separate real-world
+evaluation and deployment prompts, suggesting that current models internally
+represent this distinction. We also find that current safety evaluations are
+correctly classified by the probes, suggesting that they already appear
+artificial or inauthentic to models. Our findings underscore the importance of
+ensuring trustworthy evaluations and understanding deceptive capabilities. More
+broadly, our work showcases how model internals may be leveraged to support
+blackbox methods in safety audits, especially for future models more competent
+at evaluation awareness and deception.","['Jord Nguyen', 'Khiem Hoang', 'Carlo Leonardo Attubato', 'Felix Hofstätter']",2025-07-02 15:12:43+00:00,2025-07-02 15:12:43+00:00,http://arxiv.org/pdf/2507.01786v1,cs.CL,"['cs.CL', 'cs.AI']","probing evaluation awareness of language models language models can distinguish between testing and deployment phases -- a
+capability known as evaluation awareness. this has significant safety and
+policy implications, potentially undermining the reliability of evaluations
+that are central to ai governance frameworks and voluntary industry
+commitments. in this paper, we study evaluation awareness in
+llama-3.3-70b-instruct. we show that linear probes can separate real-world
+evaluation and deployment prompts, suggesting that current models internally
+represent this distinction. we also find that current safety evaluations are
+correctly classified by the probes, suggesting that they already appear
+artificial or inauthentic to models. our findings underscore the importance of
+ensuring trustworthy evaluations and understanding deceptive capabilities. more
+broadly, our work showcases how model internals may be leveraged to support
+blackbox methods in safety audits, especially for future models more competent
+at evaluation awareness and deception."

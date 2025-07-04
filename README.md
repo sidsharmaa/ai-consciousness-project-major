@@ -1,70 +1,166 @@
-# AI Consciousness Research Pipeline
+<div align="center">
+  <h1>🧠 AI Consciousness Research Assistant</h1>
+  <p>
+    RAG-based AI assistant that helps explore, filter, and chat with scholarly papers on consciousness from arXiv.org.
+    <br />
+    <a href="#getting-started"><strong>Get Started »</strong></a>
+    <br /><br />
+    <a href="https://github.com/your_username/ai-consciousness-project">View Demo</a>
+    ·
+    <a href="https://github.com/your_username/ai-consciousness-project/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/your_username/ai-consciousness-project/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-## Basic Idea of the model
-This project model is based on research related to ai consciousness.
+---
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
+---
 
+## 📄 About The Project
 
+This project is an end-to-end agentic pipeline for exploring **AI consciousness** in academic literature. It scrapes arXiv papers on AI, filters them using NLP, chunks and embeds them using Sentence Transformers, and enables local Q\&A via Mistral (Ollama) with source citations.
 
-## Functionality of fetch_arxiv.py
+### Key Features
 
-### Libraries used:
-arxiv to pull data from arXiv.
-pandas to handle and save data in CSV.
-datetime to get the current time for naming files.
+* ✍️ Automated ArXiv paper scraping and keyword filtering
+* 🔬 LLM-based embedding with FAISS index
+* 🫠 Local chatbot powered by Ollama (Mistral)
+* 🔹 Source-aware answers from academic papers
+* 📊 Dashboard-ready structure for future visualization
 
-### It looks for papers with any of these keywords:
-"AI consciousness", "artificial intelligence consciousness", or "machine consciousness"
+### Built With
 
-### arXiv search:
-Max 50 results.
-Sorted by most recently submitted papers (not relevance or citations)
+* Python 3.11+
+* LangChain 0.2+
+* SentenceTransformers
+* FAISS
+* Ollama (for local LLMs)
+* arXiv API
+* pandas, tqdm, matplotlib
 
-### Extraction of useful info for each paper:
+---
 
-Title of the paper
-Summary/abstract
-When it was published and last updated
-List of authors
-Link to the PDF
-Primary category (like cs.AI or cs.CL)
-All the categories the paper belongs to
+## ⚙️ Getting Started
 
+### Prerequisites
 
-### We store everything in a list called results and then convert that list into a pandas dataframe.
+* Python >= 3.10
+* Ollama installed: [https://ollama.com](https://ollama.com)
+* Create `.env` from template:
 
+  ```bash
+  cp .env.example .env
+  ```
 
-### We save all data inside a data/raw folder.
+### Installation
 
-If you encounter any error related to non existent directory:
-the script automatically creates using os.makedirs().
+```bash
+git clone https://github.com/your_username/ai-consciousness-project.git
+cd ai-consciousness-project
+python -m venv venv
+venv\Scripts\activate  # Windows
+touch .env            # add your OpenAI key if needed
+pip install -r requirements.txt
+```
 
-### After saving, we print a success message showing how many papers were saved and the full file path
+---
 
+## 🚀 Usage
 
+### 1. Fetch & Filter Papers
 
+```bash
+python scripts/pipeline.py
+```
 
-## Functionality of filter_papers.py
+### 2. Embed for RAG
 
-### Define Keywords
+```bash
+python rag/load_and_embed.py
+```
 
-The script uses a predefined list of keywords to search in paper titles and summaries:
+### 3. Start Ollama (in a new terminal)
 
-["consciousness", "sentience", "awareness", "self-awareness", "mind", "experience"]
+```bash
+ollama run mistral
+```
 
-### Load Data:
+### 4. Ask Questions
 
-The script reads a CSV file (papers_2025-04-18.csv) located in data/raw/.
+```bash
+python rag/query_bot.py
+```
 
-### Combine Title and Summary:
+---
 
-It creates a new column (text) by combining the title and summary of each paper for easier keyword searching.
+## 🚧 Roadmap
 
-### Filter Papers:
+* [x] Fetch papers from arXiv
+* [x] Filter relevant papers
+* [x] Embed using Sentence Transformers
+* [x] Query chatbot via Mistral
+* [ ] Streamlit dashboard for filtering logic + stats
+* [ ] Evaluate answer quality + chunking strategies
+* [ ] Add David Chalmers TED Talk transcript to sources
+* [ ] Guardrails + prompt engineering for AI safety
 
-It filters the papers based on the presence of any of the defined keywords in the combined text (title + summary).
+---
 
-### Save Filtered Results:
+## 💪 Contributing
 
-The filtered papers are saved into a new CSV file (filtered_papers.csv) under the data/processed/ folder.
+We welcome PRs and suggestions! See `CONTRIBUTING.md` (coming soon).
+
+1. Fork it
+2. Create a branch: `feature/my-feature`
+3. Commit your changes
+4. Push and create a PR
+
+---
+
+## 🔒 License
+
+Distributed under MIT License. See `LICENSE` for details.
+
+---
+
+## 📢 Contact
+
+**Siddhant Sharma** — [siddhantsharma4520@gmail.com](mailto:siddhantsharma4520@gmail.com)
+GitHub: [@your\_username](https://github.com/your_username)
+
+Project Link: [https://github.com/your\_username/ai-consciousness-project](https://github.com/your_username/ai-consciousness-project)
+
+---
+
+## 📖 Acknowledgments
+
+* LangChain & SentenceTransformers
+* Ollama team for lightweight LLMs
+* David Chalmers' research & talks
+* [arXiv API](https://arxiv.org/help/api/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
