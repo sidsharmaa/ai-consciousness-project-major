@@ -5,11 +5,11 @@
     <br />
     <a href="#getting-started"><strong>Get Started »</strong></a>
     <br /><br />
-    <a href="https://github.com/your_username/ai-consciousness-project">View Demo</a>
+    <a href="https://github.com/sidsharmaa/ai-consciousness-project-major">View Demo</a>
     ·
-    <a href="https://github.com/your_username/ai-consciousness-project/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/sidsharmaa/ai-consciousness-project-major/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/your_username/ai-consciousness-project/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/sidsharmaa/ai-consciousness-project-major/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -79,8 +79,8 @@ This project is an end-to-end agentic pipeline for exploring **AI consciousness*
 ### Installation
 
 ```bash
-git clone https://github.com/your_username/ai-consciousness-project.git
-cd ai-consciousness-project
+git clone https://github.com/sidsharmaa/ai-consciousness-project-major.git
+cd ai-consciousness-project-major
 python -m venv venv
 venv\Scripts\activate  # Windows
 touch .env            # add your OpenAI key if needed
@@ -150,9 +150,9 @@ Distributed under MIT License. See `LICENSE` for details.
 ## 📢 Contact
 
 **Siddhant Sharma** — [siddhantsharma4520@gmail.com](mailto:siddhantsharma4520@gmail.com)
-GitHub: [@your\_username](https://github.com/your_username)
+GitHub: [@sidsharmaa](https://github.com/sidsharmaa)
 
-Project Link: [https://github.com/your\_username/ai-consciousness-project](https://github.com/your_username/ai-consciousness-project)
+Project Link: [https://github.com/sidsharmaa/ai-consciousness-project-major](https://github.com/sidsharmaa/ai-consciousness-project-major)
 
 ---
 
