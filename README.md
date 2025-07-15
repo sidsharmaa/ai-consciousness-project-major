@@ -83,7 +83,6 @@ git clone https://github.com/sidsharmaa/ai-consciousness-project-major.git
 cd ai-consciousness-project-major
 python -m venv venv
 venv\Scripts\activate  # Windows
-touch .env            # add your OpenAI key if needed
 pip install -r requirements.txt
 ```
 
@@ -141,11 +140,6 @@ We welcome PRs and suggestions! See `CONTRIBUTING.md` (coming soon).
 
 ---
 
-## 🔒 License
-
-Distributed under MIT License. See `LICENSE` for details.
-
----
 
 ## 📢 Contact
 
@@ -156,7 +150,7 @@ Project Link: [https://github.com/sidsharmaa/ai-consciousness-project-major](htt
 
 ---
 
-## 📖 Acknowledgments
+## 📖 Resources used
 
 * LangChain & SentenceTransformers
 * Ollama team for lightweight LLMs
