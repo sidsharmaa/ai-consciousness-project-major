@@ -101,14 +101,19 @@ python scripts/pipeline.py
 ```bash
 python rag/load_and_embed.py
 ```
+### 3. Embedding David Chalmers Transcript
 
-### 3. Start Ollama (in a new terminal)
+```bash
+python rag/embed_chalmers.py
+```
+
+### 4. Start Ollama (in a new terminal)
 
 ```bash
 ollama run mistral
 ```
 
-### 4. Ask Questions
+### 5. Ask Questions
 
 ```bash
 python rag/query_bot.py
@@ -124,7 +129,7 @@ python rag/query_bot.py
 * [x] Query chatbot via Mistral
 * [ ] Streamlit dashboard for filtering logic + stats
 * [ ] Evaluate answer quality + chunking strategies
-* [ ] Add David Chalmers TED Talk transcript to sources
+* [x] Add David Chalmers TED Talk transcript to sources
 * [ ] Guardrails + prompt engineering for AI safety
 
 ---
