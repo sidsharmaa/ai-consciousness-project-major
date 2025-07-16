@@ -1,5 +1,3 @@
-# rag/load_and_embed.py
-
 import os
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
