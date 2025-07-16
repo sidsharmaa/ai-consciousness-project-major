@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🧠 AI Consciousness Research Assistant</h1>
+  <h1> AI Consciousness Research Assistant</h1>
   <p>
     RAG-based AI assistant that helps explore, filter, and chat with scholarly papers on consciousness from arXiv.org.
     <br />
@@ -40,17 +40,17 @@
 
 ---
 
-## 📄 About The Project
+##  About The Project
 
 This project is an end-to-end agentic pipeline for exploring **AI consciousness** in academic literature. It scrapes arXiv papers on AI, filters them using NLP, chunks and embeds them using Sentence Transformers, and enables local Q\&A via Mistral (Ollama) with source citations.
 
 ### Key Features
 
-* ✍️ Automated ArXiv paper scraping and keyword filtering
-* 🔬 LLM-based embedding with FAISS index
-* 🫠 Local chatbot powered by Ollama (Mistral)
-* 🔹 Source-aware answers from academic papers
-* 📊 Dashboard-ready structure for future visualization
+*  Automated ArXiv paper scraping and keyword filtering
+*  LLM-based embedding with FAISS index
+*  Local chatbot powered by Ollama (Mistral)
+*  Source-aware answers from academic papers
+*  Dashboard-ready structure for future visualization
 
 ### Built With
 
@@ -64,7 +64,7 @@ This project is an end-to-end agentic pipeline for exploring **AI consciousness*
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Fetch & Filter Papers
 
@@ -121,7 +121,7 @@ python rag/query_bot.py
 
 ---
 
-## 🚧 Roadmap
+##  Roadmap
 
 * [x] Fetch papers from arXiv
 * [x] Filter relevant papers
@@ -134,7 +134,7 @@ python rag/query_bot.py
 
 ---
 
-## 💪 Contributing
+##  Contributing
 
 We welcome PRs and suggestions! See `CONTRIBUTING.md` (coming soon).
 
@@ -146,16 +146,16 @@ We welcome PRs and suggestions! See `CONTRIBUTING.md` (coming soon).
 ---
 
 
-## 📢 Contact
+##  Contact
 
-**Siddhant Sharma** — [siddhantsharma4520@gmail.com](mailto:siddhantsharma4520@gmail.com)
+**Siddhant Sharma** — 
 GitHub: [@sidsharmaa](https://github.com/sidsharmaa)
 
 Project Link: [https://github.com/sidsharmaa/ai-consciousness-project-major](https://github.com/sidsharmaa/ai-consciousness-project-major)
 
 ---
 
-## 📖 Resources used
+##  Resources used
 
 * LangChain & SentenceTransformers
 * Ollama team for lightweight LLMs

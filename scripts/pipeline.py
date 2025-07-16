@@ -19,7 +19,7 @@ os.makedirs(PROCESSED_DIR, exist_ok=True)
 # -----------------------
 # Fetch all matching papers
 # -----------------------
-print("🔍 Fetching all AI consciousness-related papers from arXiv...")
+print(" Fetching all AI consciousness-related papers from arXiv...")
 
 query_str = "AI consciousness OR machine consciousness"
 
@@ -50,7 +50,7 @@ try:
 except arxiv.UnexpectedEmptyPageError:
     print("No more results found. Ending pagination.")
 
-print(f"✅ Total papers fetched: {len(all_results)}")
+print(f" Total papers fetched: {len(all_results)}")
 
 # Convert to DataFrame
 df = pd.DataFrame(all_results)
@@ -59,7 +59,7 @@ df = pd.DataFrame(all_results)
 # -----------------------
 # Filter papers
 # -----------------------
-print("⚙️ Filtering papers with relevant keywords...")
+print(" Filtering papers with relevant keywords...")
 KEYWORDS = ["consciousness", "sentience", "awareness", "self-awareness", "mind", "experience"]
 
 df["text"] = df["Title"].fillna("") + " " + df["Summary"].fillna("")
@@ -68,12 +68,12 @@ df["text"] = df["text"].str.lower()
 filtered_df = df[df["text"].apply(lambda x: any(kw in x for kw in KEYWORDS))]
 filtered_file = os.path.join(PROCESSED_DIR, "filtered_papers.csv")
 filtered_df.to_csv(filtered_file, index=False)
-print(f"✅ Saved filtered papers to {filtered_file}")
+print(f" Saved filtered papers to {filtered_file}")
 
 # -----------------------
 # Plot papers per month
 # -----------------------
-print("📊 Generating publication plot...")
+print(" Generating publication plot...")
 df['Published'] = pd.to_datetime(df['Published'])
 monthly_counts = df.set_index('Published').resample('ME').size()
 
@@ -88,4 +88,4 @@ plt.tight_layout()
 plot_file = os.path.join(PROCESSED_DIR, "papers_per_month.png")
 plt.savefig(plot_file)
 plt.show()
-print(f"📈 Plot saved to {plot_file}")
+print(f" Plot saved to {plot_file}")

@@ -38,4 +38,4 @@ db.save_local(FAISS_INDEX)
 docs = [Document(page_content=doc.page_content, metadata={"title": "David Chalmers TED Talk on Consciousness"}) for doc in raw_docs]
 
 
-print("✅ Chalmers TED Talk embedded into FAISS index.")
+print(" Chalmers TED Talk embedded into FAISS index.")

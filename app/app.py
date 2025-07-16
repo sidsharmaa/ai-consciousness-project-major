@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 # Load data
 filtered_df = pd.read_csv("data/processed/filtered_papers.csv")
 
-st.title("🧠 AI Consciousness Papers Dashboard")
+st.title(" AI Consciousness Papers Dashboard")
 
-# 1️⃣ Show total count
+# 1️ Show total count
 st.write(f"**Total Filtered Papers:** {len(filtered_df)}")
 
-# 2️⃣ Keyword search box
+# 2️ Keyword search box
 query = st.text_input("Search in Titles or Summaries:", "")
 
 if query:
@@ -24,7 +24,7 @@ else:
 st.write(f"**Showing {len(filtered_view)} results:**")
 st.dataframe(filtered_view[["Title", "Summary", "PDF_URL"]])
 
-# 3️⃣ Show plot
+# 3️ Show plot
 st.write("---")
 st.subheader("Number of Papers per Month")
 
@@ -35,7 +35,7 @@ try:
 except:
     st.write("No plot found. Please run pipeline.py first.")
 
-# 4️⃣ Download option
+# 4️ Download option
 st.write("---")
 st.download_button(
     label="Download Filtered Papers CSV",

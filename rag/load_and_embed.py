@@ -41,4 +41,4 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 db = FAISS.from_documents(split_docs, embeddings)
 db.save_local(FAISS_INDEX)
 
-print(f"✅ FAISS index saved to {FAISS_INDEX}")
+print(f" FAISS index saved to {FAISS_INDEX}")

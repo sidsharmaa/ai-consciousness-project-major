@@ -5,7 +5,7 @@ import os
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-from langchain_community.llms import Ollama  # ✅ LOCAL LLM
+from langchain_community.llms import Ollama  #  LOCAL LLM
 
 # -----------------------
 # Config & Paths
@@ -19,7 +19,7 @@ print("FAISS_INDEX path:", FAISS_INDEX)
 # -----------------------
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-# ✅ Use local Ollama with Mistral
+#  Use local Ollama with Mistral
 llm = Ollama(model="mistral")
 
 # -----------------------
@@ -40,19 +40,19 @@ qa_chain = RetrievalQA.from_chain_type(
 # -----------------------
 # Interactive chat loop
 # -----------------------
-print("\n🧠 Ask your consciousness questions! (Type 'exit' to quit)\n")
+print("\n Ask your consciousness questions! (Type 'exit' to quit)\n")
 
 while True:
     query = input("You: ")
     if query.lower() in ["exit", "quit"]:
         break
 
-    result = qa_chain.invoke(query)  # ✅ modern usage!
+    result = qa_chain.invoke(query)  #  modern usage!
     answer = result["result"]
     sources = result["source_documents"]
 
-    print("\n🤖 Answer:\n", answer)
-    print("\n📚 Sources:")
+    print("\n Answer:\n", answer)
+    print("\n Sources:")
     for doc in sources:
         print(f" - {doc.metadata.get('title', 'Unknown Title')}")
     print("\n" + "-" * 50)
