@@ -1,0 +1,871 @@
+Title,Summary,Authors,Published,Updated,PDF_URL,Primary_Category,Categories
+Towards Multimodal Understanding via Stable Diffusion as a Task-Aware Feature Extractor,"Recent advances in multimodal large language models (MLLMs) have enabled
+image-based question-answering capabilities. However, a key limitation is the
+use of CLIP as the visual encoder; while it can capture coarse global
+information, it often can miss fine-grained details that are relevant to the
+input query. To address these shortcomings, this work studies whether
+pre-trained text-to-image diffusion models can serve as instruction-aware
+visual encoders. Through an analysis of their internal representations, we find
+diffusion features are both rich in semantics and can encode strong image-text
+alignment. Moreover, we find that we can leverage text conditioning to focus
+the model on regions relevant to the input question. We then investigate how to
+align these features with large language models and uncover a leakage
+phenomenon, where the LLM can inadvertently recover information from the
+original diffusion prompt. We analyze the causes of this leakage and propose a
+mitigation strategy. Based on these insights, we explore a simple fusion
+strategy that utilizes both CLIP and conditional diffusion features. We
+evaluate our approach on both general VQA and specialized MLLM benchmarks,
+demonstrating the promise of diffusion models for visual understanding,
+particularly in vision-centric tasks that require spatial and compositional
+reasoning. Our project page can be found
+https://vatsalag99.github.io/mustafar/.","['Vatsal Agarwal', 'Matthew Gwilliam', 'Gefen Kohavi', 'Eshan Verma', 'Daniel Ulbricht', 'Abhinav Shrivastava']",2025-07-09 17:59:47+00:00,2025-07-09 17:59:47+00:00,http://arxiv.org/pdf/2507.07106v1,cs.CV,"['cs.CV', 'cs.LG']"
+4KAgent: Agentic Any Image to 4K Super-Resolution,"We present 4KAgent, a unified agentic super-resolution generalist system
+designed to universally upscale any image to 4K resolution (and even higher, if
+applied iteratively). Our system can transform images from extremely low
+resolutions with severe degradations, for example, highly distorted inputs at
+256x256, into crystal-clear, photorealistic 4K outputs. 4KAgent comprises three
+core components: (1) Profiling, a module that customizes the 4KAgent pipeline
+based on bespoke use cases; (2) A Perception Agent, which leverages
+vision-language models alongside image quality assessment experts to analyze
+the input image and make a tailored restoration plan; and (3) A Restoration
+Agent, which executes the plan, following a recursive execution-reflection
+paradigm, guided by a quality-driven mixture-of-expert policy to select the
+optimal output for each step. Additionally, 4KAgent embeds a specialized face
+restoration pipeline, significantly enhancing facial details in portrait and
+selfie photos. We rigorously evaluate our 4KAgent across 11 distinct task
+categories encompassing a total of 26 diverse benchmarks, setting new
+state-of-the-art on a broad spectrum of imaging domains. Our evaluations cover
+natural images, portrait photos, AI-generated content, satellite imagery,
+fluorescence microscopy, and medical imaging like fundoscopy, ultrasound, and
+X-ray, demonstrating superior performance in terms of both perceptual (e.g.,
+NIQE, MUSIQ) and fidelity (e.g., PSNR) metrics. By establishing a novel agentic
+paradigm for low-level vision tasks, we aim to catalyze broader interest and
+innovation within vision-centric autonomous agents across diverse research
+communities. We will release all the code, models, and results at:
+https://4kagent.github.io.","['Yushen Zuo', 'Qi Zheng', 'Mingyang Wu', 'Xinrui Jiang', 'Renjie Li', 'Jian Wang', 'Yide Zhang', 'Gengchen Mai', 'Lihong V. Wang', 'James Zou', 'Xiaoyu Wang', 'Ming-Hsuan Yang', 'Zhengzhong Tu']",2025-07-09 17:59:19+00:00,2025-07-09 17:59:19+00:00,http://arxiv.org/pdf/2507.07105v1,cs.CV,"['cs.CV', 'eess.IV']"
+Does Data Scaling Lead to Visual Compositional Generalization?,"Compositional understanding is crucial for human intelligence, yet it remains
+unclear whether contemporary vision models exhibit it. The dominant machine
+learning paradigm is built on the premise that scaling data and model sizes
+will improve out-of-distribution performance, including compositional
+generalization. We test this premise through controlled experiments that
+systematically vary data scale, concept diversity, and combination coverage. We
+find that compositional generalization is driven by data diversity, not mere
+data scale. Increased combinatorial coverage forces models to discover a
+linearly factored representational structure, where concepts decompose into
+additive components. We prove this structure is key to efficiency, enabling
+perfect generalization from few observed combinations. Evaluating pretrained
+models (DINO, CLIP), we find above-random yet imperfect performance, suggesting
+partial presence of this structure. Our work motivates stronger emphasis on
+constructing diverse datasets for compositional generalization, and considering
+the importance of representational structure that enables efficient
+compositional learning. Code available at
+https://github.com/oshapio/visual-compositional-generalization.","['Arnas Uselis', 'Andrea Dittadi', 'Seong Joon Oh']",2025-07-09 17:59:03+00:00,2025-07-09 17:59:03+00:00,http://arxiv.org/pdf/2507.07102v1,cs.LG,['cs.LG']
+"Small Batch Size Training for Language Models: When Vanilla SGD Works, and Why Gradient Accumulation Is Wasteful","Conventional wisdom dictates that small batch sizes make language model
+pretraining and fine-tuning unstable, motivating gradient accumulation, which
+trades off the number of optimizer steps for a proportional increase in batch
+size. While it is common to decrease the learning rate for smaller batch sizes,
+other hyperparameters are often held fixed. In this work, we revisit small
+batch sizes all the way down to batch size one, and we propose a rule for
+scaling Adam hyperparameters to small batch sizes. We find that small batch
+sizes (1) train stably, (2) are consistently more robust to hyperparameter
+choices, (3) achieve equal or better per-FLOP performance than larger batch
+sizes, and (4) notably enable stable language model training with vanilla SGD,
+even without momentum, despite storing no optimizer state. Building on these
+results, we provide practical recommendations for selecting a batch size and
+setting optimizer hyperparameters. We further recommend against gradient
+accumulation unless training on multiple devices with multiple model replicas,
+bottlenecked by inter-device bandwidth.","['Martin Marek', 'Sanae Lotfi', 'Aditya Somasundaram', 'Andrew Gordon Wilson', 'Micah Goldblum']",2025-07-09 17:57:36+00:00,2025-07-09 17:57:36+00:00,http://arxiv.org/pdf/2507.07101v1,cs.LG,['cs.LG']
+Addressing Imbalanced Domain-Incremental Learning through Dual-Balance Collaborative Experts,"Domain-Incremental Learning (DIL) focuses on continual learning in
+non-stationary environments, requiring models to adjust to evolving domains
+while preserving historical knowledge. DIL faces two critical challenges in the
+context of imbalanced data: intra-domain class imbalance and cross-domain class
+distribution shifts. These challenges significantly hinder model performance,
+as intra-domain imbalance leads to underfitting of few-shot classes, while
+cross-domain shifts require maintaining well-learned many-shot classes and
+transferring knowledge to improve few-shot class performance in old domains. To
+overcome these challenges, we introduce the Dual-Balance Collaborative Experts
+(DCE) framework. DCE employs a frequency-aware expert group, where each expert
+is guided by specialized loss functions to learn features for specific
+frequency groups, effectively addressing intra-domain class imbalance.
+Subsequently, a dynamic expert selector is learned by synthesizing
+pseudo-features through balanced Gaussian sampling from historical class
+statistics. This mechanism navigates the trade-off between preserving many-shot
+knowledge of previous domains and leveraging new data to improve few-shot class
+performance in earlier tasks. Extensive experimental results on four benchmark
+datasets demonstrate DCE's state-of-the-art performance.","['Lan Li', 'Da-Wei Zhou', 'Han-Jia Ye', 'De-Chuan Zhan']",2025-07-09 17:57:07+00:00,2025-07-09 17:57:07+00:00,http://arxiv.org/pdf/2507.07100v1,cs.LG,"['cs.LG', 'cs.CV']"
+An AI Approach for Learning the Spectrum of the Laplace-Beltrami Operator,"The spectrum of the Laplace-Beltrami (LB) operator is central in geometric
+deep learning tasks, capturing intrinsic properties of the shape of the object
+under consideration. The best established method for its estimation, from a
+triangulated mesh of the object, is based on the Finite Element Method (FEM),
+and computes the top k LB eigenvalues with a complexity of O(Nk), where N is
+the number of points. This can render the FEM method inefficient when
+repeatedly applied to databases of CAD mechanical parts, or in quality control
+applications where part metrology is acquired as large meshes and decisions
+about the quality of each part are needed quickly and frequently. As a solution
+to this problem, we present a geometric deep learning framework to predict the
+LB spectrum efficiently given the CAD mesh of a part, achieving significant
+computational savings without sacrificing accuracy, demonstrating that the LB
+spectrum is learnable. The proposed Graph Neural Network architecture uses a
+rich set of part mesh features - including Gaussian curvature, mean curvature,
+and principal curvatures. In addition to our trained network, we make
+available, for repeatability, a large curated dataset of real-world mechanical
+CAD models derived from the publicly available ABC dataset used for training
+and testing. Experimental results show that our method reduces computation time
+of the LB spectrum by approximately 5 times over linear FEM while delivering
+competitive accuracy.","['Yulin An', 'Enrique del Castillo']",2025-07-09 17:31:18+00:00,2025-07-09 17:31:18+00:00,http://arxiv.org/pdf/2507.07073v1,cs.CV,"['cs.CV', 'cs.AI']"
+How to Bridge the Sim-to-Real Gap in Digital Twin-Aided Telecommunication Networks,"Training effective artificial intelligence models for telecommunications is
+challenging due to the scarcity of deployment-specific data. Real data
+collection is expensive, and available datasets often fail to capture the
+unique operational conditions and contextual variability of the network
+environment. Digital twinning provides a potential solution to this problem, as
+simulators tailored to the current network deployment can generate
+site-specific data to augment the available training datasets. However, there
+is a need to develop solutions to bridge the inherent simulation-to-reality
+(sim-to-real) gap between synthetic and real-world data. This paper reviews
+recent advances on two complementary strategies: 1) the calibration of digital
+twins (DTs) through real-world measurements, and 2) the use of sim-to-real
+gap-aware training strategies to robustly handle residual discrepancies between
+digital twin-generated and real data. For the latter, we evaluate two
+conceptually distinct methods that model the sim-to-real gap either at the
+level of the environment via Bayesian learning or at the level of the training
+loss via prediction-powered inference.","['Clement Ruah', 'Houssem Sifaou', 'Osvaldo Simeone', 'Bashir M. Al-Hashimi']",2025-07-09 17:27:51+00:00,2025-07-09 17:27:51+00:00,http://arxiv.org/pdf/2507.07067v1,eess.SP,"['eess.SP', 'cs.LG']"
+Exploring Public Perceptions of Generative AI in Libraries: A Social Media Analysis of X Discussions,"This study investigates public perceptions of generative artificial
+intelligence (GenAI) in libraries through a large-scale analysis of posts on X
+(formerly Twitter). Using a mixed-method approach that combines temporal trend
+analysis, sentiment classification, and social network analysis, this paper
+explores how public discourse around GenAI and libraries has evolved over time,
+the emotional tones that dominate the conversation, and the key users or
+organizations driving engagement. The findings reveal that discussions are
+predominantly negative in tone, with surges linked to concerns about ethics and
+intellectual property. Furthermore, social network analysis identifies both
+institutional authority and individual bridge users who facilitate cross-domain
+engagement. The results in this paper contribute to the growing body of
+literature on GenAI in the library and GLAM (Galleries, Libraries, Archives,
+and Museums) sectors and offer a real-time, public-facing perspective on the
+emerging opportunities and concerns GenAI presents.","['Yuan Li', 'Teja Mandaloju', 'Haihua Chen']",2025-07-09 17:10:06+00:00,2025-07-09 17:10:06+00:00,http://arxiv.org/pdf/2507.07047v1,cs.CY,"['cs.CY', 'cs.HC', 'cs.SI']"
+A Novel Hybrid Deep Learning Technique for Speech Emotion Detection using Feature Engineering,"Nowadays, speech emotion recognition (SER) plays a vital role in the field of
+human-computer interaction (HCI) and the evolution of artificial intelligence
+(AI). Our proposed DCRF-BiLSTM model is used to recognize seven emotions:
+neutral, happy, sad, angry, fear, disgust, and surprise, which are trained on
+five datasets: RAVDESS (R), TESS (T), SAVEE (S), EmoDB (E), and Crema-D (C).
+The model achieves high accuracy on individual datasets, including 97.83% on
+RAVDESS, 97.02% on SAVEE, 95.10% for CREMA-D, and a perfect 100% on both TESS
+and EMO-DB. For the combined (R+T+S) datasets, it achieves 98.82% accuracy,
+outperforming previously reported results. To our knowledge, no existing study
+has evaluated a single SER model across all five benchmark datasets (i.e.,
+R+T+S+C+E) simultaneously. In our work, we introduce this comprehensive
+combination and achieve a remarkable overall accuracy of 93.76%. These results
+confirm the robustness and generalizability of our DCRF-BiLSTM framework across
+diverse datasets.","['Shahana Yasmin Chowdhury', 'Bithi Banik', 'Md Tamjidul Hoque', 'Shreya Banerjee']",2025-07-09 17:07:45+00:00,2025-07-09 17:07:45+00:00,http://arxiv.org/pdf/2507.07046v1,cs.SD,"['cs.SD', 'cs.AI', 'cs.LG', 'eess.AS']"
+"5C Prompt Contracts: A Minimalist, Creative-Friendly, Token-Efficient Design Framework for Individual and SME LLM Usage","The progression from traditional prompt engineering to a more rigorous
+discipline of prompt design marks a pivotal shift in human-LLM interaction. As
+Large Language Models (LLMs) become increasingly embedded in mission-critical
+applications, there emerges a pressing need for frameworks that are not only
+explicit and systematic but also minimal enough to remain practical and broadly
+accessible. While many existing approaches address prompt structuring through
+elaborate Domain-Specific Languages (DSLs) or multi-layered templates, such
+methods can impose significant token and cognitive overhead, potentially
+constraining the model's creative capacity. In this context, we propose the 5C
+Prompt Contract, a framework that distills prompt design into five intuitive
+components: Character, Cause, Constraint, Contingency, and Calibration. This
+minimal cognitive schema explicitly integrates fallback and output optimization
+directives, fostering reliable, interpretable, and creatively flexible AI
+interactions. Experimental results demonstrate that the 5C framework
+consistently achieves superior input token efficiency while maintaining rich
+and consistent outputs across diverse LLM architectures (OpenAI, Anthropic,
+DeepSeek, and Gemini), making it particularly suited for individuals and
+Small-to-Medium Enterprises (SMEs) with limited AI engineering resources.",['Ugur Ari'],2025-07-09 17:07:39+00:00,2025-07-09 17:07:39+00:00,http://arxiv.org/pdf/2507.07045v1,cs.SE,"['cs.SE', 'cs.SI', '68T05', 'I.2.7; I.2.6']"
+Non-Asymptotic Analysis of Online Local Private Learning with SGD,"Differentially Private Stochastic Gradient Descent (DP-SGD) has been widely
+used for solving optimization problems with privacy guarantees in machine
+learning and statistics. Despite this, a systematic non-asymptotic convergence
+analysis for DP-SGD, particularly in the context of online problems and local
+differential privacy (LDP) models, remains largely elusive. Existing
+non-asymptotic analyses have focused on non-private optimization methods, and
+hence are not applicable to privacy-preserving optimization problems. This work
+initiates the analysis to bridge this gap and opens the door to non-asymptotic
+convergence analysis of private optimization problems. A general framework is
+investigated for the online LDP model in stochastic optimization problems. We
+assume that sensitive information from individuals is collected sequentially
+and aim to estimate, in real-time, a static parameter that pertains to the
+population of interest. Most importantly, we conduct a comprehensive
+non-asymptotic convergence analysis of the proposed estimators in finite-sample
+situations, which gives their users practical guidelines regarding the effect
+of various hyperparameters, such as step size, parameter dimensions, and
+privacy budgets, on convergence rates. Our proposed estimators are validated in
+the theoretical and practical realms by rigorous mathematical derivations and
+carefully constructed numerical experiments.","['Enze Shi', 'Jinhan Xie', 'Bei Jiang', 'Linglong Kong', 'Xuming He']",2025-07-09 17:06:01+00:00,2025-07-09 17:06:01+00:00,http://arxiv.org/pdf/2507.07041v1,stat.ME,"['stat.ME', 'cs.LG', 'stat.ML']"
+Self-Supervised Learning at the Edge: The Cost of Labeling,"Contrastive learning (CL) has recently emerged as an alternative to
+traditional supervised machine learning solutions by enabling rich
+representations from unstructured and unlabeled data. However, CL and, more
+broadly, self-supervised learning (SSL) methods often demand a large amount of
+data and computational resources, posing challenges for deployment on
+resource-constrained edge devices. In this work, we explore the feasibility and
+efficiency of SSL techniques for edge-based learning, focusing on trade-offs
+between model performance and energy efficiency. In particular, we analyze how
+different SSL techniques adapt to limited computational, data, and energy
+budgets, evaluating their effectiveness in learning robust representations
+under resource-constrained settings. Moreover, we also consider the energy
+costs involved in labeling data and assess how semi-supervised learning may
+assist in reducing the overall energy consumed to train CL models. Through
+extensive experiments, we demonstrate that tailored SSL strategies can achieve
+competitive performance while reducing resource consumption by up to 4X,
+underscoring their potential for energy-efficient learning at the edge.","['Roberto Pereira', 'Fernanda Famá', 'Asal Rangrazi', 'Marco Miozzo', 'Charalampos Kalalas', 'Paolo Dini']",2025-07-09 17:03:50+00:00,2025-07-09 17:03:50+00:00,http://arxiv.org/pdf/2507.07033v1,cs.LG,"['cs.LG', 'eess.SP']"
+ZKTorch: Compiling ML Inference to Zero-Knowledge Proofs via Parallel Proof Accumulation,"As AI models become ubiquitous in our daily lives, there has been an
+increasing demand for transparency in ML services. However, the model owner
+does not want to reveal the weights, as they are considered trade secrets. To
+solve this problem, researchers have turned to zero-knowledge proofs of ML
+model inference. These proofs convince the user that the ML model output is
+correct, without revealing the weights of the model to the user. Past work on
+these provers can be placed into two categories. The first method compiles the
+ML model into a low-level circuit, and proves the circuit using a ZK-SNARK. The
+second method uses custom cryptographic protocols designed only for a specific
+class of models. Unfortunately, the first method is highly inefficient, making
+it impractical for the large models used today, and the second method does not
+generalize well, making it difficult to update in the rapidly changing field of
+machine learning. To solve this, we propose ZKTorch, an open source end-to-end
+proving system that compiles ML models into base cryptographic operations
+called basic blocks, each proved using specialized protocols. ZKTorch is built
+on top of a novel parallel extension to the Mira accumulation scheme, enabling
+succinct proofs with minimal accumulation overhead. These contributions allow
+ZKTorch to achieve at least a $3\times$ reduction in the proof size compared to
+specialized protocols and up to a $6\times$ speedup in proving time over a
+general-purpose ZKML framework.","['Bing-Jyue Chen', 'Lilia Tang', 'Daniel Kang']",2025-07-09 17:03:21+00:00,2025-07-09 17:03:21+00:00,http://arxiv.org/pdf/2507.07031v1,cs.CR,"['cs.CR', 'cs.LG']"
+Exploring Fairness Interventions in Open Source Projects,"The deployment of biased machine learning (ML) models has resulted in adverse
+effects in crucial sectors such as criminal justice and healthcare. To address
+these challenges, a diverse range of machine learning fairness interventions
+have been developed, aiming to mitigate bias and promote the creation of more
+equitable models. Despite the growing availability of these interventions,
+their adoption in real-world applications remains limited, with many
+practitioners unaware of their existence. To address this gap, we
+systematically identified and compiled a dataset of 62 open source fairness
+interventions and identified active ones. We conducted an in-depth analysis of
+their specifications and features to uncover considerations that may drive
+practitioner preference and to identify the software interventions actively
+maintained in the open source ecosystem. Our findings indicate that 32% of
+these interventions have been actively maintained within the past year, and 50%
+of them offer both bias detection and mitigation capabilities, mostly during
+inprocessing.","['Sadia Afrin Mim', 'Fatema Tuz Zohra', 'Justin Smith', 'Brittany Johnson']",2025-07-09 16:57:59+00:00,2025-07-09 16:57:59+00:00,http://arxiv.org/pdf/2507.07026v1,cs.SE,['cs.SE']
+"The Post Science Paradigm of Scientific Discovery in the Era of Artificial Intelligence: Modelling the Collapse of Ideation Costs, Epistemic Inversion, and the End of Knowledge Scarcity","This paper develops a theoretical and formal response to the collapse in the
+marginal cost of ideation caused by artificial intelligence (AI). In
+challenging the foundational assumption of knowledge scarcity, the paper argues
+that the key economic constraint is no longer the generation of ideas, but the
+alignment of ideation with the recursive structure of human needs. Building on
+previous work, we further develop Experiential Matrix Theory (EMT), a framework
+that models innovation as a recursive optimisation process in which alignment,
+rather than ideation, becomes the binding constraint. Accordingly, we formalise
+core mechanisms of EMT and apply it to the dynamics of ideation collapse and
+institutional realignment under AI. Using a series of defensible economic
+models, we show that in this post-scarcity paradigm, the creation of economic
+and social value increasingly accrues to roles that guide, interpret, and
+socially embed ideation, rather than to those that merely generate new ideas.
+The paper theorises a transition from a knowledge economy to an alignment
+economy, and derives policy implications for labor hierarchies, subsidy
+structures, and institutional design. The university, in this context, must
+invert its function from knowledge transmission to epistemic alignment. The
+paper concludes by reframing growth not as a function of knowledge
+accumulation, but of how well society aligns its expanding cognitive capacity
+with the frontier of experiential human value. This redefinition of the
+innovation constraint implies a transformation of growth theory, policy design,
+and institutional purpose in the AI era.",['Christian William Callaghan'],2025-07-09 16:47:09+00:00,2025-07-09 16:47:09+00:00,http://arxiv.org/pdf/2507.07019v1,econ.GN,"['econ.GN', 'q-fin.EC']"
+On-Device Training of PV Power Forecasting Models in a Smart Meter for Grid Edge Intelligence,"In this paper, an edge-side model training study is conducted on a
+resource-limited smart meter. The motivation of grid-edge intelligence and the
+concept of on-device training are introduced. Then, the technical preparation
+steps for on-device training are described. A case study on the task of
+photovoltaic power forecasting is presented, where two representative machine
+learning models are investigated: a gradient boosting tree model and a
+recurrent neural network model. To adapt to the resource-limited situation in
+the smart meter, ""mixed""- and ""reduced""-precision training schemes are also
+devised. Experiment results demonstrate the feasibility of economically
+achieving grid-edge intelligence via the existing advanced metering
+infrastructures.","['Jian Huang', 'Yongli Zhu', 'Linna Xu', 'Zhe Zheng', 'Wenpeng Cui', 'Mingyang Sun']",2025-07-09 16:45:33+00:00,2025-07-09 16:45:33+00:00,http://arxiv.org/pdf/2507.07016v1,cs.LG,"['cs.LG', 'eess.SP']"
+MST-Distill: Mixture of Specialized Teachers for Cross-Modal Knowledge Distillation,"Knowledge distillation as an efficient knowledge transfer technique, has
+achieved remarkable success in unimodal scenarios. However, in cross-modal
+settings, conventional distillation methods encounter significant challenges
+due to data and statistical heterogeneities, failing to leverage the
+complementary prior knowledge embedded in cross-modal teacher models. This
+paper empirically reveals two critical issues in existing approaches:
+distillation path selection and knowledge drift. To address these limitations,
+we propose MST-Distill, a novel cross-modal knowledge distillation framework
+featuring a mixture of specialized teachers. Our approach employs a diverse
+ensemble of teacher models across both cross-modal and multimodal
+configurations, integrated with an instance-level routing network that
+facilitates adaptive and dynamic distillation. This architecture effectively
+transcends the constraints of traditional methods that rely on monotonous and
+static teacher models. Additionally, we introduce a plug-in masking module,
+independently trained to suppress modality-specific discrepancies and
+reconstruct teacher representations, thereby mitigating knowledge drift and
+enhancing transfer effectiveness. Extensive experiments across five diverse
+multimodal datasets, spanning visual, audio, and text, demonstrate that our
+method significantly outperforms existing state-of-the-art knowledge
+distillation methods in cross-modal distillation tasks. The source code is
+available at https://github.com/Gray-OREO/MST-Distill.","['Hui Li', 'Pengfei Yang', 'Juanyang Chen', 'Le Dong', 'Yanxin Chen', 'Quan Wang']",2025-07-09 16:45:28+00:00,2025-07-09 16:45:28+00:00,http://arxiv.org/pdf/2507.07015v1,cs.CV,"['cs.CV', 'cs.LG', 'cs.MM']"
+When Context Is Not Enough: Modeling Unexplained Variability in Car-Following Behavior,"Modeling car-following behavior is fundamental to microscopic traffic
+simulation, yet traditional deterministic models often fail to capture the full
+extent of variability and unpredictability in human driving. While many modern
+approaches incorporate context-aware inputs (e.g., spacing, speed, relative
+speed), they frequently overlook structured stochasticity that arises from
+latent driver intentions, perception errors, and memory effects -- factors that
+are not directly observable from context alone. To fill the gap, this study
+introduces an interpretable stochastic modeling framework that captures not
+only context-dependent dynamics but also residual variability beyond what
+context can explain. Leveraging deep neural networks integrated with
+nonstationary Gaussian processes (GPs), our model employs a scenario-adaptive
+Gibbs kernel to learn dynamic temporal correlations in acceleration decisions,
+where the strength and duration of correlations between acceleration decisions
+evolve with the driving context. This formulation enables a principled,
+data-driven quantification of uncertainty in acceleration, speed, and spacing,
+grounded in both observable context and latent behavioral variability.
+Comprehensive experiments on the naturalistic vehicle trajectory dataset
+collected from the German highway, i.e., the HighD dataset, demonstrate that
+the proposed stochastic simulation method within this framework surpasses
+conventional methods in both predictive performance and interpretable
+uncertainty quantification. The integration of interpretability and accuracy
+makes this framework a promising tool for traffic analysis and safety-critical
+applications.","['Chengyuan Zhang', 'Zhengbing He', 'Cathy Wu', 'Lijun Sun']",2025-07-09 16:42:41+00:00,2025-07-09 16:42:41+00:00,http://arxiv.org/pdf/2507.07012v1,stat.AP,"['stat.AP', 'cs.LG', 'cs.RO']"
+Exact Evaluation of the Accuracy of Diffusion Models for Inverse Problems with Gaussian Data Distributions,"Used as priors for Bayesian inverse problems, diffusion models have recently
+attracted considerable attention in the literature. Their flexibility and high
+variance enable them to generate multiple solutions for a given task, such as
+inpainting, super-resolution, and deblurring. However, several unresolved
+questions remain about how well they perform. In this article, we investigate
+the accuracy of these models when applied to a Gaussian data distribution for
+deblurring. Within this constrained context, we are able to precisely analyze
+the discrepancy between the theoretical resolution of inverse problems and
+their resolution obtained using diffusion models by computing the exact
+Wasserstein distance between the distribution of the diffusion model sampler
+and the ideal distribution of solutions to the inverse problem. Our findings
+allow for the comparison of different algorithms from the literature.","['Emile Pierret', 'Bruno Galerne']",2025-07-09 16:36:51+00:00,2025-07-09 16:36:51+00:00,http://arxiv.org/pdf/2507.07008v1,cs.LG,['cs.LG']
+GNN-ViTCap: GNN-Enhanced Multiple Instance Learning with Vision Transformers for Whole Slide Image Classification and Captioning,"Microscopic assessment of histopathology images is vital for accurate cancer
+diagnosis and treatment. Whole Slide Image (WSI) classification and captioning
+have become crucial tasks in computer-aided pathology. However, microscopic WSI
+face challenges such as redundant patches and unknown patch positions due to
+subjective pathologist captures. Moreover, generating automatic pathology
+captions remains a significant challenge. To address these issues, we introduce
+a novel GNN-ViTCap framework for classification and caption generation from
+histopathological microscopic images. First, a visual feature extractor
+generates patch embeddings. Redundant patches are then removed by dynamically
+clustering these embeddings using deep embedded clustering and selecting
+representative patches via a scalar dot attention mechanism. We build a graph
+by connecting each node to its nearest neighbors in the similarity matrix and
+apply a graph neural network to capture both local and global context. The
+aggregated image embeddings are projected into the language model's input space
+through a linear layer and combined with caption tokens to fine-tune a large
+language model. We validate our method on the BreakHis and PatchGastric
+datasets. GNN-ViTCap achieves an F1 score of 0.934 and an AUC of 0.963 for
+classification, along with a BLEU-4 score of 0.811 and a METEOR score of 0.569
+for captioning. Experimental results demonstrate that GNN-ViTCap outperforms
+state of the art approaches, offering a reliable and efficient solution for
+microscopy based patient diagnosis.","['S M Taslim Uddin Raju', 'Md. Milon Islam', 'Md Rezwanul Haque', 'Hamdi Altaheri', 'Fakhri Karray']",2025-07-09 16:35:21+00:00,2025-07-09 16:35:21+00:00,http://arxiv.org/pdf/2507.07006v1,cs.CV,"['cs.CV', 'cs.LG']"
+"Learning Deliberately, Acting Intuitively: Unlocking Test-Time Reasoning in Multimodal LLMs","Reasoning is a key capability for large language models (LLMs), particularly
+when applied to complex tasks such as mathematical problem solving. However,
+multimodal reasoning research still requires further exploration of modality
+alignment and training costs. Many of these approaches rely on additional data
+annotation and relevant rule-based rewards to enhance the understanding and
+reasoning ability, which significantly increases training costs and limits
+scalability. To address these challenges, we propose the
+Deliberate-to-Intuitive reasoning framework (D2I) that improves the
+understanding and reasoning ability of multimodal LLMs (MLLMs) without extra
+annotations and complex rewards. Specifically, our method sets deliberate
+reasoning strategies to enhance modality alignment only through the rule-based
+format reward during training. While evaluating, the reasoning style shifts to
+intuitive, which removes deliberate reasoning strategies during training and
+implicitly reflects the model's acquired abilities in the response. D2I
+outperforms baselines across both in-domain and out-of-domain benchmarks. Our
+findings highlight the role of format reward in fostering transferable
+reasoning skills in MLLMs, and inspire directions for decoupling training-time
+reasoning depth from test-time response flexibility.","['Yahan Yu', 'Yuyang Dong', 'Masafumi Oyamada']",2025-07-09 16:25:44+00:00,2025-07-09 16:25:44+00:00,http://arxiv.org/pdf/2507.06999v1,cs.CV,"['cs.CV', 'cs.CL', 'cs.LG']"
+Federated Learning-based MARL for Strengthening Physical-Layer Security in B5G Networks,"This paper explores the application of a federated learning-based multi-agent
+reinforcement learning (MARL) strategy to enhance physical-layer security (PLS)
+in a multi-cellular network within the context of beyond 5G networks. At each
+cell, a base station (BS) operates as a deep reinforcement learning (DRL) agent
+that interacts with the surrounding environment to maximize the secrecy rate of
+legitimate users in the presence of an eavesdropper. This eavesdropper attempts
+to intercept the confidential information shared between the BS and its
+authorized users. The DRL agents are deemed to be federated since they only
+share their network parameters with a central server and not the private data
+of their legitimate users. Two DRL approaches, deep Q-network (DQN) and
+Reinforce deep policy gradient (RDPG), are explored and compared. The results
+demonstrate that RDPG converges more rapidly than DQN. In addition, we
+demonstrate that the proposed method outperforms the distributed DRL approach.
+Furthermore, the outcomes illustrate the trade-off between security and
+complexity.","['Deemah H. Tashman', 'Soumaya Cherkaoui', 'Walaa Hamouda']",2025-07-09 16:24:15+00:00,2025-07-09 16:24:15+00:00,http://arxiv.org/pdf/2507.06997v1,eess.SP,"['eess.SP', 'cs.ET', 'cs.LG', 'cs.NI']"
+Generating Multi-Table Time Series EHR from Latent Space with Minimal Preprocessing,"Electronic Health Records (EHR) are time-series relational databases that
+record patient interactions and medical events over time, serving as a critical
+resource for healthcare research and applications. However, privacy concerns
+and regulatory restrictions limit the sharing and utilization of such sensitive
+data, necessitating the generation of synthetic EHR datasets. Unlike previous
+EHR synthesis methods, which typically generate medical records consisting of
+expert-chosen features (e.g. a few vital signs or structured codes only), we
+introduce RawMed, the first framework to synthesize multi-table, time-series
+EHR data that closely resembles raw EHRs. Using text-based representation and
+compression techniques, RawMed captures complex structures and temporal
+dynamics with minimal preprocessing. We also propose a new evaluation framework
+for multi-table time-series synthetic EHRs, assessing distributional
+similarity, inter-table relationships, temporal dynamics, and privacy.
+Validated on two open-source EHR datasets, RawMed outperforms baseline models
+in fidelity and utility. The code is available at
+https://github.com/eunbyeol-cho/RawMed.","['Eunbyeol Cho', 'Jiyoun Kim', 'Minjae Lee', 'Sungjin Park', 'Edward Choi']",2025-07-09 16:22:22+00:00,2025-07-09 16:22:22+00:00,http://arxiv.org/pdf/2507.06996v1,cs.LG,"['cs.LG', 'cs.AI']"
+Enhancing Quantum Software Development Process with Experiment Tracking,"As quantum computing advances from theoretical promise to experimental
+reality, the need for rigorous experiment tracking becomes critical. Drawing
+inspiration from best practices in machine learning (ML) and artificial
+intelligence (AI), we argue that reproducibility, scalability, and
+collaboration in quantum research can benefit significantly from structured
+tracking workflows. This paper explores the application of MLflow in quantum
+research, illustrating how it enables better development practices, experiment
+reproducibility, decision making, and cross-domain integration in an
+increasingly hybrid classical-quantum landscape.","['Mahee Gamage', 'Otso Kinanen', 'Jake Muff', 'Vlad Stirbu']",2025-07-09 16:14:18+00:00,2025-07-09 16:14:18+00:00,http://arxiv.org/pdf/2507.06990v1,quant-ph,"['quant-ph', 'cs.SE']"
+BarkBeetle: Stealing Decision Tree Models with Fault Injection,"Machine learning models, particularly decision trees (DTs), are widely
+adopted across various domains due to their interpretability and efficiency.
+However, as ML models become increasingly integrated into privacy-sensitive
+applications, concerns about their confidentiality have grown, particularly in
+light of emerging threats such as model extraction and fault injection attacks.
+Assessing the vulnerability of DTs under such attacks is therefore important.
+In this work, we present BarkBeetle, a novel attack that leverages fault
+injection to extract internal structural information of DT models. BarkBeetle
+employs a bottom-up recovery strategy that uses targeted fault injection at
+specific nodes to efficiently infer feature splits and threshold values. Our
+proof-of-concept implementation demonstrates that BarkBeetle requires
+significantly fewer queries and recovers more structural information compared
+to prior approaches, when evaluated on DTs trained with public UCI datasets. To
+validate its practical feasibility, we implement BarkBeetle on a Raspberry Pi
+RP2350 board and perform fault injections using the Faultier voltage glitching
+tool. As BarkBeetle targets general DT models, we also provide an in-depth
+discussion on its applicability to a broader range of tree-based applications,
+including data stream classification, DT variants, and cryptography schemes.","['Qifan Wang', 'Jonas Sander', 'Minmin Jiang', 'Thomas Eisenbarth', 'David Oswald']",2025-07-09 16:08:58+00:00,2025-07-09 16:08:58+00:00,http://arxiv.org/pdf/2507.06986v1,cs.CR,['cs.CR']
+A Principled Framework for Multi-View Contrastive Learning,"Contrastive Learning (CL), a leading paradigm in Self-Supervised Learning
+(SSL), typically relies on pairs of data views generated through augmentation.
+While multiple augmentations per instance (more than two) improve
+generalization in supervised learning, current CL methods handle additional
+views suboptimally by simply aggregating different pairwise objectives. This
+approach suffers from four critical limitations: (L1) it utilizes multiple
+optimization terms per data point resulting to conflicting objectives, (L2) it
+fails to model all interactions across views and data points, (L3) it inherits
+fundamental limitations (e.g. alignment-uniformity coupling) from pairwise CL
+losses, and (L4) it prevents fully realizing the benefits of increased view
+multiplicity observed in supervised settings. We address these limitations
+through two novel loss functions: MV-InfoNCE, which extends InfoNCE to
+incorporate all possible view interactions simultaneously in one term per data
+point, and MV-DHEL, which decouples alignment from uniformity across views
+while scaling interaction complexity with view multiplicity. Both approaches
+are theoretically grounded - we prove they asymptotically optimize for
+alignment of all views and uniformity, providing principled extensions to
+multi-view contrastive learning. Our empirical results on ImageNet1K and three
+other datasets demonstrate that our methods consistently outperform existing
+multi-view approaches and effectively scale with increasing view multiplicity.
+We also apply our objectives to multimodal data and show that, in contrast to
+other contrastive objectives, they can scale beyond just two modalities. Most
+significantly, ablation studies reveal that MV-DHEL with five or more views
+effectively mitigates dimensionality collapse by fully utilizing the embedding
+space, thereby delivering multi-view benefits observed in supervised learning.","['Panagiotis Koromilas', 'Efthymios Georgiou', 'Giorgos Bouritsas', 'Theodoros Giannakopoulos', 'Mihalis A. Nicolaou', 'Yannis Panagakis']",2025-07-09 16:07:17+00:00,2025-07-09 16:07:17+00:00,http://arxiv.org/pdf/2507.06979v1,cs.LG,"['cs.LG', 'cs.CV']"
+Anti-Interference Diffractive Deep Neural Networks for Multi-Object Recognition,"Optical neural networks (ONNs) are emerging as a promising neuromorphic
+computing paradigm for object recognition, offering unprecedented advantages in
+light-speed computation, ultra-low power consumption, and inherent parallelism.
+However, most of ONNs are only capable of performing simple object
+classification tasks. These tasks are typically constrained to single-object
+scenarios, which limits their practical applications in multi-object
+recognition tasks. Here, we propose an anti-interference diffractive deep
+neural network (AI D2NN) that can accurately and robustly recognize targets in
+multi-object scenarios, including intra-class, inter-class, and dynamic
+interference. By employing different deep-learning-based training strategies
+for targets and interference, two transmissive diffractive layers form a
+physical network that maps the spatial information of targets all-optically
+into the power spectrum of the output light, while dispersing all interference
+as background noise. We demonstrate the effectiveness of this framework in
+classifying unknown handwritten digits under dynamic scenarios involving 40
+categories of interference, achieving a simulated blind testing accuracy of
+87.4% using terahertz waves. The presented framework can be physically scaled
+to operate at any electromagnetic wavelength by simply scaling the diffractive
+features in proportion to the wavelength range of interest. This work can
+greatly advance the practical application of ONNs in target recognition and
+pave the way for the development of real-time, high-throughput, low-power
+all-optical computing systems, which are expected to be applied to autonomous
+driving perception, precision medical diagnosis, and intelligent security
+monitoring.","['Zhiqi Huang', 'Yufei Liu', 'Nan Zhang', 'Zian Zhang', 'Qiming Liao', 'Cong He', 'Shendong Liu', 'Youhai Liu', 'Hongtao Wang', 'Xingdu Qiao', 'Joel K. W. Yang', 'Yan Zhang', 'Lingling Huang', 'Yongtian Wang']",2025-07-09 16:06:58+00:00,2025-07-09 16:06:58+00:00,http://arxiv.org/pdf/2507.06978v1,physics.optics,"['physics.optics', '78A40', 'I.2.6; B.4.3']"
+A multi-modal dataset for insect biodiversity with imagery and DNA at the trap and individual level,"Insects comprise millions of species, many experiencing severe population
+declines under environmental and habitat changes. High-throughput approaches
+are crucial for accelerating our understanding of insect diversity, with DNA
+barcoding and high-resolution imaging showing strong potential for automatic
+taxonomic classification. However, most image-based approaches rely on
+individual specimen data, unlike the unsorted bulk samples collected in
+large-scale ecological surveys. We present the Mixed Arthropod Sample
+Segmentation and Identification (MassID45) dataset for training automatic
+classifiers of bulk insect samples. It uniquely combines molecular and imaging
+data at both the unsorted sample level and the full set of individual
+specimens. Human annotators, supported by an AI-assisted tool, performed two
+tasks on bulk images: creating segmentation masks around each individual
+arthropod and assigning taxonomic labels to over 17 000 specimens. Combining
+the taxonomic resolution of DNA barcodes with precise abundance estimates of
+bulk images holds great potential for rapid, large-scale characterization of
+insect communities. This dataset pushes the boundaries of tiny object detection
+and instance segmentation, fostering innovation in both ecological and machine
+learning research.","['Johanna Orsholm', 'John Quinto', 'Hannu Autto', 'Gaia Banelyte', 'Nicolas Chazot', 'Jeremy deWaard', 'Stephanie deWaard', 'Arielle Farrell', 'Brendan Furneaux', 'Bess Hardwick', 'Nao Ito', 'Amlan Kar', 'Oula Kalttopää', 'Deirdre Kerdraon', 'Erik Kristensen', 'Jaclyn McKeown', 'Tommi Mononen', 'Ellen Nein', 'Hanna Rogers', 'Tomas Roslin', 'Paula Schmitz', 'Jayme Sones', 'Maija Sujala', 'Amy Thompson', 'Evgeny V. Zakharov', 'Iuliia Zarubiieva', 'Akshita Gupta', 'Scott C. Lowe', 'Graham W. Taylor']",2025-07-09 16:03:06+00:00,2025-07-09 16:03:06+00:00,http://arxiv.org/pdf/2507.06972v1,cs.CV,['cs.CV']
+"Unifying Re-Identification, Attribute Inference, and Data Reconstruction Risks in Differential Privacy","Differentially private (DP) mechanisms are difficult to interpret and
+calibrate because existing methods for mapping standard privacy parameters to
+concrete privacy risks -- re-identification, attribute inference, and data
+reconstruction -- are both overly pessimistic and inconsistent. In this work,
+we use the hypothesis-testing interpretation of DP ($f$-DP), and determine that
+bounds on attack success can take the same unified form across
+re-identification, attribute inference, and data reconstruction risks. Our
+unified bounds are (1) consistent across a multitude of attack settings, and
+(2) tunable, enabling practitioners to evaluate risk with respect to arbitrary
+(including worst-case) levels of baseline risk. Empirically, our results are
+tighter than prior methods using $\varepsilon$-DP, R\'enyi DP, and concentrated
+DP. As a result, calibrating noise using our bounds can reduce the required
+noise by 20% at the same risk level, which yields, e.g., more than 15pp
+accuracy increase in a text classification task. Overall, this unifying
+perspective provides a principled framework for interpreting and calibrating
+the degree of protection in DP against specific levels of re-identification,
+attribute inference, or data reconstruction risk.","['Bogdan Kulynych', 'Juan Felipe Gomez', 'Georgios Kaissis', 'Jamie Hayes', 'Borja Balle', 'Flavio du Pin Calmon', 'Jean Louis Raisaro']",2025-07-09 15:59:30+00:00,2025-07-09 15:59:30+00:00,http://arxiv.org/pdf/2507.06969v1,cs.LG,"['cs.LG', 'cs.AI', 'cs.CR', 'cs.CY', 'stat.ML']"
+Noisy PDE Training Requires Bigger PINNs,"Physics-Informed Neural Networks (PINNs) are increasingly used to approximate
+solutions of partial differential equations (PDEs), especially in high
+dimensions. In real-world applications, data samples are noisy, so it is
+important to know when a predictor can still achieve low empirical risk.
+However, little is known about the conditions under which a PINN can do so
+effectively. We prove a lower bound on the size of neural networks required for
+the supervised PINN empirical risk to fall below the variance of noisy
+supervision labels. Specifically, if a predictor achieves an empirical risk
+$O(\eta)$ below $\sigma^2$ (variance of supervision data), then necessarily
+$d_N\log d_N\gtrsim N_s \eta^2$, where $N_s$ is the number of samples and $d_N$
+is the number of trainable parameters of the PINN. A similar constraint applies
+to the fully unsupervised PINN setting when boundary labels are sampled
+noisily. Consequently, increasing the number of noisy supervision labels alone
+does not provide a ``free lunch'' in reducing empirical risk. We also show
+empirically that PINNs can indeed achieve empirical risks below $\sigma^2$
+under such conditions. As a case study, we investigate PINNs applied to the
+Hamilton--Jacobi--Bellman (HJB) PDE. Our findings lay the groundwork for
+quantitatively understanding the parameter requirements for training PINNs in
+the presence of noise.","['Sebastien Andre-Sloan', 'Anirbit Mukherjee', 'Matthew Colbrook']",2025-07-09 15:58:26+00:00,2025-07-09 15:58:26+00:00,http://arxiv.org/pdf/2507.06967v1,cs.LG,"['cs.LG', 'cs.AI']"
+Off-Policy Evaluation Under Nonignorable Missing Data,"Off-Policy Evaluation (OPE) aims to estimate the value of a target policy
+using offline data collected from potentially different policies. In real-world
+applications, however, logged data often suffers from missingness. While OPE
+has been extensively studied in the literature, a theoretical understanding of
+how missing data affects OPE results remains unclear. In this paper, we
+investigate OPE in the presence of monotone missingness and theoretically
+demonstrate that the value estimates remain unbiased under ignorable
+missingness but can be biased under nonignorable (informative) missingness. To
+retain the consistency of value estimation, we propose an inverse probability
+weighted value estimator and conduct statistical inference to quantify the
+uncertainty of the estimates. Through a series of numerical experiments, we
+empirically demonstrate that our proposed estimator yields a more reliable
+value inference under missing data.","['Han Wang', 'Yang Xu', 'Wenbin Lu', 'Rui Song']",2025-07-09 15:46:39+00:00,2025-07-09 15:46:39+00:00,http://arxiv.org/pdf/2507.06961v1,stat.ML,"['stat.ML', 'cs.LG']"
+What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models,"Foundation models are premised on the idea that sequence prediction can
+uncover deeper domain understanding, much like how Kepler's predictions of
+planetary motion later led to the discovery of Newtonian mechanics. However,
+evaluating whether these models truly capture deeper structure remains a
+challenge. We develop a technique for evaluating foundation models that
+examines how they adapt to synthetic datasets generated from some postulated
+world model. Our technique measures whether the foundation model's inductive
+bias aligns with the world model, and so we refer to it as an inductive bias
+probe. Across multiple domains, we find that foundation models can excel at
+their training tasks yet fail to develop inductive biases towards the
+underlying world model when adapted to new tasks. We particularly find that
+foundation models trained on orbital trajectories consistently fail to apply
+Newtonian mechanics when adapted to new physics tasks. Further analysis reveals
+that these models behave as if they develop task-specific heuristics that fail
+to generalize.","['Keyon Vafa', 'Peter G. Chang', 'Ashesh Rambachan', 'Sendhil Mullainathan']",2025-07-09 15:36:15+00:00,2025-07-09 15:36:15+00:00,http://arxiv.org/pdf/2507.06952v1,cs.LG,"['cs.LG', 'cs.AI']"
+Dataset and Benchmark for Enhancing Critical Retained Foreign Object Detection,"Critical retained foreign objects (RFOs), including surgical instruments like
+sponges and needles, pose serious patient safety risks and carry significant
+financial and legal implications for healthcare institutions. Detecting
+critical RFOs using artificial intelligence remains challenging due to their
+rarity and the limited availability of chest X-ray datasets that specifically
+feature critical RFOs cases. Existing datasets only contain non-critical RFOs,
+like necklace or zipper, further limiting their utility for developing
+clinically impactful detection algorithms. To address these limitations, we
+introduce ""Hopkins RFOs Bench"", the first and largest dataset of its kind,
+containing 144 chest X-ray images of critical RFO cases collected over 18 years
+from the Johns Hopkins Health System. Using this dataset, we benchmark several
+state-of-the-art object detection models, highlighting the need for enhanced
+detection methodologies for critical RFO cases. Recognizing data scarcity
+challenges, we further explore image synthetic methods to bridge this gap. We
+evaluate two advanced synthetic image methods, DeepDRR-RFO, a physics-based
+method, and RoentGen-RFO, a diffusion-based method, for creating realistic
+radiographs featuring critical RFOs. Our comprehensive analysis identifies the
+strengths and limitations of each synthetic method, providing insights into
+effectively utilizing synthetic data to enhance model training. The Hopkins
+RFOs Bench and our findings significantly advance the development of reliable,
+generalizable AI-driven solutions for detecting critical RFOs in clinical chest
+X-rays.","['Yuli Wang', 'Victoria R. Shi', 'Liwei Zhou', 'Richard Chin', 'Yuwei Dai', 'Yuanyun Hu', 'Cheng-Yi Li', 'Haoyue Guan', 'Jiashu Cheng', 'Yu Sun', 'Cheng Ting Lin', 'Ihab Kamel', 'Premal Trivedi', 'Pamela Johnson', 'John Eng', 'Harrison Bai']",2025-07-09 15:18:06+00:00,2025-07-09 15:18:06+00:00,http://arxiv.org/pdf/2507.06937v1,eess.IV,['eess.IV']
+DICE: Data Influence Cascade in Decentralized Learning,"Decentralized learning offers a promising approach to crowdsource data
+consumptions and computational workloads across geographically distributed
+compute interconnected through peer-to-peer networks, accommodating the
+exponentially increasing demands. However, proper incentives are still in
+absence, considerably discouraging participation. Our vision is that a fair
+incentive mechanism relies on fair attribution of contributions to
+participating nodes, which faces non-trivial challenges arising from the
+localized connections making influence ``cascade'' in a decentralized network.
+To overcome this, we design the first method to estimate \textbf{D}ata
+\textbf{I}nfluence \textbf{C}ascad\textbf{E} (DICE) in a decentralized
+environment. Theoretically, the framework derives tractable approximations of
+influence cascade over arbitrary neighbor hops, suggesting the influence
+cascade is determined by an interplay of data, communication topology, and the
+curvature of loss landscape. DICE also lays the foundations for applications
+including selecting suitable collaborators and identifying malicious behaviors.
+Project page is available at https://raiden-zhu.github.io/blog/2025/DICE/.","['Tongtian Zhu', 'Wenhao Li', 'Can Wang', 'Fengxiang He']",2025-07-09 15:13:44+00:00,2025-07-09 15:13:44+00:00,http://arxiv.org/pdf/2507.06931v1,cs.LG,"['cs.LG', 'cs.DC', 'cs.MA', 'cs.SI', 'stat.ML']"
+Machine-Learned Force Fields for Lattice Dynamics at Coupled-Cluster Level Accuracy,"We investigate Machine-Learned Force Fields (MLFFs) trained on approximate
+Density Functional Theory (DFT) and Coupled Cluster (CC) level potential energy
+surfaces for the carbon diamond and lithium hydride solids. We assess the
+accuracy and precision of the MLFFs by calculating phonon dispersions and
+vibrational densities of states (VDOS) that are compared to experiment and
+reference ab initio results. To overcome limitations from long-range effects
+and the lack of atomic forces in the CC training data, a delta-learning
+approach based on the difference between CC and DFT results is explored.
+Compared to DFT, MLFFs trained on CC theory yield higher vibrational
+frequencies for optical modes, agreeing better with experiment. Furthermore,
+the MLFFs are used to estimate anharmonic effects on the VDOS of lithium
+hydride at the level of CC theory.","['Sita Schönbauer', 'Johanna P. Carbone', 'Andreas Grüneis']",2025-07-09 15:11:55+00:00,2025-07-09 15:11:55+00:00,http://arxiv.org/pdf/2507.06929v1,cond-mat.mtrl-sci,"['cond-mat.mtrl-sci', 'cs.LG', 'physics.comp-ph']"
+Distribution-free inference for LightGBM and GLM with Tweedie loss,"Prediction uncertainty quantification is a key research topic in recent years
+scientific and business problems. In insurance industries
+(\cite{parodi2023pricing}), assessing the range of possible claim costs for
+individual drivers improves premium pricing accuracy. It also enables insurers
+to manage risk more effectively by accounting for uncertainty in accident
+likelihood and severity. In the presence of covariates, a variety of
+regression-type models are often used for modeling insurance claims, ranging
+from relatively simple generalized linear models (GLMs) to regularized GLMs to
+gradient boosting models (GBMs). Conformal predictive inference has arisen as a
+popular distribution-free approach for quantifying predictive uncertainty under
+relatively weak assumptions of exchangeability, and has been well studied under
+the classic linear regression setting. In this work, we propose new
+non-conformity measures for GLMs and GBMs with GLM-type loss. Using regularized
+Tweedie GLM regression and LightGBM with Tweedie loss, we demonstrate conformal
+prediction performance with these non-conformity measures in insurance claims
+data. Our simulation results favor the use of locally weighted Pearson
+residuals for LightGBM over other methods considered, as the resulting
+intervals maintained the nominal coverage with the smallest average width.","['Alokesh Manna', 'Aditya Vikram Sett', 'Dipak K. Dey', 'Yuwen Gu', 'Elizabeth D. Schifano', 'Jichao He']",2025-07-09 14:58:54+00:00,2025-07-09 14:58:54+00:00,http://arxiv.org/pdf/2507.06921v1,stat.ML,"['stat.ML', 'cs.LG', 'Application to insurance data, Methodology']"
+Beyond Connectivity: An Open Architecture for AI-RAN Convergence in 6G,"The proliferation of data-intensive Artificial Intelligence (AI) applications
+at the network edge demands a fundamental shift in RAN design, from merely
+consuming AI for network optimization, to actively enabling distributed AI
+workloads. This paradigm shift presents a significant opportunity for network
+operators to monetize AI at the edge while leveraging existing infrastructure
+investments. To realize this vision, this article presents a novel converged
+O-RAN and AI-RAN architecture that unifies orchestration and management of both
+telecommunications and AI workloads on shared infrastructure. The proposed
+architecture extends the Open RAN principles of modularity, disaggregation, and
+cloud-nativeness to support heterogeneous AI deployments. We introduce two key
+architectural innovations: (i) the AI-RAN Orchestrator, which extends the O-RAN
+Service Management and Orchestration (SMO) to enable integrated resource and
+allocation across RAN and AI workloads; and (ii) AI-RAN sites that provide
+distributed edge AI platforms with real-time processing capabilities. The
+proposed system supports flexible deployment options, allowing AI workloads to
+be orchestrated with specific timing requirements (real-time or batch
+processing) and geographic targeting. The proposed architecture addresses the
+orchestration requirements for managing heterogeneous workloads at different
+time scales while maintaining open, standardized interfaces and multi-vendor
+interoperability.","['Michele Polese', 'Niloofar Mohamadi', ""Salvatore D'Oro"", 'Tommaso Melodia']",2025-07-09 14:49:11+00:00,2025-07-09 14:49:11+00:00,http://arxiv.org/pdf/2507.06911v1,cs.NI,"['cs.NI', 'cs.AI', 'eess.SP']"
+Exploring LLMs for Predicting Tutor Strategy and Student Outcomes in Dialogues,"Tutoring dialogues have gained significant attention in recent years, given
+the prominence of online learning and the emerging tutoring abilities of
+artificial intelligence (AI) agents powered by large language models (LLMs).
+Recent studies have shown that the strategies used by tutors can have
+significant effects on student outcomes, necessitating methods to predict how
+tutors will behave and how their actions impact students. However, few works
+have studied predicting tutor strategy in dialogues. Therefore, in this work we
+investigate the ability of modern LLMs, particularly Llama 3 and GPT-4o, to
+predict both future tutor moves and student outcomes in dialogues, using two
+math tutoring dialogue datasets. We find that even state-of-the-art LLMs
+struggle to predict future tutor strategy while tutor strategy is highly
+indicative of student outcomes, outlining a need for more powerful methods to
+approach this task.","['Fareya Ikram', 'Alexander Scarlatos', 'Andrew Lan']",2025-07-09 14:47:35+00:00,2025-07-09 14:47:35+00:00,http://arxiv.org/pdf/2507.06910v1,cs.CL,"['cs.CL', 'cs.CY']"
+Robust and Safe Traffic Sign Recognition using N-version with Weighted Voting,"Autonomous driving is rapidly advancing as a key application of machine
+learning, yet ensuring the safety of these systems remains a critical
+challenge. Traffic sign recognition, an essential component of autonomous
+vehicles, is particularly vulnerable to adversarial attacks that can compromise
+driving safety. In this paper, we propose an N-version machine learning (NVML)
+framework that integrates a safety-aware weighted soft voting mechanism. Our
+approach utilizes Failure Mode and Effects Analysis (FMEA) to assess potential
+safety risks and assign dynamic, safety-aware weights to the ensemble outputs.
+We evaluate the robustness of three-version NVML systems employing various
+voting mechanisms against adversarial samples generated using the Fast Gradient
+Sign Method (FGSM) and Projected Gradient Descent (PGD) attacks. Experimental
+results demonstrate that our NVML approach significantly enhances the
+robustness and safety of traffic sign recognition systems under adversarial
+conditions.","['Linyun Gao', 'Qiang Wen', 'Fumio Machida']",2025-07-09 14:46:31+00:00,2025-07-09 14:46:31+00:00,http://arxiv.org/pdf/2507.06907v1,cs.LG,"['cs.LG', 'cs.SE']"
+Designing Adaptive Algorithms Based on Reinforcement Learning for Dynamic Optimization of Sliding Window Size in Multi-Dimensional Data Streams,"Multi-dimensional data streams, prevalent in applications like IoT, financial
+markets, and real-time analytics, pose significant challenges due to their high
+velocity, unbounded nature, and complex inter-dimensional dependencies. Sliding
+window techniques are critical for processing such streams, but fixed-size
+windows struggle to adapt to dynamic changes like concept drift or bursty
+patterns. This paper proposes a novel reinforcement learning (RL)-based
+approach to dynamically optimize sliding window sizes for multi-dimensional
+data streams. By formulating window size selection as an RL problem, we enable
+an agent to learn an adaptive policy based on stream characteristics, such as
+variance, correlations, and temporal trends. Our method, RL-Window, leverages a
+Dueling Deep Q-Network (DQN) with prioritized experience replay to handle
+non-stationarity and high-dimensionality. Evaluations on benchmark datasets
+(UCI HAR, PAMAP2, Yahoo! Finance Stream) demonstrate that RL-Window outperforms
+state-of-the-art methods like ADWIN and CNN-Adaptive in classification
+accuracy, drift robustness, and computational efficiency. Additional
+qualitative analyses, extended metrics (e.g., energy efficiency, latency), and
+a comprehensive dataset characterization further highlight its adaptability and
+stability, making it suitable for real-time applications.","['Abolfazl Zarghani', 'Sadegh Abedi']",2025-07-09 14:40:35+00:00,2025-07-09 14:40:35+00:00,http://arxiv.org/pdf/2507.06901v1,cs.LG,['cs.LG']
+VisualTrap: A Stealthy Backdoor Attack on GUI Agents via Visual Grounding Manipulation,"Graphical User Interface (GUI) agents powered by Large Vision-Language Models
+(LVLMs) have emerged as a revolutionary approach to automating human-machine
+interactions, capable of autonomously operating personal devices (e.g., mobile
+phones) or applications within the device to perform complex real-world tasks
+in a human-like manner. However, their close integration with personal devices
+raises significant security concerns, with many threats, including backdoor
+attacks, remaining largely unexplored. This work reveals that the visual
+grounding of GUI agent-mapping textual plans to GUI elements-can introduce
+vulnerabilities, enabling new types of backdoor attacks. With backdoor attack
+targeting visual grounding, the agent's behavior can be compromised even when
+given correct task-solving plans. To validate this vulnerability, we propose
+VisualTrap, a method that can hijack the grounding by misleading the agent to
+locate textual plans to trigger locations instead of the intended targets.
+VisualTrap uses the common method of injecting poisoned data for attacks, and
+does so during the pre-training of visual grounding to ensure practical
+feasibility of attacking. Empirical results show that VisualTrap can
+effectively hijack visual grounding with as little as 5% poisoned data and
+highly stealthy visual triggers (invisible to the human eye); and the attack
+can be generalized to downstream tasks, even after clean fine-tuning. Moreover,
+the injected trigger can remain effective across different GUI environments,
+e.g., being trained on mobile/web and generalizing to desktop environments.
+These findings underscore the urgent need for further research on backdoor
+attack risks in GUI agents.","['Ziang Ye', 'Yang Zhang', 'Wentao Shi', 'Xiaoyu You', 'Fuli Feng', 'Tat-Seng Chua']",2025-07-09 14:36:00+00:00,2025-07-09 14:36:00+00:00,http://arxiv.org/pdf/2507.06899v1,cs.CL,"['cs.CL', 'cs.AI']"
+SCoRE: Streamlined Corpus-based Relation Extraction using Multi-Label Contrastive Learning and Bayesian kNN,"The growing demand for efficient knowledge graph (KG) enrichment leveraging
+external corpora has intensified interest in relation extraction (RE),
+particularly under low-supervision settings. To address the need for adaptable
+and noise-resilient RE solutions that integrate seamlessly with pre-trained
+large language models (PLMs), we introduce SCoRE, a modular and cost-effective
+sentence-level RE system. SCoRE enables easy PLM switching, requires no
+finetuning, and adapts smoothly to diverse corpora and KGs. By combining
+supervised contrastive learning with a Bayesian k-Nearest Neighbors (kNN)
+classifier for multi-label classification, it delivers robust performance
+despite the noisy annotations of distantly supervised corpora. To improve RE
+evaluation, we propose two novel metrics: Correlation Structure Distance (CSD),
+measuring the alignment between learned relational patterns and KG structures,
+and Precision at R (P@R), assessing utility as a recommender system. We also
+release Wiki20d, a benchmark dataset replicating real-world RE conditions where
+only KG-derived annotations are available. Experiments on five benchmarks show
+that SCoRE matches or surpasses state-of-the-art methods while significantly
+reducing energy consumption. Further analyses reveal that increasing model
+complexity, as seen in prior work, degrades performance, highlighting the
+advantages of SCoRE's minimal design. Combining efficiency, modularity, and
+scalability, SCoRE stands as an optimal choice for real-world RE applications.","['Luca Mariotti', 'Veronica Guidetti', 'Federica Mandreoli']",2025-07-09 14:33:07+00:00,2025-07-09 14:33:07+00:00,http://arxiv.org/pdf/2507.06895v1,cs.CL,"['cs.CL', 'cs.AI', 'cs.IR', 'cs.LG']"
+Developing and Maintaining an Open-Source Repository of AI Evaluations: Challenges and Insights,"AI evaluations have become critical tools for assessing large language model
+capabilities and safety. This paper presents practical insights from eight
+months of maintaining $inspect\_evals$, an open-source repository of 70+
+community-contributed AI evaluations. We identify key challenges in
+implementing and maintaining AI evaluations and develop solutions including:
+(1) a structured cohort management framework for scaling community
+contributions, (2) statistical methodologies for optimal resampling and
+cross-model comparison with uncertainty quantification, and (3) systematic
+quality control processes for reproducibility. Our analysis reveals that AI
+evaluation requires specialized infrastructure, statistical rigor, and
+community coordination beyond traditional software development practices.","['Alexandra Abbas', 'Celia Waggoner', 'Justin Olive']",2025-07-09 14:30:45+00:00,2025-07-09 14:30:45+00:00,http://arxiv.org/pdf/2507.06893v1,cs.CL,"['cs.CL', 'cs.AI']"
+Squeeze the Soaked Sponge: Efficient Off-policy Reinforcement Finetuning for Large Language Model,"Reinforcement Learning (RL) has demonstrated its potential to improve the
+reasoning ability of Large Language Models (LLMs). One major limitation of most
+existing Reinforcement Finetuning (RFT) methods is that they are on-policy RL
+in nature, i.e., data generated during the past learning process is not fully
+utilized. This inevitably comes at a significant cost of compute and time,
+posing a stringent bottleneck on continuing economic and efficient scaling. To
+this end, we launch the renaissance of off-policy RL and propose Reincarnating
+Mix-policy Proximal Policy Gradient (ReMix), a general approach to enable
+on-policy RFT methods like PPO and GRPO to leverage off-policy data. ReMix
+consists of three major components: (1) Mix-policy proximal policy gradient
+with an increased Update-To-Data (UTD) ratio for efficient training; (2)
+KL-Convex policy constraint to balance the trade-off between stability and
+flexibility; (3) Policy reincarnation to achieve a seamless transition from
+efficient early-stage learning to steady asymptotic improvement. In our
+experiments, we train a series of ReMix models upon PPO, GRPO and 1.5B, 7B base
+models. ReMix shows an average Pass@1 accuracy of 52.10% (for 1.5B model) with
+0.079M response rollouts, 350 training steps and achieves 63.27%/64.39% (for 7B
+model) with 0.007M/0.011M response rollouts, 50/75 training steps, on five math
+reasoning benchmarks (i.e., AIME'24, AMC'23, Minerva, OlympiadBench, and
+MATH500). Compared with 15 recent advanced models, ReMix shows SOTA-level
+performance with an over 30x to 450x reduction in training cost in terms of
+rollout data volume. In addition, we reveal insightful findings via
+multifaceted analysis, including the implicit preference for shorter responses
+due to the Whipping Effect of off-policy discrepancy, the collapse mode of
+self-reflection behavior under the presence of severe off-policyness, etc.","['Jing Liang', 'Hongyao Tang', 'Yi Ma', 'Jinyi Liu', 'Yan Zheng', 'Shuyue Hu', 'Lei Bai', 'Jianye Hao']",2025-07-09 14:29:45+00:00,2025-07-09 14:29:45+00:00,http://arxiv.org/pdf/2507.06892v1,cs.LG,"['cs.LG', 'cs.AI', 'cs.CL']"
+Horizontal and Vertical Federated Causal Structure Learning via Higher-order Cumulants,"Federated causal discovery aims to uncover the causal relationships between
+entities while protecting data privacy, which has significant importance and
+numerous applications in real-world scenarios. Existing federated causal
+structure learning methods primarily focus on horizontal federated settings.
+However, in practical situations, different clients may not necessarily contain
+data on the same variables. In a single client, the incomplete set of variables
+can easily lead to spurious causal relationships, thereby affecting the
+information transmitted to other clients. To address this issue, we
+comprehensively consider causal structure learning methods under both
+horizontal and vertical federated settings. We provide the identification
+theories and methods for learning causal structure in the horizontal and
+vertical federal setting via higher-order cumulants. Specifically, we first
+aggregate higher-order cumulant information from all participating clients to
+construct global cumulant estimates. These global estimates are then used for
+recursive source identification, ultimately yielding a global causal strength
+matrix. Our approach not only enables the reconstruction of causal graphs but
+also facilitates the estimation of causal strength coefficients. Our algorithm
+demonstrates superior performance in experiments conducted on both synthetic
+data and real-world data.","['Wei Chen', 'Wanyang Gu', 'Linjun Peng', 'Ruichu Cai', 'Zhifeng Hao', 'Kun Zhang']",2025-07-09 14:25:51+00:00,2025-07-09 14:25:51+00:00,http://arxiv.org/pdf/2507.06888v1,cs.LG,['cs.LG']
+Formalization of the AADL Run-Time Services with Time,"The Architecture Analysis & Design Language (AADL) is an architecture
+description language for design of cyber-physical systems--machines controlled
+by software. The AADL standard, SAE International AS5506D, describes Run-Time
+Services (RTS) to be provided to execute AADL models in accordance with
+semantics defined by the standard. The RTS of primary concern are transport
+services and timing services. Although, the study presented in [1] sets a
+foundation for the formal semantics of AADL, but without modeling time. This
+paper extends and simplifies this formalization using a modal logic defined by
+a Kripke structure, to explicitly include time. The RTS defined in the AADL
+standard are also expanded to support reactive state-transition machines of the
+Behavior Specification annex standard language (BA) and its closely-related,
+formally-defined counterpart, the Behavior Language for Embedded Systems with
+Software (BLESS). An example of AADL RTS with time, implemented by the High
+Assurance Modeling and Rapid Engineering for Embedded Systems (HAMR) for
+state-transition machine behavior written in BLESS, is also presented.","['Brian R Larson', 'Ehsan Ahmad']",2025-07-09 14:17:42+00:00,2025-07-09 14:17:42+00:00,http://arxiv.org/pdf/2507.06881v1,cs.SE,"['cs.SE', 'cs.SY', 'eess.SY']"
+Do AI tutors empower or enslave learners? Toward a critical use of AI in education,"The increasing integration of AI tools in education presents both
+opportunities and challenges, particularly regarding the development of the
+students' critical thinking skills. This position paper argues that while AI
+can support learning, its unchecked use may lead to cognitive atrophy, loss of
+agency, emotional risks, and ethical concerns, ultimately undermining the core
+goals of education. Drawing on cognitive science and pedagogy, the paper
+explores how over-reliance on AI can disrupt meaningful learning, foster
+dependency and conformity, undermine the students' self-efficacy, academic
+integrity, and well-being, and raise concerns about questionable privacy
+practices. It also highlights the importance of considering the students'
+perspectives and proposes actionable strategies to ensure that AI serves as a
+meaningful support rather than a cognitive shortcut. The paper advocates for an
+intentional, transparent, and critically informed use of AI that empowers
+rather than diminishes the learner.","['Lucile Favero', 'Juan-Antonio Pérez-Ortiz', 'Tanja Käser', 'Nuria Oliver']",2025-07-09 14:15:49+00:00,2025-07-09 14:15:49+00:00,http://arxiv.org/pdf/2507.06878v1,cs.CY,"['cs.CY', 'cs.HC']"
+Winning and losing with Artificial Intelligence: What public discourse about ChatGPT tells us about how societies make sense of technological change,"Public product launches in Artificial Intelligence can serve as focusing
+events for collective attention, surfacing how societies react to technological
+change. Social media provide a window into the sensemaking around these events,
+surfacing hopes and fears and showing who chooses to engage in the discourse
+and when. We demonstrate that public sensemaking about AI is shaped by economic
+interests and cultural values of those involved. We analyze 3.8 million tweets
+posted by 1.6 million users across 117 countries in response to the public
+launch of ChatGPT in 2022. Our analysis shows how economic self-interest,
+proxied by occupational skill types in writing, programming, and mathematics,
+and national cultural orientations, as measured by Hofstede's individualism,
+uncertainty avoidance, and power distance dimensions, shape who speaks, when
+they speak, and their stance towards ChatGPT. Roles requiring more technical
+skills, such as programming and mathematics, tend to engage earlier and express
+more positive stances, whereas writing-centric occupations join later with
+greater skepticism. At the cultural level, individualism predicts both earlier
+engagement and a more negative stance, and uncertainty avoidance reduces the
+prevalence of positive stances but does not delay when users first engage with
+ChatGPT. Aggregate sentiment trends mask the dynamics observed in our study.
+The shift toward a more critical stance towards ChatGPT over time stems
+primarily from the entry of more skeptical voices rather than a change of heart
+among early adopters. Our findings underscore the importance of both the
+occupational background and cultural context in understanding public reactions
+to AI.","['Adrian Rauchfleisch', 'Joshua Philip Suarez', 'Nikka Marie Sales', 'Andreas Jungherr']",2025-07-09 14:15:12+00:00,2025-07-09 14:15:12+00:00,http://arxiv.org/pdf/2507.06876v1,cs.CY,"['cs.CY', 'cs.AI', 'I.2; J.4; K.4.0']"
+Search for the lepton number violating process $J/ψ\to K^+K^+e^-e^- +c.c.$,"Based on $(10087\pm 44)\times10^{6}$ $J/\psi$ events collected with the
+BESIII detector, we search for the lepton number violating decay $J/\psi \to
+K^+K^+e^-e^- + c.c.$ for the first time. The upper limit on the branching
+fraction of this decay is set to be $2.1 \times 10^{-9}$ at the 90$\%$
+confidence level with a frequentist method. This is the first search for
+$J/\psi$ decays with the lepton number change by two, offering valuable
+insights into the underlying physical processes.","['BESIII Collaboration', 'M. Ablikim', 'M. N. Achasov', 'P. Adlarson', 'X. C. Ai', 'R. Aliberti', 'A. Amoroso', 'Q. An', 'Y. Bai', 'O. Bakina', 'Y. Ban', 'H. -R. Bao', 'V. Batozskaya', 'K. Begzsuren', 'N. Berger', 'M. Berlowski', 'M. Bertani', 'D. Bettoni', 'F. Bianchi', 'E. Bianco', 'A. Bortone', 'I. Boyko', 'R. A. Briere', 'A. Brueggemann', 'H. Cai', 'M. H. Cai', 'X. Cai', 'A. Calcaterra', 'G. F. Cao', 'N. Cao', 'S. A. Cetin', 'X. Y. Chai', 'J. F. Chang', 'G. R. Che', 'Y. Z. Che', 'C. H. Chen', 'Chao Chen', 'G. Chen', 'H. S. Chen', 'H. Y. Chen', 'M. L. Chen', 'S. J. Chen', 'S. L. Chen', 'S. M. Chen', 'T. Chen', 'X. R. Chen', 'X. T. Chen', 'X. Y. Chen', 'Y. B. Chen', 'Y. Q. Chen', 'Y. Q. Chen', 'Z. Chen', 'Z. J. Chen', 'Z. K. Chen', 'S. K. Choi', 'X. Chu', 'G. Cibinetto', 'F. Cossio', 'J. Cottee-Meldrum', 'J. J. Cui', 'H. L. Dai', 'J. P. Dai', 'A. Dbeyssi', 'R. E. de Boer', 'D. Dedovich', 'C. Q. Deng', 'Z. Y. Deng', 'A. Denig', 'I. Denysenko', 'M. Destefanis', 'F. De Mori', 'B. Ding', 'X. X. Ding', 'Y. Ding', 'Y. Ding', 'Y. X. Ding', 'J. Dong', 'L. Y. Dong', 'M. Y. Dong', 'X. Dong', 'M. C. Du', 'S. X. Du', 'S. X. Du', 'Y. Y. Duan', 'P. Egorov', 'G. F. Fan', 'J. J. Fan', 'Y. H. Fan', 'J. Fang', 'J. Fang', 'S. S. Fang', 'W. X. Fang', 'Y. Q. Fang', 'R. Farinelli', 'L. Fava', 'F. Feldbauer', 'G. Felici', 'C. Q. Feng', 'J. H. Feng', 'L. Feng', 'Q. X. Feng', 'Y. T. Feng', 'M. Fritsch', 'C. D. Fu', 'J. L. Fu', 'Y. W. Fu', 'H. Gao', 'X. B. Gao', 'Y. Gao', 'Y. N. Gao', 'Y. N. Gao', 'Y. Y. Gao', 'S. Garbolino', 'I. Garzia', 'P. T. Ge', 'Z. W. Ge', 'C. Geng', 'E. M. Gersabeck', 'A. Gilman', 'K. Goetzen', 'J. D. Gong', 'L. Gong', 'W. X. Gong', 'W. Gradl', 'S. Gramigna', 'M. Greco', 'M. H. Gu', 'Y. T. Gu', 'C. Y. Guan', 'A. Q. Guo', 'L. B. Guo', 'M. J. Guo', 'R. P. Guo', 'Y. P. Guo', 'A. Guskov', 'J. Gutierrez', 'K. L. Han', 'T. T. Han', 'F. Hanisch', 'K. D. Hao', 'X. Q. Hao', 'F. A. Harris', 'K. K. He', 'K. L. He', 'F. H. Heinsius', 'C. H. Heinz', 'Y. K. Heng', 'C. Herold', 'P. C. Hong', 'G. Y. Hou', 'X. T. Hou', 'Y. R. Hou', 'Z. L. Hou', 'H. M. Hu', 'J. F. Hu', 'Q. P. Hu', 'S. L. Hu', 'T. Hu', 'Y. Hu', 'Z. M. Hu', 'G. S. Huang', 'K. X. Huang', 'L. Q. Huang', 'P. Huang', 'X. T. Huang', 'Y. P. Huang', 'Y. S. Huang', 'T. Hussain', 'N. Hüsken', 'N. in der Wiesche', 'J. Jackson', 'Q. Ji', 'Q. P. Ji', 'W. Ji', 'X. B. Ji', 'X. L. Ji', 'Y. Y. Ji', 'Z. K. Jia', 'D. Jiang', 'H. B. Jiang', 'P. C. Jiang', 'S. J. Jiang', 'T. J. Jiang', 'X. S. Jiang', 'Y. Jiang', 'J. B. Jiao', 'J. K. Jiao', 'Z. Jiao', 'S. Jin', 'Y. Jin', 'M. Q. Jing', 'X. M. Jing', 'T. Johansson', 'S. Kabana', 'N. Kalantar-Nayestanaki', 'X. L. Kang', 'X. S. Kang', 'M. Kavatsyuk', 'B. C. Ke', 'V. Khachatryan', 'A. Khoukaz', 'R. Kiuchi', 'O. B. Kolcu', 'B. Kopf', 'M. Kuessner', 'X. Kui', 'N. Kumar', 'A. Kupsc', 'W. Kühn', 'Q. Lan', 'W. N. Lan', 'T. T. Lei', 'M. Lellmann', 'T. Lenz', 'C. Li', 'C. Li', 'C. Li', 'C. H. Li', 'C. K. Li', 'D. M. Li', 'F. Li', 'G. Li', 'H. B. Li', 'H. J. Li', 'H. N. Li', 'Hui Li', 'J. R. Li', 'J. S. Li', 'K. Li', 'K. L. Li', 'K. L. Li', 'L. J. Li', 'Lei Li', 'M. H. Li', 'M. R. Li', 'P. L. Li', 'P. R. Li', 'Q. M. Li', 'Q. X. Li', 'R. Li', 'S. X. Li', 'T. Li', 'T. Y. Li', 'W. D. Li', 'W. G. Li', 'X. Li', 'X. H. Li', 'X. L. Li', 'X. Y. Li', 'X. Z. Li', 'Y. Li', 'Y. G. Li', 'Y. P. Li', 'Z. J. Li', 'Z. Y. Li', 'H. Liang', 'Y. F. Liang', 'Y. T. Liang', 'G. R. Liao', 'L. B. Liao', 'M. H. Liao', 'Y. P. Liao', 'J. Libby', 'A. Limphirat', 'C. C. Lin', 'D. X. Lin', 'L. Q. Lin', 'T. Lin', 'B. J. Liu', 'B. X. Liu', 'C. Liu', 'C. X. Liu', 'F. Liu', 'F. H. Liu', 'Feng Liu', 'G. M. Liu', 'H. Liu', 'H. B. Liu', 'H. H. Liu', 'H. M. Liu', 'Huihui Liu', 'J. B. Liu', 'J. J. Liu', 'K. Liu', 'K. Liu', 'K. Y. Liu', 'Ke Liu', 'L. C. Liu', 'Lu Liu', 'M. H. Liu', 'P. L. Liu', 'Q. Liu', 'S. B. Liu', 'T. Liu', 'W. K. Liu', 'W. M. Liu', 'W. T. Liu', 'X. Liu', 'X. Liu', 'X. K. Liu', 'X. Y. Liu', 'Y. Liu', 'Y. Liu', 'Y. Liu', 'Y. B. Liu', 'Z. A. Liu', 'Z. D. Liu', 'Z. Q. Liu', 'X. C. Lou', 'F. X. Lu', 'H. J. Lu', 'J. G. Lu', 'X. L. Lu', 'Y. Lu', 'Y. H. Lu', 'Y. P. Lu', 'Z. H. Lu', 'C. L. Luo', 'J. R. Luo', 'J. S. Luo', 'M. X. Luo', 'T. Luo', 'X. L. Luo', 'Z. Y. Lv', 'X. R. Lyu', 'Y. F. Lyu', 'Y. H. Lyu', 'F. C. Ma', 'H. L. Ma', 'J. L. Ma', 'L. L. Ma', 'L. R. Ma', 'Q. M. Ma', 'R. Q. Ma', 'R. Y. Ma', 'T. Ma', 'X. T. Ma', 'X. Y. Ma', 'Y. M. Ma', 'F. E. Maas', 'I. MacKay', 'M. Maggiora', 'S. Malde', 'Q. A. Malik', 'H. X. Mao', 'Y. J. Mao', 'Z. P. Mao', 'S. Marcello', 'A. Marshall', 'F. M. Melendi', 'Y. H. Meng', 'Z. X. Meng', 'G. Mezzadri', 'H. Miao', 'T. J. Min', 'R. E. Mitchell', 'X. H. Mo', 'B. Moses', 'N. Yu. Muchnoi', 'J. Muskalla', 'Y. Nefedov', 'F. Nerling', 'L. S. Nie', 'I. B. Nikolaev', 'Z. Ning', 'S. Nisar', 'Q. L. Niu', 'W. D. Niu', 'C. Normand', 'S. L. Olsen', 'Q. Ouyang', 'S. Pacetti', 'X. Pan', 'Y. Pan', 'A. Pathak', 'Y. P. Pei', 'M. Pelizaeus', 'H. P. Peng', 'X. J. Peng', 'Y. Y. Peng', 'K. Peters', 'K. Petridis', 'J. L. Ping', 'R. G. Ping', 'S. Plura', 'V. Prasad', 'F. Z. Qi', 'H. R. Qi', 'M. Qi', 'S. Qian', 'W. B. Qian', 'C. F. Qiao', 'J. H. Qiao', 'J. J. Qin', 'J. L. Qin', 'L. Q. Qin', 'L. Y. Qin', 'P. B. Qin', 'X. P. Qin', 'X. S. Qin', 'Z. H. Qin', 'J. F. Qiu', 'Z. H. Qu', 'J. Rademacker', 'C. F. Redmer', 'A. Rivetti', 'M. Rolo', 'G. Rong', 'S. S. Rong', 'F. Rosini', 'Ch. Rosner', 'M. Q. Ruan', 'N. Salone', 'A. Sarantsev', 'Y. Schelhaas', 'K. Schoenning', 'M. Scodeggio', 'K. Y. Shan', 'W. Shan', 'X. Y. Shan', 'Z. J. Shang', 'J. F. Shangguan', 'L. G. Shao', 'M. Shao', 'C. P. Shen', 'H. F. Shen', 'W. H. Shen', 'X. Y. Shen', 'B. A. Shi', 'H. Shi', 'J. L. Shi', 'J. Y. Shi', 'S. Y. Shi', 'X. Shi', 'H. L. Song', 'J. J. Song', 'T. Z. Song', 'W. M. Song', 'Y. J. Song', 'Y. X. Song', 'S. Sosio', 'S. Spataro', 'F. Stieler', 'S. S Su', 'Y. J. Su', 'G. B. Sun', 'G. X. Sun', 'H. Sun', 'H. K. Sun', 'J. F. Sun', 'K. Sun', 'L. Sun', 'S. S. Sun', 'T. Sun', 'Y. C. Sun', 'Y. H. Sun', 'Y. J. Sun', 'Y. Z. Sun', 'Z. Q. Sun', 'Z. T. Sun', 'C. J. Tang', 'G. Y. Tang', 'J. Tang', 'J. J. Tang', 'L. F. Tang', 'Y. A. Tang', 'L. Y. Tao', 'M. Tat', 'J. X. Teng', 'J. Y. Tian', 'W. H. Tian', 'Y. Tian', 'Z. F. Tian', 'I. Uman', 'B. Wang', 'B. Wang', 'Bo Wang', 'C. Wang', 'C. Wang', 'Cong Wang', 'D. Y. Wang', 'H. J. Wang', 'J. J. Wang', 'K. Wang', 'L. L. Wang', 'L. W. Wang', 'M. Wang', 'M. Wang', 'N. Y. Wang', 'S. Wang', 'T. Wang', 'T. J. Wang', 'W. Wang', 'W. Wang', 'W. P. Wang', 'X. Wang', 'X. F. Wang', 'X. J. Wang', 'X. L. Wang', 'X. N. Wang', 'Y. Wang', 'Y. D. Wang', 'Y. F. Wang', 'Y. H. Wang', 'Y. J. Wang', 'Y. L. Wang', 'Y. N. Wang', 'Y. Q. Wang', 'Yaqian Wang', 'Yi Wang', 'Yuan Wang', 'Z. Wang', 'Z. L. Wang', 'Z. L. Wang', 'Z. Q. Wang', 'Z. Y. Wang', 'D. H. Wei', 'H. R. Wei', 'F. Weidner', 'S. P. Wen', 'Y. R. Wen', 'U. Wiedner', 'G. Wilkinson', 'M. Wolke', 'C. Wu', 'J. F. Wu', 'L. H. Wu', 'L. J. Wu', 'L. J. Wu', 'Lianjie Wu', 'S. G. Wu', 'S. M. Wu', 'X. Wu', 'X. H. Wu', 'Y. J. Wu', 'Z. Wu', 'L. Xia', 'X. M. Xian', 'B. H. Xiang', 'D. Xiao', 'G. Y. Xiao', 'H. Xiao', 'Y. L. Xiao', 'Z. J. Xiao', 'C. Xie', 'K. J. Xie', 'X. H. Xie', 'Y. Xie', 'Y. G. Xie', 'Y. H. Xie', 'Z. P. Xie', 'T. Y. Xing', 'C. F. Xu', 'C. J. Xu', 'G. F. Xu', 'H. Y. Xu', 'H. Y. Xu', 'M. Xu', 'Q. J. Xu', 'Q. N. Xu', 'T. D. Xu', 'W. Xu', 'W. L. Xu', 'X. P. Xu', 'Y. Xu', 'Y. Xu', 'Y. C. Xu', 'Z. S. Xu', 'F. Yan', 'H. Y. Yan', 'L. Yan', 'W. B. Yan', 'W. C. Yan', 'W. H. Yan', 'W. P. Yan', 'X. Q. Yan', 'H. J. Yang', 'H. L. Yang', 'H. X. Yang', 'J. H. Yang', 'R. J. Yang', 'T. Yang', 'Y. Yang', 'Y. F. Yang', 'Y. H. Yang', 'Y. Q. Yang', 'Y. X. Yang', 'Y. Z. Yang', 'M. Ye', 'M. H. Ye', 'Z. J. Ye', 'Junhao Yin', 'Z. Y. You', 'B. X. Yu', 'C. X. Yu', 'G. Yu', 'J. S. Yu', 'L. Q. Yu', 'M. C. Yu', 'T. Yu', 'X. D. Yu', 'Y. C. Yu', 'C. Z. Yuan', 'H. Yuan', 'J. Yuan', 'J. Yuan', 'L. Yuan', 'S. C. Yuan', 'X. Q. Yuan', 'Y. Yuan', 'Z. Y. Yuan', 'C. X. Yue', 'Ying Yue', 'A. A. Zafar', 'S. H. Zeng', 'X. Zeng', 'Y. Zeng', 'Y. J. Zeng', 'Y. J. Zeng', 'X. Y. Zhai', 'Y. H. Zhan', 'A. Q. Zhang', 'B. L. Zhang', 'B. X. Zhang', 'D. H. Zhang', 'G. Y. Zhang', 'G. Y. Zhang', 'H. Zhang', 'H. Zhang', 'H. C. Zhang', 'H. H. Zhang', 'H. Q. Zhang', 'H. R. Zhang', 'H. Y. Zhang', 'J. Zhang', 'J. Zhang', 'J. J. Zhang', 'J. L. Zhang', 'J. Q. Zhang', 'J. S. Zhang', 'J. W. Zhang', 'J. X. Zhang', 'J. Y. Zhang', 'J. Z. Zhang', 'Jianyu Zhang', 'L. M. Zhang', 'Lei Zhang', 'N. Zhang', 'P. Zhang', 'Q. Zhang', 'Q. Y. Zhang', 'R. Y. Zhang', 'S. H. Zhang', 'Shulei Zhang', 'X. M. Zhang', 'X. Y Zhang', 'X. Y. Zhang', 'Y. Zhang', 'Y. Zhang', 'Y. T. Zhang', 'Y. H. Zhang', 'Y. M. Zhang', 'Y. P. Zhang', 'Z. D. Zhang', 'Z. H. Zhang', 'Z. L. Zhang', 'Z. L. Zhang', 'Z. X. Zhang', 'Z. Y. Zhang', 'Z. Y. Zhang', 'Z. Z. Zhang', 'Zh. Zh. Zhang', 'G. Zhao', 'J. Y. Zhao', 'J. Z. Zhao', 'L. Zhao', 'L. Zhao', 'M. G. Zhao', 'N. Zhao', 'R. P. Zhao', 'S. J. Zhao', 'Y. B. Zhao', 'Y. L. Zhao', 'Y. X. Zhao', 'Z. G. Zhao', 'A. Zhemchugov', 'B. Zheng', 'B. M. Zheng', 'J. P. Zheng', 'W. J. Zheng', 'X. R. Zheng', 'Y. H. Zheng', 'B. Zhong', 'C. Zhong', 'H. Zhou', 'J. Q. Zhou', 'J. Y. Zhou', 'S. Zhou', 'X. Zhou', 'X. K. Zhou', 'X. R. Zhou', 'X. Y. Zhou', 'Y. X. Zhou', 'Y. Z. Zhou', 'A. N. Zhu', 'J. Zhu', 'K. Zhu', 'K. J. Zhu', 'K. S. Zhu', 'L. Zhu', 'L. X. Zhu', 'S. H. Zhu', 'T. J. Zhu', 'W. D. Zhu', 'W. D. Zhu', 'W. J. Zhu', 'W. Z. Zhu', 'Y. C. Zhu', 'Z. A. Zhu', 'X. Y. Zhuang', 'J. H. Zou', 'J. Zu']",2025-07-09 14:12:21+00:00,2025-07-09 14:12:21+00:00,http://arxiv.org/pdf/2507.06872v1,hep-ex,['hep-ex']
+Conformal Prediction for Long-Tailed Classification,"Many real-world classification problems, such as plant identification, have
+extremely long-tailed class distributions. In order for prediction sets to be
+useful in such settings, they should (i) provide good class-conditional
+coverage, ensuring that rare classes are not systematically omitted from the
+prediction sets, and (ii) be a reasonable size, allowing users to easily verify
+candidate labels. Unfortunately, existing conformal prediction methods, when
+applied to the long-tailed setting, force practitioners to make a binary choice
+between small sets with poor class-conditional coverage or sets with very good
+class-conditional coverage but that are extremely large. We propose methods
+with guaranteed marginal coverage that smoothly trade off between set size and
+class-conditional coverage. First, we propose a conformal score function,
+prevalence-adjusted softmax, that targets a relaxed notion of class-conditional
+coverage called macro-coverage. Second, we propose a label-weighted conformal
+prediction method that allows us to interpolate between marginal and
+class-conditional conformal prediction. We demonstrate our methods on Pl@ntNet
+and iNaturalist, two long-tailed image datasets with 1,081 and 8,142 classes,
+respectively.","['Tiffany Ding', 'Jean-Baptiste Fermanian', 'Joseph Salmon']",2025-07-09 14:08:50+00:00,2025-07-09 14:08:50+00:00,http://arxiv.org/pdf/2507.06867v1,stat.ML,"['stat.ML', 'cs.CV', 'cs.LG', 'stat.ME']"

@@ -1,36 +1,280 @@
 Title,Summary,Authors,Published,Updated,PDF_URL,Primary_Category,Categories,text
-Designing Adaptive Algorithms Based on Reinforcement Learning for Dynamic Optimization of Sliding Window Size in Multi-Dimensional Data Streams,"Multi-dimensional data streams, prevalent in applications like IoT, financial
-markets, and real-time analytics, pose significant challenges due to their high
-velocity, unbounded nature, and complex inter-dimensional dependencies. Sliding
-window techniques are critical for processing such streams, but fixed-size
-windows struggle to adapt to dynamic changes like concept drift or bursty
-patterns. This paper proposes a novel reinforcement learning (RL)-based
-approach to dynamically optimize sliding window sizes for multi-dimensional
-data streams. By formulating window size selection as an RL problem, we enable
-an agent to learn an adaptive policy based on stream characteristics, such as
-variance, correlations, and temporal trends. Our method, RL-Window, leverages a
-Dueling Deep Q-Network (DQN) with prioritized experience replay to handle
-non-stationarity and high-dimensionality. Evaluations on benchmark datasets
-(UCI HAR, PAMAP2, Yahoo! Finance Stream) demonstrate that RL-Window outperforms
-state-of-the-art methods like ADWIN and CNN-Adaptive in classification
-accuracy, drift robustness, and computational efficiency. Additional
-qualitative analyses, extended metrics (e.g., energy efficiency, latency), and
-a comprehensive dataset characterization further highlight its adaptability and
-stability, making it suitable for real-time applications.","['Abolfazl Zarghani', 'Sadegh Abedi']",2025-07-09 14:40:35+00:00,2025-07-09 14:40:35+00:00,http://arxiv.org/pdf/2507.06901v1,cs.LG,['cs.LG'],"designing adaptive algorithms based on reinforcement learning for dynamic optimization of sliding window size in multi-dimensional data streams multi-dimensional data streams, prevalent in applications like iot, financial
-markets, and real-time analytics, pose significant challenges due to their high
-velocity, unbounded nature, and complex inter-dimensional dependencies. sliding
-window techniques are critical for processing such streams, but fixed-size
-windows struggle to adapt to dynamic changes like concept drift or bursty
-patterns. this paper proposes a novel reinforcement learning (rl)-based
-approach to dynamically optimize sliding window sizes for multi-dimensional
-data streams. by formulating window size selection as an rl problem, we enable
-an agent to learn an adaptive policy based on stream characteristics, such as
-variance, correlations, and temporal trends. our method, rl-window, leverages a
-dueling deep q-network (dqn) with prioritized experience replay to handle
-non-stationarity and high-dimensionality. evaluations on benchmark datasets
-(uci har, pamap2, yahoo! finance stream) demonstrate that rl-window outperforms
-state-of-the-art methods like adwin and cnn-adaptive in classification
-accuracy, drift robustness, and computational efficiency. additional
-qualitative analyses, extended metrics (e.g., energy efficiency, latency), and
-a comprehensive dataset characterization further highlight its adaptability and
-stability, making it suitable for real-time applications."
+DrafterBench: Benchmarking Large Language Models for Tasks Automation in Civil Engineering,"Large Language Model (LLM) agents have shown great potential for solving
+real-world problems and promise to be a solution for tasks automation in
+industry. However, more benchmarks are needed to systematically evaluate
+automation agents from an industrial perspective, for example, in Civil
+Engineering. Therefore, we propose DrafterBench for the comprehensive
+evaluation of LLM agents in the context of technical drawing revision, a
+representation task in civil engineering. DrafterBench contains twelve types of
+tasks summarized from real-world drawing files, with 46 customized
+functions/tools and 1920 tasks in total. DrafterBench is an open-source
+benchmark to rigorously test AI agents' proficiency in interpreting intricate
+and long-context instructions, leveraging prior knowledge, and adapting to
+dynamic instruction quality via implicit policy awareness. The toolkit
+comprehensively assesses distinct capabilities in structured data
+comprehension, function execution, instruction following, and critical
+reasoning. DrafterBench offers detailed analysis of task accuracy and error
+statistics, aiming to provide deeper insight into agent capabilities and
+identify improvement targets for integrating LLMs in engineering applications.
+Our benchmark is available at https://github.com/Eason-Li-AIS/DrafterBench,
+with the test set hosted at
+https://huggingface.co/datasets/Eason666/DrafterBench.","['Yinsheng Li', 'Zhen Dong', 'Yi Shao']",2025-07-15 17:56:04+00:00,2025-07-15 17:56:04+00:00,http://arxiv.org/pdf/2507.11527v1,cs.AI,"['cs.AI', 'cs.CE']","drafterbench: benchmarking large language models for tasks automation in civil engineering large language model (llm) agents have shown great potential for solving
+real-world problems and promise to be a solution for tasks automation in
+industry. however, more benchmarks are needed to systematically evaluate
+automation agents from an industrial perspective, for example, in civil
+engineering. therefore, we propose drafterbench for the comprehensive
+evaluation of llm agents in the context of technical drawing revision, a
+representation task in civil engineering. drafterbench contains twelve types of
+tasks summarized from real-world drawing files, with 46 customized
+functions/tools and 1920 tasks in total. drafterbench is an open-source
+benchmark to rigorously test ai agents' proficiency in interpreting intricate
+and long-context instructions, leveraging prior knowledge, and adapting to
+dynamic instruction quality via implicit policy awareness. the toolkit
+comprehensively assesses distinct capabilities in structured data
+comprehension, function execution, instruction following, and critical
+reasoning. drafterbench offers detailed analysis of task accuracy and error
+statistics, aiming to provide deeper insight into agent capabilities and
+identify improvement targets for integrating llms in engineering applications.
+our benchmark is available at https://github.com/eason-li-ais/drafterbench,
+with the test set hosted at
+https://huggingface.co/datasets/eason666/drafterbench."
+Turning Sand to Gold: Recycling Data to Bridge On-Policy and Off-Policy Learning via Causal Bound,"Deep reinforcement learning (DRL) agents excel in solving complex
+decision-making tasks across various domains. However, they often require a
+substantial number of training steps and a vast experience replay buffer,
+leading to significant computational and resource demands. To address these
+challenges, we introduce a novel theoretical result that leverages the
+Neyman-Rubin potential outcomes framework into DRL. Unlike most methods that
+focus on bounding the counterfactual loss, we establish a causal bound on the
+factual loss, which is analogous to the on-policy loss in DRL. This bound is
+computed by storing past value network outputs in the experience replay buffer,
+effectively utilizing data that is usually discarded. Extensive experiments
+across the Atari 2600 and MuJoCo domains on various agents, such as DQN and
+SAC, achieve up to 2,427% higher reward ratio, outperforming the same agents
+without our proposed term, and reducing the experience replay buffer size by up
+to 96%, significantly improving sample efficiency at negligible cost.","['Tal Fiskus', 'Uri Shaham']",2025-07-15 12:46:25+00:00,2025-07-15 12:46:25+00:00,http://arxiv.org/pdf/2507.11269v1,cs.LG,"['cs.LG', 'cs.AI']","turning sand to gold: recycling data to bridge on-policy and off-policy learning via causal bound deep reinforcement learning (drl) agents excel in solving complex
+decision-making tasks across various domains. however, they often require a
+substantial number of training steps and a vast experience replay buffer,
+leading to significant computational and resource demands. to address these
+challenges, we introduce a novel theoretical result that leverages the
+neyman-rubin potential outcomes framework into drl. unlike most methods that
+focus on bounding the counterfactual loss, we establish a causal bound on the
+factual loss, which is analogous to the on-policy loss in drl. this bound is
+computed by storing past value network outputs in the experience replay buffer,
+effectively utilizing data that is usually discarded. extensive experiments
+across the atari 2600 and mujoco domains on various agents, such as dqn and
+sac, achieve up to 2,427% higher reward ratio, outperforming the same agents
+without our proposed term, and reducing the experience replay buffer size by up
+to 96%, significantly improving sample efficiency at negligible cost."
+A sequential classification learning for estimating quantile optimal treatment regimes,"Quantile optimal treatment regimes (OTRs) aim to assign treatments that
+maximize a specified quantile of patients' outcomes. Compared to treatment
+regimes that target the mean outcomes, quantile OTRs offer fairer regimes when
+a lower quantile is selected, as it focuses on improving outcomes for
+individuals who would otherwise experience relatively poor results. In this
+paper, we propose a novel method for estimating quantile OTRs by reformulating
+the problem as a sequential classification task. This reformulation enables us
+to leverage the powerful machine learning technique to enhance computational
+efficiency and handle complex decision boundaries. We also investigate the
+estimation of quantile OTRs when outcomes are discrete, a setting that has
+received limited attention in the literature. A key challenge is that direct
+extensions of existing methods to discrete outcomes often lead to inconsistency
+and ineffectiveness issues. To overcome this, we introduce a smoothing
+technique that maps discrete outcomes to continuous surrogates, enabling
+consistent and effective estimation. We provide theoretical guarantees to
+support our methodology, and demonstrate its superior performance through
+comprehensive simulation studies and real-data analysis.","['Junwen Xia', 'Jingxiao Zhang', 'Dehan Kong']",2025-07-15 12:30:21+00:00,2025-07-15 12:30:21+00:00,http://arxiv.org/pdf/2507.11255v1,stat.ME,['stat.ME'],"a sequential classification learning for estimating quantile optimal treatment regimes quantile optimal treatment regimes (otrs) aim to assign treatments that
+maximize a specified quantile of patients' outcomes. compared to treatment
+regimes that target the mean outcomes, quantile otrs offer fairer regimes when
+a lower quantile is selected, as it focuses on improving outcomes for
+individuals who would otherwise experience relatively poor results. in this
+paper, we propose a novel method for estimating quantile otrs by reformulating
+the problem as a sequential classification task. this reformulation enables us
+to leverage the powerful machine learning technique to enhance computational
+efficiency and handle complex decision boundaries. we also investigate the
+estimation of quantile otrs when outcomes are discrete, a setting that has
+received limited attention in the literature. a key challenge is that direct
+extensions of existing methods to discrete outcomes often lead to inconsistency
+and ineffectiveness issues. to overcome this, we introduce a smoothing
+technique that maps discrete outcomes to continuous surrogates, enabling
+consistent and effective estimation. we provide theoretical guarantees to
+support our methodology, and demonstrate its superior performance through
+comprehensive simulation studies and real-data analysis."
+Fairness-Aware Grouping for Continuous Sensitive Variables: Application for Debiasing Face Analysis with respect to Skin Tone,"Within a legal framework, fairness in datasets and models is typically
+assessed by dividing observations into predefined groups and then computing
+fairness measures (e.g., Disparate Impact or Equality of Odds with respect to
+gender). However, when sensitive attributes such as skin color are continuous,
+dividing into default groups may overlook or obscure the discrimination
+experienced by certain minority subpopulations. To address this limitation, we
+propose a fairness-based grouping approach for continuous (possibly
+multidimensional) sensitive attributes. By grouping data according to observed
+levels of discrimination, our method identifies the partition that maximizes a
+novel criterion based on inter-group variance in discrimination, thereby
+isolating the most critical subgroups.
+  We validate the proposed approach using multiple synthetic datasets and
+demonstrate its robustness under changing population distributions - revealing
+how discrimination is manifested within the space of sensitive attributes.
+Furthermore, we examine a specialized setting of monotonic fairness for the
+case of skin color. Our empirical results on both CelebA and FFHQ, leveraging
+the skin tone as predicted by an industrial proprietary algorithm, show that
+the proposed segmentation uncovers more nuanced patterns of discrimination than
+previously reported, and that these findings remain stable across datasets for
+a given model. Finally, we leverage our grouping model for debiasing purpose,
+aiming at predicting fair scores with group-by-group post-processing. The
+results demonstrate that our approach improves fairness while having minimal
+impact on accuracy, thus confirming our partition method and opening the door
+for industrial deployment.","['Veronika Shilova', 'Emmanuel Malherbe', 'Giovanni Palma', 'Laurent Risser', 'Jean-Michel Loubes']",2025-07-15 12:21:52+00:00,2025-07-15 12:21:52+00:00,http://arxiv.org/pdf/2507.11247v1,cs.CV,"['cs.CV', 'cs.LG']","fairness-aware grouping for continuous sensitive variables: application for debiasing face analysis with respect to skin tone within a legal framework, fairness in datasets and models is typically
+assessed by dividing observations into predefined groups and then computing
+fairness measures (e.g., disparate impact or equality of odds with respect to
+gender). however, when sensitive attributes such as skin color are continuous,
+dividing into default groups may overlook or obscure the discrimination
+experienced by certain minority subpopulations. to address this limitation, we
+propose a fairness-based grouping approach for continuous (possibly
+multidimensional) sensitive attributes. by grouping data according to observed
+levels of discrimination, our method identifies the partition that maximizes a
+novel criterion based on inter-group variance in discrimination, thereby
+isolating the most critical subgroups.
+  we validate the proposed approach using multiple synthetic datasets and
+demonstrate its robustness under changing population distributions - revealing
+how discrimination is manifested within the space of sensitive attributes.
+furthermore, we examine a specialized setting of monotonic fairness for the
+case of skin color. our empirical results on both celeba and ffhq, leveraging
+the skin tone as predicted by an industrial proprietary algorithm, show that
+the proposed segmentation uncovers more nuanced patterns of discrimination than
+previously reported, and that these findings remain stable across datasets for
+a given model. finally, we leverage our grouping model for debiasing purpose,
+aiming at predicting fair scores with group-by-group post-processing. the
+results demonstrate that our approach improves fairness while having minimal
+impact on accuracy, thus confirming our partition method and opening the door
+for industrial deployment."
+React to This (RTT): A Nonverbal Turing Test for Embodied AI,"We propose an approach to test embodied AI agents for interaction awareness
+and believability, particularly in scenarios where humans push them to their
+limits. Turing introduced the Imitation Game as a way to explore the question:
+""Can machines think?"" The Total Turing Test later expanded this concept beyond
+purely verbal communication, incorporating perceptual and physical interaction.
+Building on this, we propose a new guiding question: ""Can machines react?"" and
+introduce the React to This (RTT) test for nonverbal behaviors, presenting
+results from an initial experiment.","['Chuxuan Zhang', 'Yasaman Etesam', 'Angelica Lim']",2025-07-14 21:16:12+00:00,2025-07-14 21:16:12+00:00,http://arxiv.org/pdf/2507.10812v1,cs.HC,"['cs.HC', 'cs.AI']","react to this (rtt): a nonverbal turing test for embodied ai we propose an approach to test embodied ai agents for interaction awareness
+and believability, particularly in scenarios where humans push them to their
+limits. turing introduced the imitation game as a way to explore the question:
+""can machines think?"" the total turing test later expanded this concept beyond
+purely verbal communication, incorporating perceptual and physical interaction.
+building on this, we propose a new guiding question: ""can machines react?"" and
+introduce the react to this (rtt) test for nonverbal behaviors, presenting
+results from an initial experiment."
+GenAI-Enabled Backlog Grooming in Agile Software Projects: An Empirical Study,"Effective backlog management is critical for ensuring that development teams
+remain aligned with evolving requirements and stakeholder expectations.
+However, as product backlogs consistently grow in scale and complexity, they
+tend to become cluttered with redundant, outdated, or poorly defined tasks,
+complicating prioritization and decision making processes. This study
+investigates whether a generative-AI (GenAI) assistant can automate backlog
+grooming in Agile software projects without sacrificing accuracy or
+transparency. Through Design Science cycles, we developed a Jira plug-in that
+embeds backlog issues with the vector database, detects duplicates via cosine
+similarity, and leverage the GPT-4o model to propose merges, deletions, or new
+issues. We found that AI-assisted backlog grooming achieved 100 percent
+precision while reducing the time-to-completion by 45 percent. The findings
+demonstrated the tool's potential to streamline backlog refinement processes
+while improving user experiences.","['Kasper Lien Oftebro', 'Anh Nguyen-Duc', 'Kai-Kristian Kemell']",2025-07-14 19:22:57+00:00,2025-07-14 19:22:57+00:00,http://arxiv.org/pdf/2507.10753v1,cs.SE,['cs.SE'],"genai-enabled backlog grooming in agile software projects: an empirical study effective backlog management is critical for ensuring that development teams
+remain aligned with evolving requirements and stakeholder expectations.
+however, as product backlogs consistently grow in scale and complexity, they
+tend to become cluttered with redundant, outdated, or poorly defined tasks,
+complicating prioritization and decision making processes. this study
+investigates whether a generative-ai (genai) assistant can automate backlog
+grooming in agile software projects without sacrificing accuracy or
+transparency. through design science cycles, we developed a jira plug-in that
+embeds backlog issues with the vector database, detects duplicates via cosine
+similarity, and leverage the gpt-4o model to propose merges, deletions, or new
+issues. we found that ai-assisted backlog grooming achieved 100 percent
+precision while reducing the time-to-completion by 45 percent. the findings
+demonstrated the tool's potential to streamline backlog refinement processes
+while improving user experiences."
+Exploring User Security and Privacy Attitudes and Concerns Toward the Use of General-Purpose LLM Chatbots for Mental Health,"Individuals are increasingly relying on large language model (LLM)-enabled
+conversational agents for emotional support. While prior research has examined
+privacy and security issues in chatbots specifically designed for mental health
+purposes, these chatbots are overwhelmingly ""rule-based"" offerings that do not
+leverage generative AI. Little empirical research currently measures users'
+privacy and security concerns, attitudes, and expectations when using
+general-purpose LLM-enabled chatbots to manage and improve mental health.
+Through 21 semi-structured interviews with U.S. participants, we identified
+critical misconceptions and a general lack of risk awareness. Participants
+conflated the human-like empathy exhibited by LLMs with human-like
+accountability and mistakenly believed that their interactions with these
+chatbots were safeguarded by the same regulations (e.g., HIPAA) as disclosures
+with a licensed therapist. We introduce the concept of ""intangible
+vulnerability,"" where emotional or psychological disclosures are undervalued
+compared to more tangible forms of information (e.g., financial or
+location-based data). To address this, we propose recommendations to safeguard
+user mental health disclosures with general-purpose LLM-enabled chatbots more
+effectively.","['Jabari Kwesi', 'Jiaxun Cao', 'Riya Manchanda', 'Pardis Emami-Naeini']",2025-07-14 18:10:21+00:00,2025-07-14 18:10:21+00:00,http://arxiv.org/pdf/2507.10695v1,cs.CY,"['cs.CY', 'cs.AI', 'cs.CR', 'cs.ET', 'cs.HC']","exploring user security and privacy attitudes and concerns toward the use of general-purpose llm chatbots for mental health individuals are increasingly relying on large language model (llm)-enabled
+conversational agents for emotional support. while prior research has examined
+privacy and security issues in chatbots specifically designed for mental health
+purposes, these chatbots are overwhelmingly ""rule-based"" offerings that do not
+leverage generative ai. little empirical research currently measures users'
+privacy and security concerns, attitudes, and expectations when using
+general-purpose llm-enabled chatbots to manage and improve mental health.
+through 21 semi-structured interviews with u.s. participants, we identified
+critical misconceptions and a general lack of risk awareness. participants
+conflated the human-like empathy exhibited by llms with human-like
+accountability and mistakenly believed that their interactions with these
+chatbots were safeguarded by the same regulations (e.g., hipaa) as disclosures
+with a licensed therapist. we introduce the concept of ""intangible
+vulnerability,"" where emotional or psychological disclosures are undervalued
+compared to more tangible forms of information (e.g., financial or
+location-based data). to address this, we propose recommendations to safeguard
+user mental health disclosures with general-purpose llm-enabled chatbots more
+effectively."
+An Empirical Evaluation of AI-Powered Non-Player Characters' Perceived Realism and Performance in Virtual Reality Environments,"Advancements in artificial intelligence (AI) have significantly enhanced the
+realism and interactivity of non-player characters (NPCs) in virtual reality
+(VR), creating more engaging and believable user experiences. This paper
+evaluates AI-driven NPCs within a VR interrogation simulator, focusing on their
+perceived realism, usability, and system performance. The simulator features
+two AI-powered NPCs, a suspect, and a partner, using GPT-4 Turbo to engage
+participants in a scenario to determine the suspect's guilt or innocence. A
+user study with 18 participants assessed the system using the System Usability
+Scale (SUS), Game Experience Questionnaire (GEQ), and a Virtual Agent
+Believability Questionnaire, alongside latency measurements for speech-to-text
+(STT), text-to-speech (TTS), OpenAI GPT-4 Turbo, and overall (cycle) latency.
+Results showed an average cycle latency of 7 seconds, influenced by the
+increasing conversational context. Believability scored 6.67 out of 10, with
+high ratings in behavior, social relationships, and intelligence but moderate
+scores in emotion and personality. The system achieved a SUS score of 79.44,
+indicating good usability. These findings demonstrate the potential of large
+language models to improve NPC realism and interaction in VR while highlighting
+challenges in reducing system latency and enhancing emotional depth. This
+research contributes to the development of more sophisticated AI-driven NPCs,
+revealing the need for performance optimization to achieve increasingly
+immersive virtual experiences.","['Mikko Korkiakoski', 'Saeid Sheikhi', 'Jesper Nyman', 'Jussi Saariniemi', 'Kalle Tapio', 'Panos Kostakos']",2025-07-14 16:50:29+00:00,2025-07-14 16:50:29+00:00,http://arxiv.org/pdf/2507.10469v1,cs.HC,"['cs.HC', 'cs.AI', 'cs.MM']","an empirical evaluation of ai-powered non-player characters' perceived realism and performance in virtual reality environments advancements in artificial intelligence (ai) have significantly enhanced the
+realism and interactivity of non-player characters (npcs) in virtual reality
+(vr), creating more engaging and believable user experiences. this paper
+evaluates ai-driven npcs within a vr interrogation simulator, focusing on their
+perceived realism, usability, and system performance. the simulator features
+two ai-powered npcs, a suspect, and a partner, using gpt-4 turbo to engage
+participants in a scenario to determine the suspect's guilt or innocence. a
+user study with 18 participants assessed the system using the system usability
+scale (sus), game experience questionnaire (geq), and a virtual agent
+believability questionnaire, alongside latency measurements for speech-to-text
+(stt), text-to-speech (tts), openai gpt-4 turbo, and overall (cycle) latency.
+results showed an average cycle latency of 7 seconds, influenced by the
+increasing conversational context. believability scored 6.67 out of 10, with
+high ratings in behavior, social relationships, and intelligence but moderate
+scores in emotion and personality. the system achieved a sus score of 79.44,
+indicating good usability. these findings demonstrate the potential of large
+language models to improve npc realism and interaction in vr while highlighting
+challenges in reducing system latency and enhancing emotional depth. this
+research contributes to the development of more sophisticated ai-driven npcs,
+revealing the need for performance optimization to achieve increasingly
+immersive virtual experiences."
+From BERT to Qwen: Hate Detection across architectures,"Online platforms struggle to curb hate speech without over-censoring
+legitimate discourse. Early bidirectional transformer encoders made big
+strides, but the arrival of ultra-large autoregressive LLMs promises deeper
+context-awareness. Whether this extra scale actually improves practical
+hate-speech detection on real-world text remains unverified. Our study puts
+this question to the test by benchmarking both model families, classic encoders
+and next-generation LLMs, on curated corpora of online interactions for
+hate-speech detection (Hate or No Hate).","['Ariadna Mon', 'Saúl Fenollosa', 'Jon Lecumberri']",2025-07-14 16:46:30+00:00,2025-07-14 16:46:30+00:00,http://arxiv.org/pdf/2507.10468v1,cs.CL,"['cs.CL', 'cs.LG']","from bert to qwen: hate detection across architectures online platforms struggle to curb hate speech without over-censoring
+legitimate discourse. early bidirectional transformer encoders made big
+strides, but the arrival of ultra-large autoregressive llms promises deeper
+context-awareness. whether this extra scale actually improves practical
+hate-speech detection on real-world text remains unverified. our study puts
+this question to the test by benchmarking both model families, classic encoders
+and next-generation llms, on curated corpora of online interactions for
+hate-speech detection (hate or no hate)."

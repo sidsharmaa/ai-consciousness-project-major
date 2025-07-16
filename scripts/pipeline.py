@@ -1,8 +1,7 @@
-# scripts/pipeline.py
-
 import os
 import pandas as pd
 import arxiv
+import time
 from datetime import datetime
 import matplotlib.pyplot as plt
 
@@ -18,38 +17,49 @@ os.makedirs(RAW_DIR, exist_ok=True)
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
 # -----------------------
-# Fetch papers
+# Fetch all matching papers
 # -----------------------
-print("Fetching papers from arXiv...")
+print("🔍 Fetching all AI consciousness-related papers from arXiv...")
+
+query_str = "AI consciousness OR machine consciousness"
+
 search = arxiv.Search(
-    query="AI consciousness OR machine consciousness",
-    max_results=50,
+    query=query_str,
+    max_results=float('inf'),
     sort_by=arxiv.SortCriterion.SubmittedDate
 )
 
-results = []
-for result in search.results():
-    results.append({
-        "Title": result.title,
-        "Summary": result.summary,
-        "Authors": [a.name for a in result.authors],
-        "Published": result.published,
-        "Updated": result.updated,
-        "PDF_URL": result.pdf_url,
-        "Primary_Category": result.primary_category,
-        "Categories": result.categories
-    })
+client = arxiv.Client(
+  page_size = 100,
+  delay_seconds = 3
+)
 
-df = pd.DataFrame(results)
-today = datetime.today().strftime("%Y-%m-%d")
-raw_file = os.path.join(RAW_DIR, f"papers_{today}.csv")
-df.to_csv(raw_file, index=False)
-print(f"Saved raw papers to {raw_file}")
+all_results = []
+try:
+    for result in client.results(search):
+        all_results.append({
+            "Title": result.title,
+            "Summary": result.summary,
+            "Authors": [a.name for a in result.authors],
+            "Published": result.published,
+            "Updated": result.updated,
+            "PDF_URL": result.pdf_url,
+            "Primary_Category": result.primary_category,
+            "Categories": result.categories
+        })
+except arxiv.UnexpectedEmptyPageError:
+    print("No more results found. Ending pagination.")
+
+print(f"✅ Total papers fetched: {len(all_results)}")
+
+# Convert to DataFrame
+df = pd.DataFrame(all_results)
+
 
 # -----------------------
 # Filter papers
 # -----------------------
-print("Filtering...")
+print("⚙️ Filtering papers with relevant keywords...")
 KEYWORDS = ["consciousness", "sentience", "awareness", "self-awareness", "mind", "experience"]
 
 df["text"] = df["Title"].fillna("") + " " + df["Summary"].fillna("")
@@ -58,17 +68,18 @@ df["text"] = df["text"].str.lower()
 filtered_df = df[df["text"].apply(lambda x: any(kw in x for kw in KEYWORDS))]
 filtered_file = os.path.join(PROCESSED_DIR, "filtered_papers.csv")
 filtered_df.to_csv(filtered_file, index=False)
-print(f"Saved filtered papers to {filtered_file}")
+print(f"✅ Saved filtered papers to {filtered_file}")
 
 # -----------------------
 # Plot papers per month
 # -----------------------
+print("📊 Generating publication plot...")
 df['Published'] = pd.to_datetime(df['Published'])
-monthly_counts = df.set_index('Published').resample('M').size()
+monthly_counts = df.set_index('Published').resample('ME').size()
 
 plt.figure(figsize=(10, 6))
 ax = monthly_counts.plot(kind='bar', color='skyblue')
-ax.set_title("Number of Papers per Month")
+ax.set_title("Number of AI Consciousness Papers per Month")
 ax.set_xlabel("Month")
 ax.set_ylabel("Number of Papers")
 ax.set_xticklabels([ts.strftime('%b %Y') for ts in monthly_counts.index], rotation=45, ha='right')
@@ -77,4 +88,4 @@ plt.tight_layout()
 plot_file = os.path.join(PROCESSED_DIR, "papers_per_month.png")
 plt.savefig(plot_file)
 plt.show()
-print(f"Plot saved to {plot_file}")
+print(f"📈 Plot saved to {plot_file}")
