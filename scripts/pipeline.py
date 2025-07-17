@@ -21,7 +21,10 @@ os.makedirs(PROCESSED_DIR, exist_ok=True)
 # -----------------------
 print(" Fetching all AI consciousness-related papers from arXiv...")
 
-query_str = "AI consciousness OR machine consciousness"
+query_str = '"AI consciousness" OR "machine consciousness" OR "synthetic consciousness" OR "digital consciousness" OR "artificial consciousness" OR "sentient AI" OR "conscious AI" OR "subjective experience" OR "qualia"'
+category_query = 'cat:cs.AI OR cat:phil.CO OR cat:q-bio.NC OR cat:cs.LG OR cat:cs.CL'
+query_str = f'({query_str}) AND ({category_query})'
+
 
 search = arxiv.Search(
     query=query_str,
@@ -71,21 +74,21 @@ filtered_df.to_csv(filtered_file, index=False)
 print(f" Saved filtered papers to {filtered_file}")
 
 # -----------------------
-# Plot papers per month
+# Plot papers per day
 # -----------------------
 print(" Generating publication plot...")
 df['Published'] = pd.to_datetime(df['Published'])
-monthly_counts = df.set_index('Published').resample('ME').size()
+daily_counts = df.set_index('Published').resample('D').size()
 
-plt.figure(figsize=(10, 6))
-ax = monthly_counts.plot(kind='bar', color='skyblue')
-ax.set_title("Number of AI Consciousness Papers per Month")
-ax.set_xlabel("Month")
+plt.figure(figsize=(12, 6))
+ax = daily_counts.plot(kind='bar', color='skyblue', width=0.8)
+ax.set_title("Number of AI Consciousness Papers Published per Day")
+ax.set_xlabel("Date")
 ax.set_ylabel("Number of Papers")
-ax.set_xticklabels([ts.strftime('%b %Y') for ts in monthly_counts.index], rotation=45, ha='right')
+ax.set_xticklabels([ts.strftime('%Y-%m-%d') for ts in daily_counts.index], rotation=45, ha='right')
 plt.tight_layout()
 
-plot_file = os.path.join(PROCESSED_DIR, "papers_per_month.png")
+plot_file = os.path.join(PROCESSED_DIR, "papers_per_day.png")
 plt.savefig(plot_file)
 plt.show()
 print(f" Plot saved to {plot_file}")
