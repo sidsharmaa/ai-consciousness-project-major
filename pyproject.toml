@@ -1,0 +1,8 @@
+[project]
+name = "ai_consciousness_project"
+version = "0.1.0"
+description = "A RAG-based assistant for AI consciousness research."
+authors = [{ name = "Siddhant Sharma"}]
+
+[tool.setuptools]
+packages = ["src"]
