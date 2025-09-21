@@ -59,3 +59,36 @@ embedding_pipeline:
   text_splitter:
     chunk_size: 500
     chunk_overlap: 50
+
+# Configuration for the RAG chatbot application
+rag_application:
+  # Use paths from our standardized project structure
+  faiss_index_path: "data/06_models/faiss_index"
+  log_path: "chatbot.log" # Log file will be in the project root
+
+  # Models
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  llm:
+    model_name: "mistral"
+    base_url: "http://localhost:11434"
+
+  # RAG Chain parameters
+  prompt_template: >
+    Use the following pieces of context to answer the user's question.
+    If you don't know the answer, or if the question is not related to 
+    AI consciousness or consciousness, just say that you don't know or 
+    that the question is outside the scope of this knowledge base.
+    Do not try to make up an answer.
+
+    Context:
+    {context}
+
+    Question: {question}
+
+    Answer:
+  
+  # User preference mapping
+  answer_length_map:
+    short: 100
+    medium: 250
+    long: 500
