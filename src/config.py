@@ -35,12 +35,24 @@ class LocalJsonProcessingConfig(BaseModel):
     max_title_len: int
     max_abstract_len: int
 
+class TextSplitterConfig(BaseModel):
+    chunk_size: int
+    chunk_overlap: int
+
+class EmbeddingPipelineConfig(BaseModel):
+    transcript_sources: List[Path]
+    parquet_source: Path
+    faiss_index_path: Path
+    embedding_model: str
+    text_splitter: TextSplitterConfig
+
 class AppConfig(BaseModel):
     """Main application configuration model."""
     data_source: DataSourceConfig
     processing: ProcessingConfig
     paths: PathConfig
     local_json_processing: LocalJsonProcessingConfig
+    embedding_pipeline: EmbeddingPipelineConfig
 
 def load_config() -> AppConfig:
     """
