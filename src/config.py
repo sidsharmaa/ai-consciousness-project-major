@@ -88,7 +88,7 @@ def load_config() -> AppConfig:
                     if isinstance(value, str):
                         config_yaml[section_name][key] = PROJECT_ROOT / value
     
-    return AppConfig.parse_obj(config_yaml)
+    return AppConfig.model_validate(config_yaml)
 
 # Load the configuration globally on import
 config = load_config()
