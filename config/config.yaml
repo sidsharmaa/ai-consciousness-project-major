@@ -37,3 +37,25 @@ local_json_processing:
 
   max_title_len: 300
   max_abstract_len: 1000
+
+# Configuration for the vector store creation pipeline
+embedding_pipeline:
+  # Paths to specific source text files
+  transcript_sources:
+    - "data/01_raw/anirban_bandopadhyay.txt"
+    - "data/01_raw/bernardo_kastrup.txt"
+    - "data/01_raw/david_chalmers.txt"
+    - "data/01_raw/sir_roger_penrose.txt"
+    - "data/01_raw/stuart_hameroff.txt"
+  
+  # Path to the processed parquet file
+  parquet_source: "data/02_intermediate/filtered_arxiv_metadata.parquet"
+  
+  # Path to save the final FAISS index
+  faiss_index_path: "data/06_models/faiss_index"
+
+  # Model and text splitting parameters
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  text_splitter:
+    chunk_size: 500
+    chunk_overlap: 50
