@@ -1,0 +1,39 @@
+# Configuration for the data processing pipeline
+data_source:
+  kaggle_dataset: "Cornell-University/arxiv"
+
+processing:
+  keywords:
+    - "consciousness"
+    - "sentience"
+    - "awareness"
+    - "self-awareness"
+    - "mind"
+    - "experience"
+
+# Paths for the Kaggle pipeline
+paths:
+  download_dir: "data/01_raw/kaggle_arxiv" 
+  output_path: "data/02_intermediate/filtered_papers.csv"
+
+# Configuration for processing the local JSON snapshot
+local_json_processing:
+  input_path: "data/01_raw/arxiv-metadata-oai-snapshot.json"
+  output_path: "data/02_intermediate/filtered_arxiv_metadata.parquet"
+  
+  filter_keywords:
+    - "consciousness"
+    - "sentience"
+    - "self-awareness"
+    - "subjective experience"
+    - "qualia"
+      
+  target_categories:
+    - "cs.AI"
+    - "phil.CO"
+    - "q-bio.NC"
+    - "cs.LG"
+    - "cs.CL"
+
+  max_title_len: 300
+  max_abstract_len: 1000
