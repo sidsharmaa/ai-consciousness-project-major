@@ -6,6 +6,7 @@ ensuring that the configuration is type-safe and structured correctly.
 """
 from pathlib import Path
 from typing import List
+from typing import Dict
 
 import yaml
 from pydantic import BaseModel
@@ -46,6 +47,18 @@ class EmbeddingPipelineConfig(BaseModel):
     embedding_model: str
     text_splitter: TextSplitterConfig
 
+class LLMConfig(BaseModel):
+    model_name: str
+    base_url: str
+
+class RAGApplicationConfig(BaseModel):
+    faiss_index_path: Path
+    log_path: Path
+    embedding_model: str
+    llm: LLMConfig
+    prompt_template: str
+    answer_length_map: Dict[str, int]
+
 class AppConfig(BaseModel):
     """Main application configuration model."""
     data_source: DataSourceConfig
@@ -53,6 +66,7 @@ class AppConfig(BaseModel):
     paths: PathConfig
     local_json_processing: LocalJsonProcessingConfig
     embedding_pipeline: EmbeddingPipelineConfig
+    rag_application: RAGApplicationConfig
 
 def load_config() -> AppConfig:
     """
