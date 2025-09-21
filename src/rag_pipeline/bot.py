@@ -101,14 +101,14 @@ def format_response(result: Dict[str, Any]) -> str:
     if sources:
         response += "\n\nSources:"
         unique_sources = { # Remove duplicate sources
-            _format_source_doc(doc) for doc in sources
+            format_source_doc(doc) for doc in sources
         }
         for source_str in sorted(list(unique_sources)):
             response += f"\n - {source_str}"
             
     return response
 
-def _format_source_doc(doc: Document) -> str:
+def format_source_doc(doc: Document) -> str:
     """Helper function to format a single source document."""
     title = doc.metadata.get("title", "Unknown Title")
     if doc.metadata.get("source_type") == "arxiv_paper":
